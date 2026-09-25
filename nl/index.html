@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Buyer Arena — test je product met synthetische kopers</title>
-  <meta name="description" content="Lanceringsaudit met vijf panels: eindgebruikers, ontwikkelaars, investeerders, red team en segmenten. Bewijs bij elke score. Gratis en open source.">
+  <title>Buyer Arena — evaluatie op basis van bewijs voor software van mensen en AI-agents</title>
+  <meta name="description" content="Meet wat er gebeurt voordat gebruikers de problemen vinden: echte browsertrajecten, synthetische kopers, security- en eval-tools. Offline eerst, modelonafhankelijk.">
   <link rel="canonical" href="https://abrahamhl.github.io/buyer-arena-site/nl/">
   <link rel="alternate" hreflang="es" href="https://abrahamhl.github.io/buyer-arena-site/es/">
   <link rel="alternate" hreflang="en" href="https://abrahamhl.github.io/buyer-arena-site/en/">
@@ -15,8 +15,8 @@
   <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Buyer Arena">
-  <meta property="og:title" content="Buyer Arena — test je product met synthetische kopers">
-  <meta property="og:description" content="Lanceringsaudit met vijf panels: eindgebruikers, ontwikkelaars, investeerders, red team en segmenten. Bewijs bij elke score. Gratis en open source.">
+  <meta property="og:title" content="Buyer Arena — evaluatie op basis van bewijs voor software van mensen en AI-agents">
+  <meta property="og:description" content="Meet wat er gebeurt voordat gebruikers de problemen vinden: echte browsertrajecten, synthetische kopers, security- en eval-tools. Offline eerst, modelonafhankelijk.">
   <meta property="og:url" content="https://abrahamhl.github.io/buyer-arena-site/nl/">
   <meta property="og:locale" content="nl_NL">
   <meta property="og:locale:alternate" content="es_ES">
@@ -24,224 +24,319 @@
   <meta property="og:image" content="https://abrahamhl.github.io/buyer-arena-site/assets/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Buyer Arena — test je product met synthetische kopers">
+  <meta property="og:image:alt" content="Buyer Arena — evaluatie op basis van bewijs voor software van mensen en AI-agents">
   <meta name="twitter:image" content="https://abrahamhl.github.io/buyer-arena-site/assets/og.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Buyer Arena — test je product met synthetische kopers">
-  <meta name="twitter:description" content="Lanceringsaudit met vijf panels: eindgebruikers, ontwikkelaars, investeerders, red team en segmenten. Bewijs bij elke score. Gratis en open source.">
+  <meta name="twitter:title" content="Buyer Arena — evaluatie op basis van bewijs voor software van mensen en AI-agents">
+  <meta name="twitter:description" content="Meet wat er gebeurt voordat gebruikers de problemen vinden: echte browsertrajecten, synthetische kopers, security- en eval-tools. Offline eerst, modelonafhankelijk.">
+  <meta name="ba-launch-state" content="prelaunch">
   <link rel="icon" href="/buyer-arena-site/assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="/buyer-arena-site/assets/inter-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/buyer-arena-site/assets/styles.css?v=445edf8374">
+  <link rel="stylesheet" href="/buyer-arena-site/assets/styles.css?v=84eb862ce5">
   <script>try{var t=localStorage.getItem('ba-theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t}catch(e){}</script>
-  <script src="/buyer-arena-site/assets/app.js?v=82e285c00d" defer></script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Buyer Arena","description":"Lanceringsaudit met vijf panels: eindgebruikers, ontwikkelaars, investeerders, red team en segmenten. Bewijs bij elke score. Gratis en open source.","url":"https://abrahamhl.github.io/buyer-arena-site/nl/","inLanguage":"nl","applicationCategory":"DeveloperApplication","operatingSystem":"Windows, macOS, Linux","license":"https://www.apache.org/licenses/LICENSE-2.0","sameAs":["https://github.com/abrahamhl/buyer-arena"],"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}</script>
+  <script src="/buyer-arena-site/assets/app.js?v=4f487bc50f" defer></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Buyer Arena","description":"Meet wat er gebeurt voordat gebruikers de problemen vinden: echte browsertrajecten, synthetische kopers, security- en eval-tools. Offline eerst, modelonafhankelijk.","url":"https://abrahamhl.github.io/buyer-arena-site/nl/","inLanguage":"nl","applicationCategory":"DeveloperApplication","operatingSystem":"Windows, macOS, Linux","license":"https://www.apache.org/licenses/LICENSE-2.0","softwareVersion":"0.2.0-rc.1"}</script>
 </head>
 <body>
 <a class="skip" href="#main">Naar de inhoud</a>
 <header class="nav" id="nav">
   <div class="wrap nav-row">
-    <a class="brand" href="/buyer-arena-site/nl/"><span class="brand-mark" aria-hidden="true">▲</span><span>Buyer Arena</span></a>
-    <nav class="links" aria-label="Onderdelen"><a href="#panels">Panels</a><a href="#evidence">Bewijs</a><a href="#mix">Mix</a><a href="#quickstart">Aan de slag</a><a href="#phone">Via je telefoon</a><a href="#safety">Veiligheid</a></nav>
+    <a class="brand" href="/buyer-arena-site/nl/" aria-label="Buyer Arena — Home"><span class="brand-mark" aria-hidden="true">▲</span><span class="brand-word">BUYER ARENA</span></a>
+    <nav class="links" aria-label="Onderdelen"><a href="#how">Hoe het werkt</a><a href="#report">Echt rapport</a><a href="#integrations">Integraties</a><a href="#offline">Offline eerst</a><a href="#limits">Beperkingen</a><a href="#quickstart">Lokaal draaien</a></nav>
     <div class="controls">
-      <nav class="seg lang" id="lang" aria-label="Taal"><a class="lb" href="/buyer-arena-site/es/" hreflang="es" lang="es" title="Español">ES</a><a class="lb" href="/buyer-arena-site/en/" hreflang="en" lang="en" title="English">EN</a><a class="lb" href="/buyer-arena-site/nl/" hreflang="nl" lang="nl" aria-current="page" title="Nederlands">NL</a></nav>
-      <button class="icon-btn" id="themeBtn" type="button" aria-label="Wissel tussen licht en donker thema" title="Wissel tussen licht en donker thema"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><circle cx="12" cy="12" r="8.2" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M12 3.8a8.2 8.2 0 0 1 0 16.4z" fill="currentColor"/></svg></button>
-      <a class="btn btn-primary run-btn" href="/buyer-arena-site/nl/run.html">Run-bouwer</a>
+      <nav class="seg lang" id="lang" aria-label="Taal"><a class="lb" href="/buyer-arena-site/es/" hreflang="es" lang="es" aria-label="Español">ES</a><a class="lb" href="/buyer-arena-site/en/" hreflang="en" lang="en" aria-label="English">EN</a><a class="lb" href="/buyer-arena-site/nl/" hreflang="nl" lang="nl" aria-current="page" aria-label="Nederlands">NL</a></nav>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Wisselen tussen licht en donker thema" title="Wisselen tussen licht en donker thema"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="8.2" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M12 3.8a8.2 8.2 0 0 1 0 16.4z" fill="currentColor"/></svg></button>
+      <a class="btn btn-primary run-btn" href="/buyer-arena-site/nl/run.html">Configurator</a>
     </div>
   </div>
   <nav class="subnav" aria-label="Onderdelen">
-    <a class="sub-run" href="/buyer-arena-site/nl/run.html">Run-bouwer</a><a href="#panels">Panels</a><a href="#evidence">Bewijs</a><a href="#mix">Mix</a><a href="#quickstart">Aan de slag</a><a href="#phone">Via je telefoon</a><a href="#safety">Veiligheid</a>
+    <a class="sub-run" href="/buyer-arena-site/nl/run.html">Configurator</a><a href="#how">Hoe het werkt</a><a href="#report">Echt rapport</a><a href="#integrations">Integraties</a><a href="#offline">Offline eerst</a><a href="#limits">Beperkingen</a><a href="#quickstart">Lokaal draaien</a>
   </nav>
 </header>
 <main class="wrap" id="main">
-  <section class="hero" id="top">
-    <div>
-      <p class="eyebrow">open source · Apache-2.0 · v0.1</p>
-      <h1><span class="h1-brand">Buyer Arena —</span> Test je product met <em>synthetische kopers</em> voordat echte klanten de problemen vinden.</h1>
-      <p class="sub">Een audit van je lanceringsgereedheid met vijf panels. Elk panel bekijkt je product met een eigen doel, en elke score linkt naar het bewijs.</p>
-      <p class="price"><span class="price-dot" aria-hidden="true"></span>Gratis en open source · €0 · Apache-2.0</p>
+  <section class="hero" id="top" aria-labelledby="h-hero">
+    <div class="hero-copy">
+      <p class="state-pill "><span class="state-dot" aria-hidden="true"></span>Privé release candidate — de broncode gaat open na een onafhankelijke audit</p>
+      <h1 id="h-hero"><span class="h1-brand"><span aria-hidden="true">▲ </span>BUYER ARENA<span class="state-v"> · v0.2.0-rc.1</span></span> De evaluatielaag <em>op basis van bewijs</em> voor software gebouwd door mensen en AI-agents.</h1>
+      <p class="sub">Meet wat er echt gebeurt — echte browsertrajecten, synthetische kopers, security- en eval-tools — voordat je gebruikers de problemen vinden. Offline eerst, onafhankelijk van model en aanbieder.</p>
       <div class="ctas">
-        <a class="btn btn-primary btn-lg" href="#quickstart">Aan de slag</a>
-        <a class="btn btn-ghost btn-lg" href="/buyer-arena-site/report/">Bekijk het live rapport <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-primary btn-lg" href="#quickstart">Lokaal draaien</a>
+        <a class="btn btn-ghost btn-lg" href="/buyer-arena-site/report/demo/report.html">Bekijk een echt rapport <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <span class="btn btn-ghost btn-lg is-disabled" role="link" aria-disabled="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8.5 10.5V7.8a3.5 3.5 0 0 1 7 0v2.7"/></svg> Broncode · bij de lancering</span>
       </div>
     </div>
-    <div class="term " role="img" aria-label="buyer-arena — voorbeeld">
-  <div class="term-bar"><i></i><i></i><i></i><span>buyer-arena — voorbeeld</span></div>
-  <pre><span class="t-dim">$</span> npm run ba -- launch-check <span class="t-dim">\</span>
-    <span class="t-dim">--repo . --url https://winkel.example</span>
-<span class="t-ok">✓</span> 40 deelnemers · 5 panels · diepte standard
+    <figure class="scene card" id="scene">
+  <svg class="hs" viewBox="0 0 480 424" role="img" aria-label="Illustratieve animatie met demodata. Twintig synthetische kopers gaan door de trechter van een product. In de basisversie halen 8 van de 20 het doel (40%); een aantal haakt af bij een aanmeldstap die om een telefoonnummer vraagt, en bij elke fout wordt bewijs vastgelegd. De verbeterde kandidaat haalt 15 van de 20 (75%): +35 procentpunt. Daarna voeden vijf modelroutes — Claude, GPT, Gemini, een lokaal model en een deterministische heuristiek — Buyer Arena, dat onenigheid, bewijs en betrouwbaarheid rapporteert." focusable="false">
+    <g aria-hidden="true">
+      <text class="hs-k" x="0" y="12">BASIS</text>
+      <text class="hs-v" x="0" y="40" data-k="b">40%</text>
+      <text class="hs-k" x="118" y="12">KANDIDAAT</text>
+      <text class="hs-v" x="118" y="40" data-k="c">75%</text>
+      <g class="hs-delta" data-k="d"><rect x="236" y="18" width="84" height="26" rx="13"/><text x="278" y="36" text-anchor="middle">+35 pp</text></g>
+      <circle class="hs-dot ok" cx="370" cy="10" r="4"/><text class="hs-lbl" x="380" y="14">doel</text><circle class="hs-dot ab" cx="370" cy="25" r="4"/><text class="hs-lbl" x="380" y="29">afgehaakt</text><path class="hs-warn" d="M366 44 l4 -7 l4 7z"/><text class="hs-lbl" x="380" y="44">frictie</text>
+      <path class="hs-funnel" d="M40 58 L440 108 L440 180 L40 230 Z"/>
+      <line class="hs-gate" x1="150" x2="150" y1="73.8" y2="214.3"/><line class="hs-gate" x1="250" x2="250" y1="86.3" y2="201.8"/><line class="hs-gate" x1="350" x2="350" y1="98.8" y2="189.3"/>
+      <g class="hs-friction"><path class="hs-warn" d="M243 80.3 l7 -12 l7 12z"/><text class="hs-lbl hs-flbl" x="250" y="64.3" text-anchor="middle">telefoon verplicht</text></g>
+      <text class="hs-lbl" x="150" y="252" text-anchor="middle">prijzen</text><text class="hs-lbl" x="250" y="252" text-anchor="middle">aanmelden</text><text class="hs-lbl" x="350" y="252" text-anchor="middle">afrekenen</text><text class="hs-lbl" x="462" y="252" text-anchor="middle">doel</text>
+      <circle class="hs-dot ok" r="4" cx="452" cy="124" data-o="-0.95" data-b="3" data-c="3"/><circle class="hs-dot ok" r="4" cx="462" cy="124" data-o="-0.25" data-b="1" data-c="3"/><circle class="hs-dot ab" r="4" cx="143" cy="170.3" data-o="0.44999999999999996" data-b="0" data-c="0"/><circle class="hs-dot ok" r="4" cx="472" cy="124" data-o="-0.85" data-b="3" data-c="3"/><circle class="hs-dot ok" r="4" cx="452" cy="134" data-o="-0.15000000000000002" data-b="1" data-c="3"/><circle class="hs-dot ok" r="4" cx="462" cy="134" data-o="0.55" data-b="1" data-c="3"/><circle class="hs-dot ok" r="4" cx="472" cy="134" data-o="-0.75" data-b="3" data-c="3"/><circle class="hs-dot ab" r="4" cx="343" cy="142.1" data-o="-0.050000000000000044" data-b="2" data-c="2"/><circle class="hs-dot ok" r="4" cx="452" cy="144" data-o="0.6499999999999999" data-b="1" data-c="3"/><circle class="hs-dot ok" r="4" cx="462" cy="144" data-o="-0.65" data-b="3" data-c="3"/><circle class="hs-dot ab" r="4" cx="143" cy="146.9" data-o="0.050000000000000044" data-b="0" data-c="0"/><circle class="hs-dot ok" r="4" cx="472" cy="144" data-o="0.75" data-b="1" data-c="3"/><circle class="hs-dot ok" r="4" cx="452" cy="154" data-o="-0.55" data-b="3" data-c="3"/><circle class="hs-dot ab" r="4" cx="243" cy="151.3" data-o="0.1499999999999999" data-b="1" data-c="1"/><circle class="hs-dot ok" r="4" cx="462" cy="154" data-o="0.8500000000000001" data-b="2" data-c="3"/><circle class="hs-dot ok" r="4" cx="472" cy="154" data-o="-0.44999999999999996" data-b="3" data-c="3"/><circle class="hs-dot ab" r="4" cx="143" cy="158.6" data-o="0.25" data-b="0" data-c="0"/><circle class="hs-dot ok" r="4" cx="452" cy="164" data-o="0.95" data-b="3" data-c="3"/><circle class="hs-dot ok" r="4" cx="462" cy="164" data-o="-0.35" data-b="1" data-c="3"/><circle class="hs-dot ok" r="4" cx="472" cy="164" data-o="0.3500000000000001" data-b="3" data-c="3"/>
+      <g class="hs-chip" data-i="0"><rect x="0" y="268" width="152" height="24" rx="7"/><text x="76" y="284" text-anchor="middle">form_error · stap 3</text></g><g class="hs-chip" data-i="1"><rect x="162" y="268" width="152" height="24" rx="7"/><text x="238" y="284" text-anchor="middle">screenshot · p-009</text></g><g class="hs-chip" data-i="2"><rect x="324" y="268" width="152" height="24" rx="7"/><text x="400" y="284" text-anchor="middle">bezwaar · telefoon</text></g>
+      <line class="hs-div" x1="0" x2="480" y1="305" y2="305"/>
+      <path class="hs-wire" id="hs-in-0" d="M98 327 C140 327 140 363 180 363"/><g class="hs-route"><rect x="0" y="318" width="98" height="18" rx="9"/><text x="49" y="331" text-anchor="middle">Claude</text></g><path class="hs-wire" id="hs-in-1" d="M98 348 C140 348 140 363 180 363"/><g class="hs-route"><rect x="0" y="339" width="98" height="18" rx="9"/><text x="49" y="352" text-anchor="middle">GPT</text></g><path class="hs-wire" id="hs-in-2" d="M98 369 C140 369 140 363 180 363"/><g class="hs-route"><rect x="0" y="360" width="98" height="18" rx="9"/><text x="49" y="373" text-anchor="middle">Gemini</text></g><path class="hs-wire" id="hs-in-3" d="M98 390 C140 390 140 363 180 363"/><g class="hs-route"><rect x="0" y="381" width="98" height="18" rx="9"/><text x="49" y="394" text-anchor="middle">lokaal model</text></g><path class="hs-wire" id="hs-in-4" d="M98 411 C140 411 140 363 180 363"/><g class="hs-route"><rect x="0" y="402" width="98" height="18" rx="9"/><text x="49" y="415" text-anchor="middle">heuristiek</text></g>
+      <path class="hs-wire" id="hs-out-0" d="M304 363 C334 363 334 333 362 333"/><g class="hs-out" data-i="0"><rect x="362" y="322" width="118" height="22" rx="11"/><text x="421" y="337" text-anchor="middle">onenigheid</text></g><path class="hs-wire" id="hs-out-1" d="M304 363 C334 363 334 363 362 363"/><g class="hs-out" data-i="1"><rect x="362" y="352" width="118" height="22" rx="11"/><text x="421" y="367" text-anchor="middle">bewijs</text></g><path class="hs-wire" id="hs-out-2" d="M304 363 C334 363 334 393 362 393"/><g class="hs-out" data-i="2"><rect x="362" y="382" width="118" height="22" rx="11"/><text x="421" y="397" text-anchor="middle">betrouwbaarheid</text></g>
+      <g class="hs-core"><rect x="180" y="340" width="124" height="46" rx="10"/><text x="242" y="368" text-anchor="middle">▲ BUYER ARENA</text></g>
+    </g>
+  </svg>
+  <figcaption class="scene-cap"><span>Illustratieve animatie — demodata</span><button class="scene-btn" type="button" id="sceneBtn" hidden data-pause="Animatie pauzeren" data-play="Animatie afspelen" data-replay="Animatie opnieuw afspelen"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2.4"><path d="M9 6v12M15 6v12"/></svg><span>Animatie pauzeren</span></button></figcaption>
+</figure>
+  </section>
 
-Eindgebruikers  <span class="t-warn">★★★★☆</span>  78 %
-Ontwikkelaars   <span class="t-warn">★★★☆☆</span>  61 %
-Investeerders   <span class="t-warn">★★★★☆</span>  72 %  <span class="t-dim">signalen</span>
-Red team        <span class="t-warn">★★☆☆☆</span>  <span class="t-bad">44 %</span>
-Segmenten       <span class="t-warn">★★★☆☆</span>  63 %
+  <section id="how" aria-labelledby="h-how">
+    <div class="sec-head"><h2 id="h-how">Van wijziging naar oordeel, in zeven stappen</h2><p>Buyer Arena staat tussen wie de wijziging maakte — een mens of een AI-agent — en de beslissing om te releasen.</p></div>
+    <ol class="flow" id="flow">
+<li class="flow-step">
+        <span class="flow-n" aria-hidden="true">01</span>
+        <div class="flow-body"><h3><span class="sr">1. </span>Een AI-agent of een mens bouwt software</h3><p>Een pull request, een branch of een uitgerolde preview. Voor Buyer Arena maakt het niet uit wie hem schreef.</p></div>
+      </li>
+<li class="flow-step">
+        <span class="flow-n" aria-hidden="true">02</span>
+        <div class="flow-body"><h3><span class="sr">2. </span>Buyer Arena evalueert de wijziging</h3><p>Op je eigen machine, in CI of vanuit een agent via MCP. Elke run legt zijn netwerkbeleid vast.</p></div>
+      </li>
+<li class="flow-step">
+        <span class="flow-n" aria-hidden="true">03</span>
+        <div class="flow-body"><h3><span class="sr">3. </span>Browseragents en synthetische kopers gebruiken het product</h3><p>Echte Playwright-trajecten met screenshots en events. Elke koper is een persona met seed, doel, budget en beperkt geduld.</p><span class="tag mono">Playwright</span></div>
+      </li>
+<li class="flow-step">
+        <span class="flow-n" aria-hidden="true">04</span>
+        <div class="flow-body"><h3><span class="sr">4. </span>Security- en eval-tools leveren bewijs</h3><p>Promptfoo, garak, Gitleaks, Trivy en andere sluiten aan als adapter. Hun resultaten zijn bewijs, geen oordeel.</p></div>
+      </li>
+<li class="flow-step">
+        <span class="flow-n" aria-hidden="true">05</span>
+        <div class="flow-body"><h3><span class="sr">5. </span>Buyer Arena normaliseert het bewijs</h3><p>Alles wordt Evidence Protocol v1: draagbare JSONL-records met een bron, een locatie en een betrouwbaarheid.</p><span class="tag mono">Evidence Protocol v1</span></div>
+      </li>
+<li class="flow-step">
+        <span class="flow-n" aria-hidden="true">06</span>
+        <div class="flow-body"><h3><span class="sr">6. </span>Basis en kandidaat worden vergeleken</h3><p>Dezelfde persona’s op beide versies, gepaarde verschillen met intervallen, opgeloste en nieuwe frictie.</p><span class="tag mono">Δ +35 pp</span></div>
+      </li>
+<li class="flow-step">
+        <span class="flow-n" aria-hidden="true">07</span>
+        <div class="flow-body"><h3><span class="sr">7. </span>Echte geaggregeerde data kalibreert toekomstige simulaties</h3><p>Als je echte geaggregeerde uitkomsten aanlevert, meet de kalibratie de fout en markeert elke run als UNCALIBRATED, PARTIALLY CALIBRATED of CALIBRATED.</p></div>
+      </li>
+    </ol>
+  </section>
 
-<span class="t-acc">#1</span> Installatiescript downloadt externe code
-   <span class="t-dim">package.json:14 · bewijs sec-003</span></pre>
-</div>
+  <section id="report" aria-labelledby="h-report">
+    <div class="sec-head"><h2 id="h-report">Een echt rapport, geen mock-up</h2><p>Twintig deterministische synthetische kopers liepen echte browsertrajecten door twee versies van de meegeleverde demowinkel “Tallybird”. Dit is het onbewerkte HTML-rapport van die run.</p></div>
+    <div class="report card">
+      <div class="report-main">
+        <p class="fiction"><span class="dot" aria-hidden="true"></span>Het demoproduct is fictief; de trajecten zijn echt, de kopers synthetisch.</p>
+        <dl class="facts"><div class="fact"><dt>doel gehaald, basis</dt><dd>40 %</dd></div><div class="fact"><dt>doel gehaald, kandidaat</dt><dd>75 %</dd></div><div class="fact good"><dt>verschil · 95%-interval +15 … +55 pp</dt><dd>+35 pp</dd></div><div class="fact"><dt>browsertrajecten · 217 screenshots</dt><dd>40</dd></div><div class="fact"><dt>modelkosten · 0 tokens · netwerk LOCAL</dt><dd>$0</dd></div></dl>
+        <ul class="checks"><li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Elke bevinding verwijst naar een event in het traject, een screenshot, een URL of <b>bestand:regel</b>.</span></li><li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Exporteert naar CSV, PNG, JPG, Markdown, JSON en PDF; rapporten in het Spaans, Engels en Nederlands.</span></li><li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Deterministische kopers: zelfde seed, zelfde resultaat. Geen model en geen API-sleutel nodig.</span></li></ul>
+        <p class="report-cta"><a class="btn btn-primary btn-lg" href="/buyer-arena-site/report/demo/report.html">Open het echte rapport <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><span class="dim">Eén HTML-bestand · werkt offline</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="limits" aria-labelledby="h-limits">
+    <div class="sec-head"><h2 id="h-limits">Beperkingen — lees deze eerst</h2><p>Wat Buyer Arena vandaag meet, en wat niet.</p></div>
+    <ul class="limits"><li class="card"><span class="ic warn-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 2.8 19.5h18.4z"/><path d="M12 10v4.2M12 16.8v.1"/></svg></span><div><h3>Een conversie-indicator, geen omzet</h3><p>Synthetische kopers meten of een traject zijn doel haalt. Dat is een benadering van conversie, geen voorspelling van verkoop of omzet.</p></div></li><li class="card"><span class="ic warn-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 2.8 19.5h18.4z"/><path d="M12 10v4.2M12 16.8v.1"/></svg></span><div><h3>Standaard niet gekalibreerd</h3><p>Tot je echte geaggregeerde data aanlevert, is elke run UNCALIBRATED: lees verschillen als richting, niet als belofte.</p></div></li><li class="card"><span class="ic warn-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 2.8 19.5h18.4z"/><path d="M12 10v4.2M12 16.8v.1"/></svg></span><div><h3>Nog geen live LLM-run geverifieerd</h3><p>Kopers en routes met een model zijn gebouwd en getest met gescripte modellen; een echte run tegen een betaalde aanbieder is voor deze release nog niet geverifieerd.</p></div></li><li class="card"><span class="ic warn-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 2.8 19.5h18.4z"/><path d="M12 10v4.2M12 16.8v.1"/></svg></span><div><h3>Gehoste uitvoering van repositories komt later</h3><p>Een repository auditen via een URL is alleen statisch: bestanden worden als data gelezen. Label: STATIC AUDIT · NO CODE EXECUTED.</p></div></li><li class="card"><span class="ic warn-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 2.8 19.5h18.4z"/><path d="M12 10v4.2M12 16.8v.1"/></svg></span><div><h3>Experimentele onderdelen zijn gemarkeerd</h3><p>Alles met het label EXPERIMENTAL kan vóór 1.0 veranderen of verdwijnen.</p></div></li></ul>
   </section>
 
   <section id="panels" aria-labelledby="h-panels">
-    <div class="sec-head"><div><h2 id="h-panels">Vijf panels, vijf doelen</h2><p>Een lancering mislukt om verschillende redenen, afhankelijk van wie er kijkt. Elk panel zoekt zijn eigen problemen en onderbouwt de score met bewijs.</p></div></div>
+    <div class="sec-head"><h2 id="h-panels">Vijf panels, vijf invalshoeken</h2><p>Een lancering mislukt om verschillende redenen, afhankelijk van wie er kijkt. Elk panel zoekt zijn eigen problemen en onderbouwt de score met bewijs.</p></div>
     <div class="panels">
-<article class="card panel p-users-card">
+<article class="card panel">
       <div class="panel-top"><span class="ic p-users-ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.2 10.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L20.5 8H6.2"/><circle cx="9.5" cy="19.5" r="1.3"/><circle cx="17" cy="19.5" r="1.3"/></svg></span><code class="key">users</code></div>
       <h3>Eindgebruikers</h3>
-      <p class="intent">Waar gaan conversies verloren, en waarom?</p>
-      <ul class="ticks"><li>Echte klantreizen in de browser door synthetische klanten.</li><li>Trechter per stap, gevonden frictie en uitval.</li><li>A/B-vergelijking van twee versies van je site.</li></ul>
+      <p class="intent">Waar lekken conversies weg, en waarom?</p>
+      <ul class="ticks"><li>Echte browsertrajecten door synthetische kopers.</li><li>Trechter per stap, gevonden frictie en afhakers.</li><li>Vergelijking van basis en kandidaat met gepaarde verschillen.</li></ul>
       
     </article>
-<article class="card panel p-developers-card">
+<article class="card panel">
       <div class="panel-top"><span class="ic p-developers-ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="15" rx="3"/><path d="m7.5 10 2.5 2-2.5 2M12.5 15h4"/></svg></span><code class="key">developers</code></div>
       <h3>Ontwikkelaars</h3>
-      <p class="intent">Hoe snel boekt een nieuwkomer een eerste succes?</p>
-      <ul class="ticks"><li>Kloont de repository en volgt de README letterlijk.</li><li>Installeert en draait tot het eerste werkende resultaat.</li><li>Meet de tijd tot het eerste succes en noteert wat er breekt.</li></ul>
+      <p class="intent">Hoe lang duurt het voordat een nieuwkomer een eerste succes heeft?</p>
+      <ul class="ticks"><li>Begint met een schone checkout en volgt de README letterlijk.</li><li>Installeert en draait tot het eerste werkende resultaat (alleen met --execute, voor repositories die je vertrouwt).</li><li>Meet de tijd tot het eerste succes en noteert wat er misgaat.</li></ul>
       
     </article>
-<article class="card panel p-investors-card">
-      <div class="panel-top"><span class="ic p-investors-ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5h16"/><path d="m5 15 4.5-4.5 3.5 3L19 7.5"/><path d="M15 7.5h4v4"/></svg></span><code class="key">investors</code></div>
-      <h3>Investeerders</h3>
-      <p class="intent">Wat zegt het bewijs tegen iemand die due diligence doet?</p>
-      <ul class="ticks"><li>Probleem, onderscheidend vermogen en passend verdienmodel: open source, open core, SaaS, abonnement, diensten of API.</li><li>Viraal potentieel en strategische interesse: AI-labs, browserautomatisering, analytics en A/B-testen, platforms voor ontwikkeltools, beveiliging.</li></ul>
-      <p class="note"><span class="dot"></span>Signalen, nooit een voorspelling van financiering.</p>
+<article class="card panel">
+      <div class="panel-top"><span class="ic p-commercial-ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5h16"/><path d="m5 15 4.5-4.5 3.5 3L19 7.5"/><path d="M15 7.5h4v4"/></svg></span><code class="key">commercial</code></div>
+      <h3>Commerciële gereedheid</h3>
+      <p class="intent">Wordt het commerciële verhaal door bewijs gedragen?</p>
+      <ul class="ticks"><li>Probleem, onderscheidend vermogen en passend verdienmodel: open source, open core, SaaS, abonnement, diensten of API.</li><li>Distributiepotentieel en strategische relevantie, met het bewijs achter elk signaal.</li></ul>
+      <p class="note"><span class="dot" aria-hidden="true"></span>Met investeerdersblik: signalen voor due diligence, nooit een voorspelling van investeringsbeslissingen.</p>
     </article>
-<article class="card panel p-security-card">
+<article class="card panel">
       <div class="panel-top"><span class="ic p-security-ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2 5 6v5.4c0 4.3 3 7.9 7 9.4 4-1.5 7-5.1 7-9.4V6z"/><path d="M12 8.5v4.2M12 15.6v.1"/></svg></span><code class="key">security</code></div>
       <h3>Red team</h3>
-      <p class="intent">Waar komt iemand met kwade bedoelingen binnen?</p>
-      <ul class="ticks"><li>Geheimen, afhankelijkheden, injectie in CI-scripts en installatiescripts.</li><li>Het aanvalsoppervlak van de website via Argus, privacy en cookies.</li><li>Het aanvalsoppervlak voor AI-agents: promptinjectie in skills, AGENTS.md en documentatie, verborgen Unicode, vergiftigde MCP-tools en gevaarlijke toolrechten, onbetrouwbare webinhoud die naar een LLM gaat, te ruime agentrechten.</li></ul>
+      <p class="intent">Waar zou iemand met kwade bedoelingen binnenkomen?</p>
+      <ul class="ticks"><li>Secrets, dependencies, injectie in CI-scripts en installatiescripts.</li><li>Aanvalsoppervlak van de website met Argus, privacy en cookies.</li><li>Aanvalsoppervlak voor AI-agents: promptinjectie in skills, AGENTS.md en documentatie, verborgen Unicode, vergiftigde MCP-tools en te ruime agentrechten.</li></ul>
       
     </article>
-<article class="card panel p-segments-card">
+<article class="card panel">
       <div class="panel-top"><span class="ic p-segments-ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="10" r="5.2"/><circle cx="15" cy="10" r="5.2"/><circle cx="12" cy="15" r="5.2"/></svg></span><code class="key">segments</code></div>
       <h3>Segmenten</h3>
       <p class="intent">Werkt het voor mensen die niet op je team lijken?</p>
-      <ul class="ticks"><li>Objectieve doelgroepen, geen stereotypen.</li><li>Toegankelijkheid, trage verbindingen, 200 % zoom en mobiel.</li><li>Mensen die geen account willen aanmaken, en andere talen.</li></ul>
+      <ul class="ticks"><li>Doelgroepen, geen stereotypen.</li><li>Toegankelijkheid, trage verbindingen, 200% zoom en mobiel.</li><li>Mensen die geen account willen, en andere talen.</li></ul>
       
     </article>
     </div>
   </section>
 
-  <section id="evidence" aria-labelledby="h-evidence">
-    <div class="sec-head"><div><h2 id="h-evidence">Elke score is bewijs</h2><p>Geen score zonder bron. Elke controle zegt waar hij vandaan komt.</p></div></div>
-    <div class="grid-2">
-      <div class="card pad">
-        <ul class="checks"><li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span><b>0–5 sterren en 0–100 %</b> per panel en per controle.</span></li><li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Elke controle verwijst naar <b>bestand:regel</b>, een <b>URL</b> of een opgenomen <b>gebeurtenis in de klantreis</b>.</span></li><li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Exporteert naar CSV, PNG, JPG, Markdown, JSON en PDF.</span></li><li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Rapport in het Spaans, Engels en Nederlands.</span></li></ul>
-        <div class="kv"><span class="dim">Exporteren</span><div class="chips"><span class="chip mono">CSV</span><span class="chip mono">PNG</span><span class="chip mono">JPG</span><span class="chip mono">Markdown</span><span class="chip mono">JSON</span><span class="chip mono">PDF</span></div></div>
-        <div class="kv"><span class="dim">Talen</span><div class="chips"><span class="chip mono">ES</span><span class="chip mono">EN</span><span class="chip mono">NL</span></div></div>
-      </div>
-      <div class="card pad sample">
-        <p class="eyebrow">Voorbeeldcontrole · users</p>
-        <h3>Afrekenen lukt zonder account</h3>
-        <div class="score-row"><span class="stars" role="img" aria-label="4/5">★★★★<span class="off">★</span></span><b>80 %</b></div>
-        <div class="bar"><i style="width:80%"></i></div>
-        <p class="muted">8 van 10 klantreizen bereikten afrekenen als gast. Twee stopten bij de verplichte registratie in stap 3.</p>
-        <div class="chips"><span class="ev">journey p-007:e12</span><span class="ev">src/checkout/guest.ts:88</span><span class="ev">https://shop.example/cart</span></div>
-      </div>
+  <section id="capabilities" aria-labelledby="h-caps">
+    <div class="sec-head"><h2 id="h-caps">Wat er in deze release zit</h2><p>Kort en precies. Experimentele onderdelen zijn gemarkeerd.</p></div>
+    <ul class="caps"><li class="cap"><h3>Evidence Protocol v1</h3><p>Draagbaar bewijs in JSONL dat elke tool kan schrijven en lezen.</p></li><li class="cap"><h3>Integratie-SDK</h3><p>Een klein contract om tools als adapter toe te voegen; <code>integrations list</code> toont wat beschikbaar is.</p></li><li class="cap"><h3>agent-eval</h3><p>Beoordeelt wat een AI-codeeragent opleverde — build, tests, verwijderde of overgeslagen tests, secrets, gates — en vertrouwt nooit op wat de agent zelf beweert.</p></li><li class="cap"><h3>Modelrouter</h3><p>Expliciet vastpinnen en routeren op kosten: quality, balanced, economy of offline.</p></li><li class="cap"><h3>Tokeneconomie-rapport</h3><p>Tokens en kosten per run, en kosten per bevinding.</p></li><li class="cap"><h3>Exacte response-cache</h3><p>Een identiek verzoek wordt uit een lokale cache beantwoord in plaats van door de aanbieder.</p></li><li class="cap"><h3>GitHub-PR-workflow</h3><p>Een herbruikbare workflow die één compacte reactie met het verschil plaatst.</p></li><li class="cap"><h3>Kalibratiestatussen</h3><p>UNCALIBRATED · PARTIALLY CALIBRATED · CALIBRATED, met foutmaten.</p></li><li class="cap"><h3>Statische repository-audit</h3><p>Audit een publieke repository via een URL zonder hem uit te voeren: STATIC AUDIT · NO CODE EXECUTED.</p></li><li class="cap exp"><h3>Modelensemble <span class="badge b-experimental">EXPERIMENTAL</span></h3><p>Meerdere modelroutes op dezelfde koper om onenigheid zichtbaar te maken.</p></li></ul>
+  </section>
+
+  <section id="integrations" aria-labelledby="h-integ">
+    <div class="sec-head"><h2 id="h-integ">Werkt met de tools die je al gebruikt</h2><p>Alleen tekst, geen logo’s. Bij elke vermelding staat hoe ver de integratie gaat.</p></div>
+    <div class="wall">
+      <section class="ig-group card" aria-labelledby="ig-models">
+        <h3 id="ig-models" class="ig-h">Modellen / gateways</h3>
+        <ul><li><span class="ig-name">Anthropic</span><span class="badge b-built">BUILT IN</span></li><li><span class="ig-name">OpenAI-compatible (OpenAI, vLLM, llama.cpp, LocalAI)</span><span class="badge b-built">BUILT IN</span></li><li><span class="ig-name">OpenRouter</span><span class="badge b-supported">SUPPORTED</span></li><li><span class="ig-name">LM Studio</span><span class="badge b-built">BUILT IN</span></li><li><span class="ig-name">Ollama</span><span class="badge b-built">BUILT IN</span></li><li><span class="ig-name">OpenCode</span><span class="badge b-adapter">ADAPTER</span></li></ul>
+      </section>
+      <section class="ig-group card" aria-labelledby="ig-browser">
+        <h3 id="ig-browser" class="ig-h">Browser</h3>
+        <ul><li><span class="ig-name">Playwright</span><span class="badge b-built">BUILT IN</span></li><li><span class="ig-name">Browser Use<small>referentie-sidecar</small></span><span class="badge b-adapter">ADAPTER</span></li><li><span class="ig-name">Stagehand</span><span class="badge b-experimental">EXPERIMENTAL</span></li></ul>
+      </section>
+      <section class="ig-group card" aria-labelledby="ig-evals">
+        <h3 id="ig-evals" class="ig-h">AI-evals</h3>
+        <ul><li><span class="ig-name">Promptfoo</span><span class="badge b-supported">SUPPORTED</span></li><li><span class="ig-name">DeepEval</span><span class="badge b-adapter">ADAPTER</span></li><li><span class="ig-name">Inspect AI</span><span class="badge b-adapter">ADAPTER</span></li><li><span class="ig-name">lm-evaluation-harness</span><span class="badge b-adapter">ADAPTER</span></li></ul>
+      </section>
+      <section class="ig-group card" aria-labelledby="ig-security">
+        <h3 id="ig-security" class="ig-h">Red team / security</h3>
+        <ul><li><span class="ig-name">garak</span><span class="badge b-supported">SUPPORTED</span></li><li><span class="ig-name">PyRIT</span><span class="badge b-experimental">EXPERIMENTAL</span></li><li><span class="ig-name">Gitleaks</span><span class="badge b-supported">SUPPORTED</span></li><li><span class="ig-name">Trivy</span><span class="badge b-supported">SUPPORTED</span></li><li><span class="ig-name">Nuclei<small>standaard alleen import</small></span><span class="badge b-experimental">EXPERIMENTAL</span></li></ul>
+      </section>
+      <section class="ig-group card" aria-labelledby="ig-obs">
+        <h3 id="ig-obs" class="ig-h">Observability</h3>
+        <ul><li><span class="ig-name">OpenTelemetry<small>GenAI-conventies</small></span><span class="badge b-adapter">ADAPTER</span></li><li><span class="ig-name">Langfuse<small>via OpenTelemetry</small></span><span class="badge b-adapter">ADAPTER</span></li><li><span class="ig-name">Phoenix<small>via OpenTelemetry</small></span><span class="badge b-adapter">ADAPTER</span></li></ul>
+      </section>
+    </div>
+    <p class="disclaimer">Vermeld voor interoperabiliteit; er is geen samenwerking of aanbeveling mee bedoeld.</p>
+    <div class="legend card">
+      <h3 class="h3-sm">Wat elke status betekent</h3>
+      <dl><div><dt><span class="badge b-built">BUILT IN</span></dt><dd>Zit in Buyer Arena en is gedekt door tests.</dd></div><div><dt><span class="badge b-supported">SUPPORTED</span></dt><dd>Werkt via een onderhouden koppeling; de tool installeer je zelf.</dd></div><div><dt><span class="badge b-adapter">ADAPTER</span></dt><dd>Er is een contract of referentie-adapter; de tool draai je zelf.</dd></div><div><dt><span class="badge b-experimental">EXPERIMENTAL</span></dt><dd>Werkt in beperkte gevallen en kan veranderen.</dd></div><div><dt><span class="badge b-planned">PLANNED</span></dt><dd>Op de roadmap; nog niet beschikbaar.</dd></div></dl>
     </div>
   </section>
 
+  <section id="offline" aria-labelledby="h-offline">
+    <div class="sec-head"><h2 id="h-offline">Offline eerst, zo ontworpen</h2><p>Er verlaat niets je machine, tenzij je een cloudmodel kiest. En gebeurt dat wel, dan legt de run het vast.</p></div>
+    <ul class="offline-points"><li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Geen betaalde API nodig</span></li><li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Deterministische modus</span></li><li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>LM Studio / Ollama</span></li><li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Al het bewijs lokaal opgeslagen</span></li><li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Standaard geen telemetrie</span></li><li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Broncode uploaden is niet nodig</span></li><li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>De cloud is optioneel</span></li></ul>
+    <div class="boundary card" id="boundary" data-mode="local">
+    <fieldset class="modes">
+      <legend>Netwerkbeleid</legend>
+      <div class="seg seg-radio modes-seg"><label><input type="radio" name="netmode" value="offline"><span>OFFLINE</span></label><label><input type="radio" name="netmode" value="local" checked><span>LOCAL</span></label><label><input type="radio" name="netmode" value="hybrid"><span>HYBRID</span></label><label><input type="radio" name="netmode" value="online"><span>ONLINE</span></label></div>
+    </fieldset>
+    <div class="bd">
+      <div class="bd-machine">
+        <p class="bd-title">JOUW MACHINE</p>
+        <ul><li>repository</li><li>browser</li><li>lokale modellen</li><li>artefacten en bewijs</li></ul>
+      </div>
+      <div class="bd-link bd-l-lan"><span class="bd-st st-allowed">toegestaan</span><span class="bd-st st-blocked" hidden>✕ geblokkeerd</span></div>
+      <div class="bd-box bd-lan"><p>privénetwerk (LAN, Docker)</p></div>
+      <div class="bd-link bd-l-cloud is-blocked"><span class="bd-st st-allowed" hidden>toegestaan</span><span class="bd-st st-blocked">✕ geblokkeerd</span></div>
+      <div class="bd-box bd-cloud">
+        <p class="bd-title">OPTIONELE CLOUD</p>
+        <p class="c-sel">alleen de modelaanbieder die jij kiest</p>
+        <p class="c-any" hidden>elke host, binnen de veiligheidsregels</p>
+      </div>
+    </div>
+    <ul class="mode-desc"><li data-m="offline"><b>OFFLINE</b> Alleen loopback. Lokale modellen, doelen op localhost en lokale repositories werken; verder niets.</li><li data-m="local" class="on"><b>LOCAL</b> Loopback plus je privénetwerk (LAN, Docker). Het vertrekpunt als je niets kiest.</li><li data-m="hybrid"><b>HYBRID</b> Lokaal plus de modelaanbieders die je koos. Verder verlaat niets de machine.</li><li data-m="online"><b>ONLINE</b> Elke host, nog steeds binnen de veiligheidsregels, zoals browsen binnen dezelfde origin.</li></ul>
+    <p class="sr" id="bdLive" aria-live="polite"></p>
+  </div>
+    <p class="ledger">Elke run legt vast wat de machine verliet: gecontacteerde hosts, aanbieders die data ontvingen en wat er geweigerd is. Zonder expliciete keuze begint hij bij LOCAL en verruimt hij alleen voor een doel dat je in het commando noemt — en meldt dat.</p>
+  </section>
+
   <section id="mix" aria-labelledby="h-mix">
-    <div class="sec-head"><div><h2 id="h-mix">Kies de mix</h2><p>Jij bepaalt hoeveel aandacht elk panel krijgt. Voor een financieringsronde: meer investeerders, minder red team. Voor je de code openbaar maakt: andersom.</p></div></div>
+    <div class="sec-head"><h2 id="h-mix">Kies de mix</h2><p>Jij bepaalt hoeveel aandacht elk panel krijgt. Voor een lancering meer eindgebruikers; voordat je de broncode openzet, meer red team.</p></div>
     <div class="grid-2">
       <div class="card pad">
-        <p class="eyebrow">Voorbeeld: een financieringsronde voorbereiden</p>
-        <div class="stack" aria-hidden="true"><i class="p-users" style="width:35.00%"></i><i class="p-developers" style="width:15.00%"></i><i class="p-investors" style="width:30.00%"></i><i class="p-security" style="width:5.00%"></i><i class="p-segments" style="width:15.00%"></i></div><ul class="stack-legend"><li><span class="sw p-users" aria-hidden="true"></span><span>Eindgebruikers</span><b>35 %</b></li><li><span class="sw p-developers" aria-hidden="true"></span><span>Ontwikkelaars</span><b>15 %</b></li><li><span class="sw p-investors" aria-hidden="true"></span><span>Investeerders</span><b>30 %</b></li><li><span class="sw p-security" aria-hidden="true"></span><span>Red team</span><b>5 %</b></li><li><span class="sw p-segments" aria-hidden="true"></span><span>Segmenten</span><b>15 %</b></li></ul>
-        <h3 class="sub-h">Diepte</h3>
-        <dl class="depths"><div><dt><code>quick</code> Snel</dt><dd>Minder deelnemers en kortere klantreizen. Een controle voor elke deploy.</dd></div><div class="on"><dt><code>standard</code> Standaard</dt><dd>De standaardkeuze. Genoeg om te beslissen of je lanceert.</dd></div><div><dt><code>deep</code> Diep</dt><dd>Meer klantreizen en meer stappen per reis. Voor een grote lancering.</dd></div></dl>
-        <a class="btn btn-primary" href="/buyer-arena-site/nl/run.html">Open de run-bouwer <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <p class="eyebrow">Voorbeeld: voor een lancering</p>
+        <div class="stack" aria-hidden="true"><i class="p-users" style="width:45.00%"></i><i class="p-developers" style="width:15.00%"></i><i class="p-commercial" style="width:15.00%"></i><i class="p-security" style="width:10.00%"></i><i class="p-segments" style="width:15.00%"></i></div><ul class="stack-legend"><li><span class="sw p-users" aria-hidden="true"></span><span>Eindgebruikers</span><b>45 %</b></li><li><span class="sw p-developers" aria-hidden="true"></span><span>Ontwikkelaars</span><b>15 %</b></li><li><span class="sw p-commercial" aria-hidden="true"></span><span>Commerciële gereedheid</span><b>15 %</b></li><li><span class="sw p-security" aria-hidden="true"></span><span>Red team</span><b>10 %</b></li><li><span class="sw p-segments" aria-hidden="true"></span><span>Segmenten</span><b>15 %</b></li></ul>
       </div>
-      <div class="studio">
-        <h3 class="sub-h">Live voortgang</h3>
-        <p class="muted">Tijdens de run toont <code>buyer-arena studio</code> lokaal een voortgangsbalk per panel en het terminallogboek.</p>
-        <div class="term " role="img" aria-label="buyer-arena studio">
-  <div class="term-bar"><i></i><i></i><i></i><span>buyer-arena studio</span></div>
-  <pre><span class="t-dim">gebruikers   </span> <span class="t-acc">████████████</span><span class="t-dim">░░░░</span> 12/16
-<span class="t-dim">ontwikkelaars</span> <span class="t-ok">████████████████</span>  6/6
-<span class="t-dim">investeerders</span> <span class="t-acc">██████████</span><span class="t-dim">░░░░░░</span>  5/8
-<span class="t-dim">red team     </span> <span class="t-acc">████████</span><span class="t-dim">░░░░░░░░</span>  2/4
-<span class="t-dim">segmenten    </span> <span class="t-acc">██████</span><span class="t-dim">░░░░░░░░░░</span>  3/8
-
-<span class="t-dim">12:04:31</span> p-011 afrekenen <span class="t-ok">✓ doel bereikt</span>
-<span class="t-dim">12:04:33</span> p-012 registratie <span class="t-bad">✗ haakt af in stap 3</span></pre>
-</div>
+      <div class="card pad">
+        <h3 class="h3-sm">Diepgang</h3>
+        <dl class="depths"><div><dt><code>quick</code> Snel</dt><dd>Minder deelnemers en kortere trajecten. Voor een check voor elke deploy.</dd></div><div class="on"><dt><code>standard</code> Standaard</dt><dd>De standaardkeuze. Genoeg om te beslissen of je lanceert.</dd></div><div><dt><code>deep</code> Diep</dt><dd>Meer trajecten en meer stappen per traject. Voor een grote lancering.</dd></div></dl>
+        <a class="btn btn-primary" href="/buyer-arena-site/nl/run.html">Open de configurator <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
     </div>
   </section>
 
   <section id="quickstart" aria-labelledby="h-quick">
-    <div class="sec-head"><div><h2 id="h-quick">Aan de slag</h2><p>Je hebt Node.js 22.12 of nieuwer en Git nodig. De demo downloadt eenmalig Chromium voor Playwright.</p></div></div>
+    <div class="sec-head"><h2 id="h-quick">Lokaal draaien</h2><p>Je hebt Node.js 22.12 of nieuwer nodig. De demo downloadt eenmalig Chromium voor Playwright.</p></div>
+    <div class="soon" role="note"><span class="ic warn-ic"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8.5 10.5V7.8a3.5 3.5 0 0 1 7 0v2.7"/></svg></span><div><p class="soon-t">Beschikbaar bij de publieke lancering</p><p>De broncode is nog niet openbaar. Dit zijn de commando’s die je gebruikt zodra hij opengaat; vandaag valt er niets te installeren.</p></div></div>
     <ol class="card qs-list">
 <li class="qs">
       <span class="qs-n" aria-hidden="true">1</span>
-      <div class="qs-t">Kloon de repository</div>
-      <div class="code"><pre><code id="cmd-clone">git clone https://github.com/abrahamhl/buyer-arena.git</code></pre><button class="copy" type="button" data-copy-target="cmd-clone" data-copied="Gekopieerd">Kopiëren</button></div>
+      <div class="qs-t">Installeer de dependencies</div>
+      <div class="code"><pre><code id="cmd-install">npm install</code></pre><button class="copy" type="button" data-copy-target="cmd-install" data-copied="Gekopieerd" aria-label="Kopiëren: npm install">Kopiëren</button></div>
     </li>
 <li class="qs">
       <span class="qs-n" aria-hidden="true">2</span>
-      <div class="qs-t">Ga naar de map</div>
-      <div class="code"><pre><code id="cmd-cd">cd buyer-arena</code></pre><button class="copy" type="button" data-copy-target="cmd-cd" data-copied="Gekopieerd">Kopiëren</button></div>
+      <div class="qs-t">Draai de demo en open het rapport dat hij maakt</div>
+      <div class="code"><pre><code id="cmd-demo">npm run demo</code></pre><button class="copy" type="button" data-copy-target="cmd-demo" data-copied="Gekopieerd" aria-label="Kopiëren: npm run demo">Kopiëren</button></div>
     </li>
 <li class="qs">
       <span class="qs-n" aria-hidden="true">3</span>
-      <div class="qs-t">Installeer de afhankelijkheden</div>
-      <div class="code"><pre><code id="cmd-install">npm install</code></pre><button class="copy" type="button" data-copy-target="cmd-install" data-copied="Gekopieerd">Kopiëren</button></div>
+      <div class="qs-t">Open de visuele controlekamer lokaal</div>
+      <div class="code"><pre><code id="cmd-studio">npm run ba -- studio</code></pre><button class="copy" type="button" data-copy-target="cmd-studio" data-copied="Gekopieerd" aria-label="Kopiëren: npm run ba -- studio">Kopiëren</button></div>
     </li>
 <li class="qs">
       <span class="qs-n" aria-hidden="true">4</span>
-      <div class="qs-t">Draai de demo en open het rapport dat hij maakt</div>
-      <div class="code"><pre><code id="cmd-demo">npm run demo</code></pre><button class="copy" type="button" data-copy-target="cmd-demo" data-copied="Gekopieerd">Kopiëren</button></div>
+      <div class="qs-t">Audit je eigen product: pas de URL en de succestekst aan</div>
+      <div class="code"><pre><code id="cmd-launch">npm run ba -- launch-check --repo . --url https://your-site.example --success-text &quot;welcome&quot;</code></pre><button class="copy" type="button" data-copy-target="cmd-launch" data-copied="Gekopieerd" aria-label="Kopiëren: npm run ba -- launch-check --repo . --url https://your-site.example --success-text &quot;welcome&quot;">Kopiëren</button></div>
     </li>
 <li class="qs">
       <span class="qs-n" aria-hidden="true">5</span>
-      <div class="qs-t">Open de lokale visuele controlekamer</div>
-      <div class="code"><pre><code id="cmd-studio">npm run ba -- studio</code></pre><button class="copy" type="button" data-copy-target="cmd-studio" data-copied="Gekopieerd">Kopiëren</button></div>
-    </li>
-<li class="qs">
-      <span class="qs-n" aria-hidden="true">6</span>
-      <div class="qs-t">Audit je eigen product: pas de URL en de tekst aan die succes betekent</div>
-      <div class="code"><pre><code id="cmd-launch">npm run ba -- launch-check --repo . --url https://your-site.example --success-text &quot;welcome&quot;</code></pre><button class="copy" type="button" data-copy-target="cmd-launch" data-copied="Gekopieerd">Kopiëren</button></div>
+      <div class="qs-t">Beoordeel wat een AI-agent in deze repository heeft opgeleverd</div>
+      <div class="code"><pre><code id="cmd-agentEval">npm run ba -- agent-eval --repo .</code></pre><button class="copy" type="button" data-copy-target="cmd-agentEval" data-copied="Gekopieerd" aria-label="Kopiëren: npm run ba -- agent-eval --repo .">Kopiëren</button></div>
     </li>
     </ol>
-  </section>
-
-  <section id="phone" aria-labelledby="h-phone">
-    <div class="grid-2">
-      <div>
-        <div class="sec-head"><div><h2 id="h-phone">Via je telefoon</h2><p>Geen computer nodig: de audit draait op GitHub Actions.</p></div></div>
-        <ol class="timeline"><li><span class="node" aria-hidden="true">1</span><span>Open de GitHub-app.</span></li><li><span class="node" aria-hidden="true">2</span><span>Ga naar de repository <b>abrahamhl/buyer-arena</b> (of je fork).</span></li><li><span class="node" aria-hidden="true">3</span><span>Open <b>Actions</b> en kies <b>Launch check</b>.</span></li><li><span class="node" aria-hidden="true">4</span><span>Tik op <b>Run workflow</b> en vul de URL en de mix in.</span></li><li><span class="node" aria-hidden="true">5</span><span>Het resultaat verschijnt als samenvatting met sterren op de runpagina, met een rapport om te downloaden.</span></li></ol>
-        <a class="btn btn-ghost" href="https://github.com/abrahamhl/buyer-arena/actions/workflows/launch-check.yml" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 2.5a9.7 9.7 0 0 0-3.07 18.9c.49.09.66-.21.66-.47v-1.7c-2.7.59-3.27-1.15-3.27-1.15-.44-1.12-1.08-1.42-1.08-1.42-.88-.6.07-.59.07-.59.97.07 1.49 1 1.49 1 .87 1.48 2.27 1.05 2.83.8.09-.63.34-1.05.62-1.3-2.16-.24-4.42-1.08-4.42-4.8 0-1.06.38-1.93 1-2.61-.1-.25-.43-1.24.1-2.57 0 0 .82-.26 2.67 1a9.2 9.2 0 0 1 4.86 0c1.85-1.26 2.67-1 2.67-1 .53 1.33.2 2.32.1 2.57.62.68 1 1.55 1 2.61 0 3.73-2.27 4.55-4.43 4.79.35.3.66.9.66 1.8v2.67c0 .26.17.57.67.47A9.7 9.7 0 0 0 12 2.5"/></svg> Open de workflow „Launch check” <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+    <div class="grid-2 qs-more">
+      <div class="card pad">
+        <h3 class="h3-sm">In CI en vanaf je telefoon</h3>
+        <p class="muted">De workflow “Launch check” draait op GitHub Actions en start je vanuit de GitHub-app. Een herbruikbare PR-workflow plaatst één compacte reactie met het verschil.</p>
+        <span class="btn btn-ghost is-disabled" role="link" aria-disabled="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8.5 10.5V7.8a3.5 3.5 0 0 1 7 0v2.7"/></svg> Open de workflow “Launch check” · beschikbaar bij de publieke lancering</span>
       </div>
-      <div id="agents" class="card pad agents">
-        <h2 class="h2-sm">Gebruik het vanuit AI-agents</h2>
-        <p>Buyer Arena heeft een MCP-server, zodat een agent audits kan starten en de resultaten kan lezen.</p>
-        <div class="code"><pre><code id="cmd-mcp">npm run ba -- mcp</code></pre><button class="copy" type="button" data-copy-target="cmd-mcp" data-copied="Gekopieerd">Kopiëren</button></div>
-        <p class="note"><span class="dot"></span>Standaard luistert hij alleen op localhost. Openstellen voor een netwerk is een bewuste keuze van jou.</p>
+      <div class="card pad" id="agents">
+        <h3 class="h3-sm">Vanuit AI-agents</h3>
+        <p class="muted">Een MCP-server, zodat een agent audits kan starten en de resultaten kan lezen.</p>
+        <div class="code"><pre><code id="cmd-mcp">npm run ba -- mcp</code></pre><button class="copy" type="button" data-copy-target="cmd-mcp" data-copied="Gekopieerd" aria-label="Kopiëren: npm run ba -- mcp">Kopiëren</button></div>
+        <p class="note good-note"><span class="dot" aria-hidden="true"></span>Luistert standaard alleen op localhost. Openstellen voor het netwerk is een bewuste keuze van jou.</p>
       </div>
     </div>
   </section>
 
   <section id="safety" aria-labelledby="h-safety">
-    <div class="sec-head"><div><h2 id="h-safety">Veiligheid en privacy</h2><p>Een tool die websites test, mag zelf geen risico worden.</p></div></div>
-    <ul class="safety"><li class="card"><span class="ic good-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><h3>Draait lokaal</h3><p>Op je eigen machine of je eigen CI-runner. Geen dienst ertussen.</p></div></li><li class="card"><span class="ic good-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><h3>Alleen jouw origin</h3><p>Bezoekt alleen de origin die je opgeeft.</p></div></li><li class="card"><span class="ic good-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><h3>Blokkeert derden</h3><p>Verzoeken naar andere hosts worden tijdens klantreizen geblokkeerd.</p></div></li><li class="card"><span class="ic good-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><h3>Geen echte betaalgegevens</h3><p>Vult nooit een kaart of echte betaalgegevens in.</p></div></li><li class="card"><span class="ic good-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><h3>Tests kosten niets</h3><p>De testsuite doet nul betaalde API-aanroepen.</p></div></li><li class="card"><span class="ic good-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><h3>Eén bestand</h3><p>Het rapport is één HTML-bestand dat offline werkt.</p></div></li></ul>
+    <div class="sec-head"><h2 id="h-safety">Veiligheid en privacy</h2><p>Een tool die websites test, mag zelf geen risico worden.</p></div>
+    <ul class="safety"><li class="card"><span class="ic good-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><h3>Draait lokaal</h3><p>Op je eigen machine of je eigen CI-runner. Er zit geen dienst tussen.</p></div></li><li class="card"><span class="ic good-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><h3>Alleen de origin die je opgeeft</h3><p>Bezoekt uitsluitend het domein dat je meegeeft.</p></div></li><li class="card"><span class="ic good-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><h3>Blokkeert derden</h3><p>Verzoeken naar andere domeinen worden tijdens trajecten geblokkeerd.</p></div></li><li class="card"><span class="ic good-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><h3>Nooit echte betaalgegevens</h3><p>Vult nooit een kaart of echte betaalgegevens in.</p></div></li><li class="card"><span class="ic good-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><h3>Tests kosten niets</h3><p>De testsuite doet nul aanroepen naar betaalde API’s.</p></div></li><li class="card"><span class="ic good-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><h3>Eén bestand</h3><p>Het rapport is één HTML-bestand dat offline werkt.</p></div></li></ul>
+  </section>
+
+  <section id="self-audit" class="self-audit" aria-labelledby="h-self">
+    <div class="card pad self-card">
+      <p class="self-label">ZELFAUDIT — GEEN EXTERNE VALIDATIE</p>
+      <h2 id="h-self" class="h3-sm">Buyer Arena op zichzelf</h2>
+      <p class="muted">We draaien launch-check op de eigen repository van Buyer Arena. De run van 25-09-2026 scoorde 84/100 (de webpanels meten de fictieve demowinkel met ingebouwde fouten, niet Buyer Arena). De tool beoordeelde zichzelf: dit is geen onafhankelijk bewijs en niet het bewijs waarop we leunen — dat is het echte rapport hierboven.</p>
+      
+    </div>
   </section>
 </main>
 <footer class="foot">
   <div class="wrap foot-grid">
     <div>
-      <a class="brand" href="/buyer-arena-site/nl/"><span class="brand-mark" aria-hidden="true">▲</span><span>Buyer Arena</span></a>
-      <p class="muted foot-tag">Synthetische kopers voor een lanceringsaudit op basis van bewijs.</p>
-      <p class="foot-privacy-wrap"><a class="pill good foot-privacy" href="/buyer-arena-site/nl/#safety" rel="privacy-policy"><span class="dot"></span>Privacy: geen cookies, geen trackers</a></p>
+      <a class="brand" href="/buyer-arena-site/nl/" aria-label="Buyer Arena — Home"><span class="brand-mark" aria-hidden="true">▲</span><span class="brand-word">BUYER ARENA</span></a>
+      <p class="muted foot-tag">De evaluatielaag op basis van bewijs voor software gebouwd door mensen en AI-agents.</p>
+      <p class="foot-state"><span class="state-dot" aria-hidden="true"></span>Privé release candidate — de broncode gaat open na een onafhankelijke audit</p>
+      <p class="foot-privacy-wrap"><a class="pill good foot-privacy" href="/buyer-arena-site/nl/#safety" rel="privacy-policy"><span class="dot" aria-hidden="true"></span>Privacy: geen cookies, geen trackers</a></p>
     </div>
     <ul class="foot-links">
-      <li><a href="https://github.com/abrahamhl/buyer-arena" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 2.5a9.7 9.7 0 0 0-3.07 18.9c.49.09.66-.21.66-.47v-1.7c-2.7.59-3.27-1.15-3.27-1.15-.44-1.12-1.08-1.42-1.08-1.42-.88-.6.07-.59.07-.59.97.07 1.49 1 1.49 1 .87 1.48 2.27 1.05 2.83.8.09-.63.34-1.05.62-1.3-2.16-.24-4.42-1.08-4.42-4.8 0-1.06.38-1.93 1-2.61-.1-.25-.43-1.24.1-2.57 0 0 .82-.26 2.67 1a9.2 9.2 0 0 1 4.86 0c1.85-1.26 2.67-1 2.67-1 .53 1.33.2 2.32.1 2.57.62.68 1 1.55 1 2.61 0 3.73-2.27 4.55-4.43 4.79.35.3.66.9.66 1.8v2.67c0 .26.17.57.67.47A9.7 9.7 0 0 0 12 2.5"/></svg>Broncode op GitHub</a></li>
-      <li><a href="https://github.com/abrahamhl/buyer-arena/blob/main/LICENSE" rel="noopener license">Licentie Apache-2.0</a></li>
-      <li><a href="/buyer-arena-site/report/">Rapport van de zelfaudit</a></li>
-      <li><a href="/buyer-arena-site/nl/run.html">Run-bouwer</a></li>
+      <li><span class="foot-off" aria-disabled="true" role="link"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8.5 10.5V7.8a3.5 3.5 0 0 1 7 0v2.7"/></svg>Broncode · bij de lancering</span></li>
+      <li><span class="foot-plain">Apache-2.0-licentie</span></li>
+      <li><a href="/buyer-arena-site/report/demo/report.html">Echt demorapport</a></li>
+      <li><a href="/buyer-arena-site/nl/run.html">Configurator</a></li>
     </ul>
     <div class="foot-lang">
       <span class="dim">Talen</span>
-      <nav class="seg lang" aria-label="Taal"><a class="lb" href="/buyer-arena-site/es/" hreflang="es" lang="es" title="Español">ES</a><a class="lb" href="/buyer-arena-site/en/" hreflang="en" lang="en" title="English">EN</a><a class="lb" href="/buyer-arena-site/nl/" hreflang="nl" lang="nl" aria-current="page" title="Nederlands">NL</a></nav>
+      <div class="seg lang" role="group" aria-label="Taal"><a class="lb" href="/buyer-arena-site/es/" hreflang="es" lang="es" aria-label="Español">ES</a><a class="lb" href="/buyer-arena-site/en/" hreflang="en" lang="en" aria-label="English">EN</a><a class="lb" href="/buyer-arena-site/nl/" hreflang="nl" lang="nl" aria-current="page" aria-label="Nederlands">NL</a></div>
     </div>
   </div>
 </footer>
