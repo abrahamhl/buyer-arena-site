@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /buyer-arena-site/404.html
+
+Sitemap: https://abrahamhl.github.io/buyer-arena-site/sitemap.xml
