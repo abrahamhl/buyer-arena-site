@@ -1,0 +1,21 @@
+{
+  "persona_id": "p-008",
+  "context": {
+    "situation": "is a retired teacher who tutors",
+    "pain": "is afraid of doing taxes wrong",
+    "trigger": "saw an advert",
+    "constraints": [
+      "36 EUR/month maximum",
+      "has the afternoon to look around properly",
+      "is on a laptop",
+      "gives up on forms with unclear errors"
+    ],
+    "success_looks_like": "Marta is set up with a invoicing tool within budget"
+  },
+  "narrative": "Marta is a retired teacher who tutors. Right now Marta is afraid of doing taxes wrong. Background: Marta finds most software confusing; and has never signed up for a SaaS product. Marta can spend up to 36 EUR a month and finds most software confusing. Marta finds this invoicing tool because saw an advert, and has the afternoon to look around properly. Marta gives up on forms with unclear errors.",
+  "narratives": {
+    "es": "Marta da clases particulares tras jubilarse de la docencia. Ahora mismo, Marta tiene miedo de equivocarse con los impuestos. Antecedentes: Marta encuentra confusa la mayoría del software; y nunca se ha dado de alta en un producto SaaS. Marta puede gastar hasta 36 EUR al mes y encuentra confuso casi todo el software. Marta encuentra esta herramienta de facturación porque vio un anuncio, y tiene la tarde para mirarlo con calma. Marta se rinde con formularios de errores poco claros.",
+    "en": "Marta is a retired teacher who tutors. Right now Marta is afraid of doing taxes wrong. Background: Marta finds most software confusing; and has never signed up for a SaaS product. Marta can spend up to 36 EUR a month and finds most software confusing. Marta finds this invoicing tool because saw an advert, and has the afternoon to look around properly. Marta gives up on forms with unclear errors.",
+    "nl": "Marta geeft bijles na een loopbaan in het onderwijs. Marta is bang om fouten te maken met de belasting. Achtergrond: Marta vindt de meeste software verwarrend; en heeft zich nog nooit aangemeld voor een SaaS-product. Marta kan tot 36 EUR per maand uitgeven en vindt de meeste software verwarrend. Marta vindt deze factuurtool omdat er een advertentie voorbijkwam, en heeft de middag om rustig rond te kijken. Marta geeft het op bij formulieren met onduidelijke fouten."
+  }
+}

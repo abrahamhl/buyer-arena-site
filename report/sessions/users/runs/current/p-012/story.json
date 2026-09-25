@@ -1,0 +1,21 @@
+{
+  "persona_id": "p-012",
+  "context": {
+    "situation": "runs operations at a small consultancy",
+    "pain": "spends five hours a week producing invoices",
+    "trigger": "the accountant asked for cleaner records",
+    "constraints": [
+      "124 EUR/month maximum",
+      "has ten minutes before another meeting",
+      "is on a laptop",
+      "drops tools that take long to set up"
+    ],
+    "success_looks_like": "Mateo is set up with a invoicing tool within budget"
+  },
+  "narrative": "Mateo runs operations at a small consultancy. Right now Mateo spends five hours a week producing invoices. Background: Mateo abandoned two SaaS tools because onboarding was too complicated; and has bought SaaS with a company card before. Mateo can spend up to 124 EUR a month and is comfortable with software. Mateo finds this invoicing tool because the accountant asked for cleaner records, and has ten minutes before another meeting. Mateo drops tools that take long to set up.",
+  "narratives": {
+    "es": "Mateo lleva las operaciones de una pequeña consultora. Ahora mismo, Mateo dedica cinco horas a la semana a hacer facturas. Antecedentes: Mateo abandonó dos herramientas SaaS porque la puesta en marcha era demasiado complicada; y ya ha comprado SaaS con la tarjeta de empresa. Mateo puede gastar hasta 124 EUR al mes y se maneja bien con el software. Mateo encuentra esta herramienta de facturación porque la gestoría pidió registros más limpios, y tiene diez minutos antes de otra reunión. Mateo abandona las herramientas que tardan en configurarse.",
+    "en": "Mateo runs operations at a small consultancy. Right now Mateo spends five hours a week producing invoices. Background: Mateo abandoned two SaaS tools because onboarding was too complicated; and has bought SaaS with a company card before. Mateo can spend up to 124 EUR a month and is comfortable with software. Mateo finds this invoicing tool because the accountant asked for cleaner records, and has ten minutes before another meeting. Mateo drops tools that take long to set up.",
+    "nl": "Mateo regelt de bedrijfsvoering bij een klein adviesbureau. Mateo besteedt vijf uur per week aan facturen maken. Achtergrond: Mateo stopte met twee SaaS-tools omdat de onboarding te ingewikkeld was; en heeft eerder SaaS gekocht met een bedrijfscreditcard. Mateo kan tot 124 EUR per maand uitgeven en is handig met software. Mateo vindt deze factuurtool omdat de accountant om nettere administratie vroeg, en heeft tien minuten voor een volgende vergadering. Mateo haakt af bij tools die lang duren om in te stellen."
+  }
+}

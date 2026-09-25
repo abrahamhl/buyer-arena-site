@@ -1,0 +1,2112 @@
+{
+  "version": 1,
+  "id": "self-audit",
+  "generated_at": "2026-09-25T13:02:43.346Z",
+  "name": "Buyer Arena",
+  "target": {
+    "repo": "buyer-arena",
+    "url": "https://abrahamhl.github.io/buyer-arena-site/es/",
+    "demo": false
+  },
+  "mix": {
+    "users": 40,
+    "developers": 15,
+    "investors": 15,
+    "security": 15,
+    "segments": 15
+  },
+  "depth": "standard",
+  "size": 40,
+  "execute": true,
+  "allocations": [
+    {
+      "panel": "users",
+      "share": 40,
+      "participants": 16,
+      "level": 3
+    },
+    {
+      "panel": "developers",
+      "share": 15,
+      "participants": 6,
+      "level": 2
+    },
+    {
+      "panel": "investors",
+      "share": 15,
+      "participants": 6,
+      "level": 2
+    },
+    {
+      "panel": "security",
+      "share": 15,
+      "participants": 6,
+      "level": 2
+    },
+    {
+      "panel": "segments",
+      "share": 15,
+      "participants": 6,
+      "level": 2
+    }
+  ],
+  "estimate_s": 189,
+  "overall": {
+    "score": 95,
+    "stars": 5
+  },
+  "panels": [
+    {
+      "id": "users",
+      "score": 100,
+      "stars": 5,
+      "share": 40,
+      "reviewers": [
+        {
+          "id": "price-sensitive",
+          "archetype": "price-sensitive",
+          "score": 100
+        },
+        {
+          "id": "goal-focused",
+          "archetype": "goal-focused",
+          "score": 100
+        },
+        {
+          "id": "novice",
+          "archetype": "novice",
+          "score": 100
+        },
+        {
+          "id": "mobile-rushed",
+          "archetype": "mobile-rushed",
+          "score": 100
+        },
+        {
+          "id": "skeptic",
+          "archetype": "skeptic",
+          "score": 100
+        }
+      ],
+      "checks": [
+        {
+          "id": "usr.completion",
+          "panel": "users",
+          "score": 100,
+          "weight": 5,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "run",
+              "ref": "current-p-001:e0",
+              "excerpt": "Budget freelancer · completed"
+            },
+            {
+              "kind": "run",
+              "ref": "current-p-002:e0",
+              "excerpt": "Agency operator · completed"
+            },
+            {
+              "kind": "run",
+              "ref": "current-p-003:e0",
+              "excerpt": "Non-technical owner · completed"
+            }
+          ],
+          "params": {
+            "rate": "100%",
+            "n": 16
+          }
+        },
+        {
+          "id": "usr.pricing",
+          "panel": "users",
+          "score": 100,
+          "weight": 2,
+          "status": "pass",
+          "evidence": [],
+          "params": {
+            "rate": "100%"
+          }
+        },
+        {
+          "id": "usr.cta",
+          "panel": "users",
+          "score": 100,
+          "weight": 3,
+          "status": "pass",
+          "evidence": [],
+          "params": {
+            "rate": "100%"
+          }
+        },
+        {
+          "id": "usr.errors",
+          "panel": "users",
+          "score": 100,
+          "weight": 2,
+          "status": "pass",
+          "evidence": [],
+          "params": {
+            "rate": "0%"
+          }
+        },
+        {
+          "id": "usr.friction",
+          "panel": "users",
+          "score": 100,
+          "weight": 2,
+          "status": "pass",
+          "evidence": [],
+          "params": {
+            "per": "0.00"
+          }
+        },
+        {
+          "id": "usr.effort",
+          "panel": "users",
+          "score": 100,
+          "weight": 2,
+          "status": "pass",
+          "evidence": [],
+          "params": {
+            "steps": 1
+          }
+        }
+      ],
+      "duration_ms": 3077
+    },
+    {
+      "id": "developers",
+      "score": 100,
+      "stars": 5,
+      "share": 15,
+      "reviewers": [
+        {
+          "id": "dev-1",
+          "archetype": "newcomer",
+          "score": 100
+        },
+        {
+          "id": "dev-2",
+          "archetype": "contributor",
+          "score": 100
+        },
+        {
+          "id": "dev-3",
+          "archetype": "integrator",
+          "score": 100
+        },
+        {
+          "id": "dev-4",
+          "archetype": "newcomer",
+          "score": 100
+        },
+        {
+          "id": "dev-5",
+          "archetype": "contributor",
+          "score": 100
+        },
+        {
+          "id": "dev-6",
+          "archetype": "integrator",
+          "score": 100
+        }
+      ],
+      "checks": [
+        {
+          "id": "dev.readme",
+          "panel": "developers",
+          "score": 100,
+          "weight": 3,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "file",
+              "ref": "README.md:1",
+              "excerpt": "<div align=\"center\">"
+            }
+          ],
+          "params": {
+            "sections": 14
+          }
+        },
+        {
+          "id": "dev.quickstart",
+          "panel": "developers",
+          "score": 100,
+          "weight": 3,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "file",
+              "ref": "README.md:21",
+              "excerpt": "git clone https://github.com/abrahamhl/buyer-arena.git && cd buyer-arena"
+            },
+            {
+              "kind": "file",
+              "ref": "README.md:22",
+              "excerpt": "npm install"
+            },
+            {
+              "kind": "file",
+              "ref": "README.md:23",
+              "excerpt": "npm run demo"
+            }
+          ],
+          "params": {
+            "commands": 18,
+            "broken": 0
+          }
+        },
+        {
+          "id": "dev.prereqs",
+          "panel": "developers",
+          "score": 100,
+          "weight": 2,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "file",
+              "ref": "README.md:26",
+              "excerpt": "The first run downloads Playwright's Chromium once (about 150 MB). You need Node 22.12 or newer."
+            },
+            {
+              "kind": "file",
+              "ref": "package.json",
+              "excerpt": "engines.node: >=22.12"
+            }
+          ],
+          "params": {
+            "engines": ">=22.12"
+          }
+        },
+        {
+          "id": "dev.ci",
+          "panel": "developers",
+          "score": 100,
+          "weight": 2,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "file",
+              "ref": ".github/workflows/ci.yml:32",
+              "excerpt": "- run: npm test"
+            }
+          ],
+          "params": {
+            "workflows": 2
+          }
+        },
+        {
+          "id": "dev.tests",
+          "panel": "developers",
+          "score": 100,
+          "weight": 2,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "file",
+              "ref": "tests/fixtures/fake-engine.mjs"
+            },
+            {
+              "kind": "file",
+              "ref": "tests/helpers.ts"
+            },
+            {
+              "kind": "file",
+              "ref": "tests/integration/cli-mcp.test.ts"
+            },
+            {
+              "kind": "file",
+              "ref": "tests/integration/guarantees.test.ts"
+            },
+            {
+              "kind": "file",
+              "ref": "tests/integration/journeys.test.ts"
+            }
+          ],
+          "params": {
+            "files": 11
+          }
+        },
+        {
+          "id": "dev.docs",
+          "panel": "developers",
+          "score": 100,
+          "weight": 1,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "file",
+              "ref": "CONTRIBUTING.md"
+            },
+            {
+              "kind": "file",
+              "ref": "CHANGELOG.md"
+            },
+            {
+              "kind": "file",
+              "ref": "SECURITY.md"
+            },
+            {
+              "kind": "file",
+              "ref": "CODE_OF_CONDUCT.md"
+            }
+          ],
+          "params": {
+            "found": 4
+          }
+        },
+        {
+          "id": "dev.license",
+          "panel": "developers",
+          "score": 100,
+          "weight": 2,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "file",
+              "ref": "LICENSE:1",
+              "excerpt": "Apache License"
+            }
+          ],
+          "params": {
+            "license": "Apache License"
+          }
+        },
+        {
+          "id": "dev.tooling",
+          "panel": "developers",
+          "score": 100,
+          "weight": 1,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "file",
+              "ref": "tsconfig.json"
+            },
+            {
+              "kind": "file",
+              "ref": "eslint.config.js"
+            },
+            {
+              "kind": "file",
+              "ref": ".prettierrc.json"
+            }
+          ],
+          "params": {
+            "tools": 3
+          }
+        },
+        {
+          "id": "dev.install",
+          "panel": "developers",
+          "score": 100,
+          "weight": 3,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "command",
+              "ref": "npm ci --no-audit --no-fund",
+              "excerpt": "18 s"
+            }
+          ],
+          "params": {
+            "seconds": 18
+          }
+        },
+        {
+          "id": "dev.build",
+          "panel": "developers",
+          "score": 100,
+          "weight": 2,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "command",
+              "ref": "npm run build",
+              "excerpt": "7 s"
+            }
+          ],
+          "params": {
+            "seconds": 7
+          }
+        },
+        {
+          "id": "dev.first_success",
+          "panel": "developers",
+          "score": 100,
+          "weight": 4,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "command",
+              "ref": "npm run demo",
+              "excerpt": "25 s"
+            }
+          ],
+          "params": {
+            "seconds": 25,
+            "command": "npm run demo"
+          }
+        }
+      ],
+      "duration_ms": 54382,
+      "extra": {
+        "executed": true,
+        "commands": [
+          {
+            "cmd": "npm ci --no-audit --no-fund",
+            "ok": true,
+            "seconds": 18
+          },
+          {
+            "cmd": "npm run build",
+            "ok": true,
+            "seconds": 7
+          },
+          {
+            "cmd": "npm run demo",
+            "ok": true,
+            "seconds": 25
+          }
+        ]
+      }
+    },
+    {
+      "id": "investors",
+      "score": 83,
+      "stars": 4,
+      "share": 15,
+      "reviewers": [
+        {
+          "id": "inv-1",
+          "archetype": "angel",
+          "score": 96
+        },
+        {
+          "id": "inv-2",
+          "archetype": "seed_vc",
+          "score": 78
+        },
+        {
+          "id": "inv-3",
+          "archetype": "strategic",
+          "score": 77
+        },
+        {
+          "id": "inv-4",
+          "archetype": "oss_foundation",
+          "score": 97
+        },
+        {
+          "id": "inv-5",
+          "archetype": "angel",
+          "score": 97
+        },
+        {
+          "id": "inv-6",
+          "archetype": "seed_vc",
+          "score": 79
+        }
+      ],
+      "checks": [
+        {
+          "id": "inv.problem",
+          "panel": "investors",
+          "score": 100,
+          "weight": 3,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "file",
+              "ref": "README.md:1",
+              "excerpt": "**Test your product with synthetic buyers before real customers find the problems.**"
+            }
+          ]
+        },
+        {
+          "id": "inv.differentiation",
+          "panel": "investors",
+          "score": 85,
+          "weight": 3,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "file",
+              "ref": "README.md:35",
+              "excerpt": "**The report is a small app in its own right.** It is available in ES · EN · NL; every text switches, including buyer thoughts, findings and customer stories. I"
+            },
+            {
+              "kind": "file",
+              "ref": "README.md:69",
+              "excerpt": "## Why"
+            },
+            {
+              "kind": "file",
+              "ref": "README.md:74",
+              "excerpt": "|                     | Opinion-poll personas             | **Buyer Arena**                                                                                |"
+            }
+          ]
+        },
+        {
+          "id": "inv.demo",
+          "panel": "investors",
+          "score": 100,
+          "weight": 3,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "file",
+              "ref": "README.md:23",
+              "excerpt": "npm run demo          # 20 buyers × 2 versions of a demo SaaS · 15–30 s · no API keys"
+            },
+            {
+              "kind": "file",
+              "ref": "README.md:90",
+              "excerpt": "npm run demo                                  # bundled demo, fully offline"
+            },
+            {
+              "kind": "file",
+              "ref": "README.md:28",
+              "excerpt": "![Buyer Arena report — light theme, Simple mode](assets/demo/report-hero.png)"
+            },
+            {
+              "kind": "file",
+              "ref": "README.md:31",
+              "excerpt": "<td width=\"62%\"><img src=\"assets/demo/report-dark.png\" alt=\"Expert mode, dark theme\"></td>"
+            },
+            {
+              "kind": "file",
+              "ref": "README.md:32",
+              "excerpt": "<td><img src=\"assets/demo/report-mobile-nl.png\" alt=\"Mobile, Dutch\"></td>"
+            }
+          ],
+          "params": {
+            "seconds": 25
+          }
+        },
+        {
+          "id": "inv.business_model",
+          "panel": "investors",
+          "score": 100,
+          "weight": 4,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "file",
+              "ref": "LICENSE_STRATEGY.md"
+            },
+            {
+              "kind": "file",
+              "ref": "src/providers/pricing.ts"
+            },
+            {
+              "kind": "file",
+              "ref": "LICENSE_STRATEGY.md:4",
+              "excerpt": "licensed hosted and enterprise layer, not from restricting the core. The name and logo are"
+            },
+            {
+              "kind": "file",
+              "ref": "LICENSE_STRATEGY.md:10",
+              "excerpt": "2. **Commercial opportunity.** Hosted runs, team dashboards, CI integrations, calibration against private analytics, and enterprise controls such as SSO and aud"
+            },
+            {
+              "kind": "file",
+              "ref": "LICENSE_STRATEGY.md:11",
+              "excerpt": "3. **Protection against direct hosted cloning.** Stop a third party from offering \"Buyer Arena as a service\" built on our work without giving anything back."
+            },
+            {
+              "kind": "file",
+              "ref": "LICENSE_STRATEGY.md:19",
+              "excerpt": "| AGPL-3.0                                                    | Medium to low; many companies ban it outright                                     | Strong: host"
+            },
+            {
+              "kind": "file",
+              "ref": "LICENSE_STRATEGY.md:4",
+              "excerpt": "licensed hosted and enterprise layer, not from restricting the core. The name and logo are"
+            },
+            {
+              "kind": "file",
+              "ref": "LICENSE_STRATEGY.md:10",
+              "excerpt": "2. **Commercial opportunity.** Hosted runs, team dashboards, CI integrations, calibration against private analytics, and enterprise controls such as SSO and aud"
+            }
+          ],
+          "params": {
+            "signals": 4
+          }
+        },
+        {
+          "id": "inv.license_fit",
+          "panel": "investors",
+          "score": 95,
+          "weight": 2,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "file",
+              "ref": "LICENSE:1",
+              "excerpt": "Apache License"
+            },
+            {
+              "kind": "file",
+              "ref": "LICENSE:178",
+              "excerpt": "APPENDIX: How to apply the Apache License to your work."
+            },
+            {
+              "kind": "file",
+              "ref": "LICENSE_STRATEGY.md:19",
+              "excerpt": "| AGPL-3.0                                                    | Medium to low; many companies ban it outright                                     | Strong: host"
+            }
+          ]
+        },
+        {
+          "id": "inv.traction",
+          "panel": "investors",
+          "score": 92,
+          "weight": 2,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "metric",
+              "ref": "tests",
+              "excerpt": "11 test files"
+            },
+            {
+              "kind": "metric",
+              "ref": "ci",
+              "excerpt": "2 workflows"
+            },
+            {
+              "kind": "metric",
+              "ref": "git",
+              "excerpt": "12 commits"
+            }
+          ],
+          "params": {
+            "tests": 11,
+            "commits": 12
+          }
+        },
+        {
+          "id": "inv.adoption",
+          "panel": "investors",
+          "score": 5,
+          "weight": 4,
+          "status": "fail",
+          "evidence": [
+            {
+              "kind": "metric",
+              "ref": "git tags",
+              "excerpt": "0 releases/tags"
+            },
+            {
+              "kind": "metric",
+              "ref": "git authors",
+              "excerpt": "2 commit authors"
+            },
+            {
+              "kind": "metric",
+              "ref": "adopters",
+              "excerpt": "no adopters, users or testimonials"
+            }
+          ],
+          "params": {
+            "tags": 0,
+            "authors": 2,
+            "adopters": 0
+          }
+        },
+        {
+          "id": "inv.moat",
+          "panel": "investors",
+          "score": 100,
+          "weight": 2,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "file",
+              "ref": "LICENSE_STRATEGY.md:10",
+              "excerpt": "2. **Commercial opportunity.** Hosted runs, team dashboards, CI integrations, calibration against private analytics, and enterprise controls such as SSO and aud"
+            },
+            {
+              "kind": "file",
+              "ref": "LICENSE_STRATEGY.md:26",
+              "excerpt": "- A hosted clone would need the parts that do not live in this repo: managed browser fleets, secure credential handling for customer staging environments, calib"
+            },
+            {
+              "kind": "file",
+              "ref": "README.md:119",
+              "excerpt": "| `calibrate <aggregates>`         | Simulated funnel vs. **aggregate** real funnel, per-stage error                            |"
+            },
+            {
+              "kind": "file",
+              "ref": "README.md:263",
+              "excerpt": "- Calibration accepts **aggregates only**: shares and rates, with a minimum group size of 10 or more. The schema has no field that could hold a person-level rec"
+            },
+            {
+              "kind": "file",
+              "ref": "LICENSE_STRATEGY.md:4",
+              "excerpt": "licensed hosted and enterprise layer, not from restricting the core. The name and logo are"
+            },
+            {
+              "kind": "file",
+              "ref": "LICENSE_STRATEGY.md:10",
+              "excerpt": "2. **Commercial opportunity.** Hosted runs, team dashboards, CI integrations, calibration against private analytics, and enterprise controls such as SSO and aud"
+            },
+            {
+              "kind": "file",
+              "ref": "LICENSE_STRATEGY.md:11",
+              "excerpt": "3. **Protection against direct hosted cloning.** Stop a third party from offering \"Buyer Arena as a service\" built on our work without giving anything back."
+            },
+            {
+              "kind": "file",
+              "ref": "LICENSE_STRATEGY.md:19",
+              "excerpt": "| AGPL-3.0                                                    | Medium to low; many companies ban it outright                                     | Strong: host"
+            }
+          ]
+        },
+        {
+          "id": "inv.market",
+          "panel": "investors",
+          "score": 90,
+          "weight": 2,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "file",
+              "ref": "README.md:11",
+              "excerpt": "[![CI](https://img.shields.io/badge/CI-GitHub_Actions-2d5bff)](.github/workflows/ci.yml)"
+            },
+            {
+              "kind": "file",
+              "ref": "README.md:80",
+              "excerpt": "| Output for the team | A summary                         | A ranked `ROI_BACKLOG.md` with a visible scoring formula                                       |"
+            },
+            {
+              "kind": "file",
+              "ref": "README.md:133",
+              "excerpt": "| **Red team**   | Secrets, supply chain, CI injection, prompt injection in files agents read, MCP tool risks, privacy; risk index and AI-agent risk |"
+            },
+            {
+              "kind": "file",
+              "ref": "README.md:22",
+              "excerpt": "npm install           # also builds the CLI"
+            },
+            {
+              "kind": "file",
+              "ref": "README.md:23",
+              "excerpt": "npm run demo          # 20 buyers × 2 versions of a demo SaaS · 15–30 s · no API keys"
+            },
+            {
+              "kind": "file",
+              "ref": "README.md:95",
+              "excerpt": "`npm run ba -- <command>` runs the local CLI. `npm link` puts a `buyer-arena` command on your"
+            },
+            {
+              "kind": "file",
+              "ref": "README.md:96",
+              "excerpt": "PATH, which the examples below use. Do **not** run `npx buyer-arena` until the package is"
+            },
+            {
+              "kind": "file",
+              "ref": "README.md:116",
+              "excerpt": "| `report` / `audit`               | Re-analyse a session; `audit --auditor anthropic:<model>` uses LLM auditors                |"
+            }
+          ]
+        },
+        {
+          "id": "inv.risk_disclosure",
+          "panel": "investors",
+          "score": 100,
+          "weight": 1,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "file",
+              "ref": "CONTRIBUTING.md:29",
+              "excerpt": "5. **Honest statistics.** Synthetic results are a conversion proxy. Small samples are labelled EXPLORATORY SIGNAL."
+            },
+            {
+              "kind": "file",
+              "ref": "README.md:39",
+              "excerpt": "BASELINE → CANDIDATE   EXPLORATORY SIGNAL   CONVERSION PROXY"
+            },
+            {
+              "kind": "file",
+              "ref": "README.md:213",
+              "excerpt": "- Below 30 pairs every result is labelled **EXPLORATORY SIGNAL**. Buyer Arena never uses the word \"significant\"."
+            },
+            {
+              "kind": "file",
+              "ref": "README.md:214",
+              "excerpt": "- Goal completion is a **CONVERSION PROXY**, not predicted revenue. The ROI backlog is a unitless leverage score: `frequency × severity × goal impact × breadth "
+            },
+            {
+              "kind": "file",
+              "ref": "SECURITY.md"
+            }
+          ]
+        },
+        {
+          "id": "inv.governance",
+          "panel": "investors",
+          "score": 100,
+          "weight": 1,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "file",
+              "ref": "CONTRIBUTING.md"
+            },
+            {
+              "kind": "file",
+              "ref": "CODE_OF_CONDUCT.md"
+            },
+            {
+              "kind": "file",
+              "ref": "SECURITY.md"
+            },
+            {
+              "kind": "file",
+              "ref": "TRADEMARKS.md"
+            }
+          ]
+        }
+      ],
+      "duration_ms": 458,
+      "extra": {
+        "models": [
+          {
+            "id": "open_core",
+            "fit": 100,
+            "reasons": [
+              "permissive",
+              "enterprise",
+              "hosted",
+              "strategy"
+            ]
+          },
+          {
+            "id": "saas",
+            "fit": 95,
+            "reasons": [
+              "compute",
+              "hosted",
+              "b2b",
+              "dataMoat"
+            ]
+          },
+          {
+            "id": "open_source",
+            "fit": 90,
+            "reasons": [
+              "permissive",
+              "devtool",
+              "cli"
+            ]
+          },
+          {
+            "id": "subscription",
+            "fit": 45,
+            "reasons": [
+              "pricing"
+            ]
+          },
+          {
+            "id": "api_usage",
+            "fit": 45,
+            "reasons": [
+              "compute",
+              "agents"
+            ]
+          },
+          {
+            "id": "services",
+            "fit": 40,
+            "reasons": [
+              "b2b"
+            ]
+          }
+        ],
+        "recommended": "open_core",
+        "runner_up": "saas",
+        "virality": 100,
+        "viral": [
+          {
+            "id": "one_command_demo",
+            "pts": 20
+          },
+          {
+            "id": "visual_output",
+            "pts": 20
+          },
+          {
+            "id": "ai_agents_trend",
+            "pts": 20
+          },
+          {
+            "id": "permissive_license",
+            "pts": 15
+          },
+          {
+            "id": "clear_promise",
+            "pts": 10
+          },
+          {
+            "id": "fast_first_success",
+            "pts": 15
+          }
+        ],
+        "strategic": [
+          {
+            "id": "ai_labs",
+            "fit": 100
+          },
+          {
+            "id": "devtools_platforms",
+            "fit": 100
+          },
+          {
+            "id": "browser_automation",
+            "fit": 82
+          },
+          {
+            "id": "security_compliance",
+            "fit": 79
+          },
+          {
+            "id": "analytics_ab",
+            "fit": 76
+          }
+        ]
+      }
+    },
+    {
+      "id": "security",
+      "score": 94,
+      "stars": 4.5,
+      "share": 15,
+      "reviewers": [
+        {
+          "id": "sec-1",
+          "archetype": "appsec",
+          "score": 91
+        },
+        {
+          "id": "sec-2",
+          "archetype": "supply_chain",
+          "score": 100
+        },
+        {
+          "id": "sec-3",
+          "archetype": "ai_agent",
+          "score": 91
+        },
+        {
+          "id": "sec-4",
+          "archetype": "privacy_legal",
+          "score": 92
+        },
+        {
+          "id": "sec-5",
+          "archetype": "appsec",
+          "score": 90
+        },
+        {
+          "id": "sec-6",
+          "archetype": "supply_chain",
+          "score": 100
+        }
+      ],
+      "checks": [
+        {
+          "id": "sec.secrets",
+          "panel": "security",
+          "score": 100,
+          "weight": 5,
+          "status": "pass",
+          "evidence": [],
+          "params": {
+            "found": 0
+          }
+        },
+        {
+          "id": "sec.dependencies",
+          "panel": "security",
+          "score": 100,
+          "weight": 3,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "command",
+              "ref": "npm audit --omit=dev",
+              "excerpt": "{\"info\":0,\"low\":0,\"moderate\":0,\"high\":0,\"critical\":0,\"total\":0}"
+            }
+          ],
+          "params": {
+            "critical": 0,
+            "high": 0
+          }
+        },
+        {
+          "id": "sec.install_scripts",
+          "panel": "security",
+          "score": 100,
+          "weight": 2,
+          "status": "pass",
+          "evidence": [],
+          "params": {
+            "hooks": 0
+          }
+        },
+        {
+          "id": "sec.ci",
+          "panel": "security",
+          "score": 100,
+          "weight": 3,
+          "status": "pass",
+          "evidence": [],
+          "params": {
+            "injection": 0,
+            "unpinned": 0
+          }
+        },
+        {
+          "id": "sec.agent_instructions",
+          "panel": "security",
+          "score": 100,
+          "weight": 5,
+          "status": "pass",
+          "evidence": [],
+          "params": {
+            "files": 18,
+            "found": 0
+          }
+        },
+        {
+          "id": "sec.mcp",
+          "panel": "security",
+          "score": 100,
+          "weight": 4,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "file",
+              "ref": "src/mcp/server.ts:12",
+              "excerpt": "assertTarget,"
+            },
+            {
+              "kind": "file",
+              "ref": "src/mcp/server.ts:25",
+              "excerpt": "const localOnly = () => process.env.BUYER_ARENA_ALLOW_REMOTE !== '1';"
+            },
+            {
+              "kind": "file",
+              "ref": "src/mcp/server.ts:34",
+              "excerpt": "success_text: z.string().optional().describe('Regex: goal reached when page text matches'),"
+            },
+            {
+              "kind": "file",
+              "ref": "src/mcp/server.ts:105",
+              "excerpt": "server.registerTool("
+            },
+            {
+              "kind": "file",
+              "ref": "src/mcp/server.ts:135",
+              "excerpt": "server.registerTool("
+            }
+          ],
+          "params": {
+            "tools": 8,
+            "dangerous": 0,
+            "guards": 10
+          }
+        },
+        {
+          "id": "sec.agent_permissions",
+          "panel": "security",
+          "score": 100,
+          "weight": 3,
+          "status": "pass",
+          "evidence": [],
+          "params": {
+            "found": 0
+          }
+        },
+        {
+          "id": "sec.llm_input",
+          "panel": "security",
+          "score": 80,
+          "weight": 4,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "file",
+              "ref": "src/cli/main.ts",
+              "excerpt": "calls an LLM API"
+            },
+            {
+              "kind": "file",
+              "ref": "src/mcp/server.ts",
+              "excerpt": "calls an LLM API"
+            },
+            {
+              "kind": "file",
+              "ref": "src/auditors/llm-auditor.ts",
+              "excerpt": "model output schema-validated"
+            },
+            {
+              "kind": "file",
+              "ref": "src/simulator/llm-policy.ts",
+              "excerpt": "model output schema-validated"
+            }
+          ],
+          "params": {
+            "models": 5,
+            "validated": 2
+          }
+        },
+        {
+          "id": "sec.shell",
+          "panel": "security",
+          "score": 76,
+          "weight": 2,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "file",
+              "ref": "scripts/secret-scan.mjs:15",
+              "excerpt": "const files = execSync('git ls-files --cached --others --exclude-standard', { encoding: 'utf8' })"
+            },
+            {
+              "kind": "file",
+              "ref": "src/engines/external.ts:60",
+              "excerpt": "const child = spawn(o.command, { shell: true, stdio: ['pipe', 'pipe', 'pipe'] });"
+            },
+            {
+              "kind": "file",
+              "ref": "src/panels/developers.ts:47",
+              "excerpt": "shell: true,"
+            }
+          ],
+          "params": {
+            "found": 3
+          }
+        },
+        {
+          "id": "sec.web",
+          "panel": "security",
+          "score": 71,
+          "weight": 3,
+          "status": "warn",
+          "evidence": [
+            {
+              "kind": "url",
+              "ref": "argus:headers.clickjacking-protection-not-observed",
+              "excerpt": "review · No framing protection was observed (X-Frame-Options or CSP frame-ancestors)"
+            },
+            {
+              "kind": "url",
+              "ref": "argus:privacy.no-privacy-link",
+              "excerpt": "review · No privacy-policy link was found in the delivered homepage HTML"
+            },
+            {
+              "kind": "url",
+              "ref": "argus:transport.hsts-not-observed",
+              "excerpt": "review · Strict-Transport-Security header was not observed"
+            },
+            {
+              "kind": "url",
+              "ref": "argus:transport.no-https-redirect",
+              "excerpt": "review · Plain HTTP was answered without redirecting to HTTPS"
+            },
+            {
+              "kind": "url",
+              "ref": "argus:a11y.html-lang-not-observed",
+              "excerpt": "informational · The page did not declare a language"
+            },
+            {
+              "kind": "url",
+              "ref": "argus:headers.permissions-policy-not-observed",
+              "excerpt": "informational · Permissions-Policy header was not observed"
+            },
+            {
+              "kind": "url",
+              "ref": "argus:headers.referrer-policy-not-observed",
+              "excerpt": "informational · Referrer-Policy header was not observed"
+            },
+            {
+              "kind": "url",
+              "ref": "argus:headers.x-content-type-options-not-observed",
+              "excerpt": "informational · X-Content-Type-Options header was not observed"
+            }
+          ],
+          "params": {
+            "findings": 9
+          }
+        },
+        {
+          "id": "sec.privacy",
+          "panel": "security",
+          "score": 100,
+          "weight": 3,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "metric",
+              "ref": "cookies",
+              "excerpt": "0 cookies, 0 without Secure/HttpOnly"
+            }
+          ],
+          "params": {
+            "hosts": 0,
+            "cookies": 0
+          }
+        }
+      ],
+      "duration_ms": 6258,
+      "extra": {
+        "risk": 6,
+        "criticity": "low",
+        "agent_risk": 5,
+        "threats": [
+          {
+            "id": "secrets_leak",
+            "status": "clear",
+            "evidence": 0
+          },
+          {
+            "id": "dependency_vulns",
+            "status": "clear",
+            "evidence": 0
+          },
+          {
+            "id": "supply_chain_install_scripts",
+            "status": "clear",
+            "evidence": 0
+          },
+          {
+            "id": "ci_script_injection",
+            "status": "clear",
+            "evidence": 0
+          },
+          {
+            "id": "prompt_injection_files",
+            "status": "clear",
+            "evidence": 0
+          },
+          {
+            "id": "mcp_tool_capabilities",
+            "status": "clear",
+            "evidence": 0
+          },
+          {
+            "id": "mcp_tool_poisoning",
+            "status": "clear",
+            "evidence": 0
+          },
+          {
+            "id": "agent_overbroad_permissions",
+            "status": "clear",
+            "evidence": 0
+          },
+          {
+            "id": "untrusted_web_to_llm",
+            "status": "mitigated",
+            "evidence": 3
+          },
+          {
+            "id": "web_surface",
+            "status": "found",
+            "evidence": 4
+          },
+          {
+            "id": "tracking_third_parties",
+            "status": "clear",
+            "evidence": 0
+          }
+        ],
+        "argus": true
+      }
+    },
+    {
+      "id": "segments",
+      "score": 91,
+      "stars": 4.5,
+      "share": 15,
+      "reviewers": [
+        {
+          "id": "accessibility",
+          "archetype": "accessibility",
+          "score": 66
+        },
+        {
+          "id": "slow_network",
+          "archetype": "slow_network",
+          "score": 100
+        },
+        {
+          "id": "no_account",
+          "archetype": "no_account",
+          "score": 100
+        },
+        {
+          "id": "zoom",
+          "archetype": "zoom",
+          "score": 100
+        },
+        {
+          "id": "language",
+          "archetype": "language",
+          "score": 100
+        },
+        {
+          "id": "mobile",
+          "archetype": "mobile",
+          "score": 100
+        }
+      ],
+      "checks": [
+        {
+          "id": "seg.accessibility",
+          "panel": "segments",
+          "score": 66,
+          "weight": 4,
+          "status": "warn",
+          "evidence": [
+            {
+              "kind": "url",
+              "ref": "https://abrahamhl.github.io/buyer-arena-site/es/",
+              "excerpt": "unlabeled 0 · no-alt 0 · unnamed 0 · small 4 · contrast 19"
+            },
+            {
+              "kind": "url",
+              "ref": "https://abrahamhl.github.io/buyer-arena-site/es/#small_target",
+              "excerpt": "<a href=\"https://github.com/abrahamhl/buyer-arena\" rel=\"noopener\" data-ba-idx=\"2"
+            }
+          ],
+          "params": {
+            "pages": 1
+          }
+        },
+        {
+          "id": "seg.slow_network",
+          "panel": "segments",
+          "score": 100,
+          "weight": 3,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "run",
+              "ref": "current-p-001:e0",
+              "excerpt": "completed · 1 steps"
+            },
+            {
+              "kind": "run",
+              "ref": "current-p-002:e0",
+              "excerpt": "completed · 1 steps"
+            },
+            {
+              "kind": "run",
+              "ref": "current-p-003:e0",
+              "excerpt": "completed · 1 steps"
+            }
+          ],
+          "params": {
+            "rate": "100%",
+            "load": "0 ms"
+          }
+        },
+        {
+          "id": "seg.no_account",
+          "panel": "segments",
+          "score": 100,
+          "weight": 3,
+          "status": "pass",
+          "evidence": [],
+          "params": {
+            "rate": "100%"
+          }
+        },
+        {
+          "id": "seg.zoom",
+          "panel": "segments",
+          "score": 100,
+          "weight": 2,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "url",
+              "ref": "https://abrahamhl.github.io/buyer-arena-site/es/ @zoom200",
+              "excerpt": "horizontal overflow 0px"
+            },
+            {
+              "kind": "url",
+              "ref": "https://abrahamhl.github.io/buyer-arena-site/es/ @phone320",
+              "excerpt": "horizontal overflow 0px"
+            }
+          ],
+          "params": {
+            "overflow": "0/0"
+          }
+        },
+        {
+          "id": "seg.language",
+          "panel": "segments",
+          "score": 100,
+          "weight": 1,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "url",
+              "ref": "https://abrahamhl.github.io/buyer-arena-site/es/",
+              "excerpt": "lang=\"es\" · 4 hreflang alternates"
+            }
+          ],
+          "params": {
+            "lang": "es",
+            "alternates": 4
+          }
+        },
+        {
+          "id": "seg.mobile",
+          "panel": "segments",
+          "score": 100,
+          "weight": 2,
+          "status": "pass",
+          "evidence": [
+            {
+              "kind": "run",
+              "ref": "current-p-004:e0",
+              "excerpt": "completed"
+            },
+            {
+              "kind": "run",
+              "ref": "current-p-009:e0",
+              "excerpt": "completed"
+            },
+            {
+              "kind": "run",
+              "ref": "current-p-014:e0",
+              "excerpt": "completed"
+            }
+          ],
+          "params": {
+            "mobile": "100%",
+            "desktop": "100%"
+          }
+        }
+      ],
+      "duration_ms": 5794,
+      "extra": {
+        "table": [
+          {
+            "id": "accessibility",
+            "score": 66,
+            "n": 1
+          },
+          {
+            "id": "slow_network",
+            "score": 100,
+            "n": 3
+          },
+          {
+            "id": "no_account",
+            "score": 100,
+            "n": 3
+          },
+          {
+            "id": "zoom",
+            "score": 100,
+            "n": 2
+          },
+          {
+            "id": "language",
+            "score": 100,
+            "n": 1
+          },
+          {
+            "id": "mobile",
+            "score": 100,
+            "n": 3
+          }
+        ]
+      }
+    }
+  ],
+  "brief": {
+    "title": "Buyer Arena founding brief",
+    "coverage": 100,
+    "items": [
+      {
+        "id": "install",
+        "area": "core",
+        "text": {
+          "es": "El repositorio se instala",
+          "en": "The repository installs",
+          "nl": "De repository installeert"
+        },
+        "status": "done",
+        "evidence": [
+          {
+            "kind": "file",
+            "ref": "package-lock.json"
+          },
+          {
+            "kind": "file",
+            "ref": "package.json",
+            "excerpt": "\"prepare\": \"npm run build\""
+          }
+        ]
+      },
+      {
+        "id": "demo",
+        "area": "core",
+        "text": {
+          "es": "La demo arranca con un comando",
+          "en": "The demo launches with one command",
+          "nl": "De demo start met één commando"
+        },
+        "status": "done",
+        "evidence": [
+          {
+            "kind": "file",
+            "ref": "package.json",
+            "excerpt": "\"demo\": \"npm run setup:browser --silent && npm run build --silent && node dist/cli/main.js demo\""
+          }
+        ]
+      },
+      {
+        "id": "twenty_buyers",
+        "area": "users",
+        "text": {
+          "es": "20 compradores sintéticos pueden ejecutarse",
+          "en": "20 synthetic buyers can run",
+          "nl": "20 synthetische kopers kunnen draaien"
+        },
+        "status": "done",
+        "evidence": [
+          {
+            "kind": "file",
+            "ref": "src/workflow.ts:94",
+            "excerpt": "population: generatePopulation({ template: 'saas', size: o.size ?? 20, seed: o.seed ?? 42 }),"
+          }
+        ]
+      },
+      {
+        "id": "archetypes",
+        "area": "users",
+        "text": {
+          "es": "Existen 5 arquetipos",
+          "en": "5 archetypes exist",
+          "nl": "Er bestaan 5 archetypen"
+        },
+        "status": "done",
+        "evidence": [
+          {
+            "kind": "file",
+            "ref": "src/personas/templates.ts:57",
+            "excerpt": "'mobile-rushed': {"
+          },
+          {
+            "kind": "file",
+            "ref": "src/personas/templates.ts:69",
+            "excerpt": "skeptic: {"
+          }
+        ]
+      },
+      {
+        "id": "stories",
+        "area": "users",
+        "text": {
+          "es": "Existen historias de cliente",
+          "en": "Customer stories exist",
+          "nl": "Klantverhalen bestaan"
+        },
+        "status": "done",
+        "evidence": [
+          {
+            "kind": "file",
+            "ref": "src/stories/story.ts"
+          }
+        ]
+      },
+      {
+        "id": "journeys",
+        "area": "users",
+        "text": {
+          "es": "Se capturan recorridos reales de navegador",
+          "en": "Browser journeys are captured",
+          "nl": "Browserreizen worden vastgelegd"
+        },
+        "status": "done",
+        "evidence": [
+          {
+            "kind": "file",
+            "ref": "src/simulator/journey.ts"
+          },
+          {
+            "kind": "file",
+            "ref": "src/simulator/journey.ts:135",
+            "excerpt": "if (o.trace !== 'off') await context.tracing.start({ screenshots: true, snapshots: true, title: o.runId });"
+          }
+        ]
+      },
+      {
+        "id": "evidence",
+        "area": "core",
+        "text": {
+          "es": "La evidencia se guarda y cada hallazgo la cita",
+          "en": "Evidence is persisted and findings cite it",
+          "nl": "Bewijs wordt bewaard en bevindingen verwijzen ernaar"
+        },
+        "status": "done",
+        "evidence": [
+          {
+            "kind": "file",
+            "ref": "src/auditors/consensus.ts:82",
+            "excerpt": "export function validateFindings("
+          }
+        ]
+      },
+      {
+        "id": "compare",
+        "area": "users",
+        "text": {
+          "es": "Funciona la comparación actual vs candidata",
+          "en": "Baseline vs candidate works",
+          "nl": "Huidige versie vs kandidaat werkt"
+        },
+        "status": "done",
+        "evidence": [
+          {
+            "kind": "file",
+            "ref": "src/comparison/compare.ts"
+          }
+        ]
+      },
+      {
+        "id": "auditors",
+        "area": "core",
+        "text": {
+          "es": "Análisis de cinco auditores",
+          "en": "Five-auditor analysis",
+          "nl": "Analyse door vijf auditors"
+        },
+        "status": "done",
+        "evidence": [
+          {
+            "kind": "file",
+            "ref": "src/auditors/rules.ts:254",
+            "excerpt": "export const REDTEAM_AUDITOR: Auditor = {"
+          }
+        ]
+      },
+      {
+        "id": "roi",
+        "area": "core",
+        "text": {
+          "es": "Se genera ROI_BACKLOG.md",
+          "en": "ROI_BACKLOG.md is generated",
+          "nl": "ROI_BACKLOG.md wordt gegenereerd"
+        },
+        "status": "done",
+        "evidence": [
+          {
+            "kind": "file",
+            "ref": "examples/demo-output/ROI_BACKLOG.md"
+          }
+        ]
+      },
+      {
+        "id": "report",
+        "area": "core",
+        "text": {
+          "es": "Funciona el informe HTML",
+          "en": "The HTML report works",
+          "nl": "Het HTML-rapport werkt"
+        },
+        "status": "done",
+        "evidence": [
+          {
+            "kind": "file",
+            "ref": "src/reports/html.ts"
+          }
+        ]
+      },
+      {
+        "id": "replay",
+        "area": "core",
+        "text": {
+          "es": "Reproducción y trazas inspeccionables",
+          "en": "Replay and trace inspection work",
+          "nl": "Terugkijken en traces werken"
+        },
+        "status": "done",
+        "evidence": [
+          {
+            "kind": "file",
+            "ref": "src/cli/main.ts:480",
+            "excerpt": ".command('replay')"
+          }
+        ]
+      },
+      {
+        "id": "mcp",
+        "area": "agents",
+        "text": {
+          "es": "Servidor MCP funcional",
+          "en": "A working MCP server",
+          "nl": "Een werkende MCP-server"
+        },
+        "status": "done",
+        "evidence": [
+          {
+            "kind": "file",
+            "ref": "src/mcp/server.ts"
+          },
+          {
+            "kind": "file",
+            "ref": "tests/integration/cli-mcp.test.ts"
+          }
+        ]
+      },
+      {
+        "id": "no_paid_tests",
+        "area": "safety",
+        "text": {
+          "es": "Tests y demo sin API de pago",
+          "en": "No paid API for tests or demo",
+          "nl": "Geen betaalde API voor tests of demo"
+        },
+        "status": "done",
+        "evidence": [
+          {
+            "kind": "file",
+            "ref": "vitest.config.ts:12",
+            "excerpt": "BUYER_ARENA_OFFLINE: '1',"
+          }
+        ]
+      },
+      {
+        "id": "providers",
+        "area": "agents",
+        "text": {
+          "es": "Existe adaptador para proveedores LLM externos",
+          "en": "External LLM provider adapter exists",
+          "nl": "Adapter voor externe LLM-providers bestaat"
+        },
+        "status": "done",
+        "evidence": [
+          {
+            "kind": "file",
+            "ref": "src/providers/anthropic.ts"
+          },
+          {
+            "kind": "file",
+            "ref": "src/providers/openai-compatible.ts"
+          }
+        ]
+      },
+      {
+        "id": "budgets",
+        "area": "safety",
+        "text": {
+          "es": "Los presupuestos se hacen cumplir",
+          "en": "Budgets are enforced",
+          "nl": "Budgetten worden afgedwongen"
+        },
+        "status": "done",
+        "evidence": [
+          {
+            "kind": "file",
+            "ref": "src/providers/metered.ts:41",
+            "excerpt": "reserve(provider: ChatProvider, req: ChatRequest): number {"
+          }
+        ]
+      },
+      {
+        "id": "resume",
+        "area": "core",
+        "text": {
+          "es": "Una interrupción se puede reanudar",
+          "en": "Interruption can resume",
+          "nl": "Onderbreking kan worden hervat"
+        },
+        "status": "done",
+        "evidence": [
+          {
+            "kind": "file",
+            "ref": "tests/integration/journeys.test.ts:112",
+            "excerpt": "it('resumes after interruption without re-running completed journeys', async () => {"
+          }
+        ]
+      },
+      {
+        "id": "ci",
+        "area": "oss",
+        "text": {
+          "es": "Existe integración continua",
+          "en": "CI exists",
+          "nl": "CI bestaat"
+        },
+        "status": "done",
+        "evidence": [
+          {
+            "kind": "file",
+            "ref": ".github/workflows/ci.yml"
+          }
+        ]
+      },
+      {
+        "id": "secrets",
+        "area": "safety",
+        "text": {
+          "es": "Los secretos están protegidos",
+          "en": "Secrets are protected",
+          "nl": "Geheimen zijn beschermd"
+        },
+        "status": "done",
+        "evidence": [
+          {
+            "kind": "file",
+            "ref": "scripts/secret-scan.mjs"
+          },
+          {
+            "kind": "file",
+            "ref": "src/providers/http.ts:4",
+            "excerpt": "export function redact(text: string): string {"
+          }
+        ]
+      },
+      {
+        "id": "oss_docs",
+        "area": "oss",
+        "text": {
+          "es": "El proyecto parece creíble en GitHub",
+          "en": "The project looks credible on GitHub",
+          "nl": "Het project oogt geloofwaardig op GitHub"
+        },
+        "status": "done",
+        "evidence": [
+          {
+            "kind": "file",
+            "ref": "CONTRIBUTING.md"
+          },
+          {
+            "kind": "file",
+            "ref": "SECURITY.md"
+          },
+          {
+            "kind": "file",
+            "ref": "LICENSE_STRATEGY.md"
+          }
+        ]
+      },
+      {
+        "id": "five_panels",
+        "area": "launch",
+        "text": {
+          "es": "Cinco paneles (usuario, desarrollador, inversor, red team, segmentos)",
+          "en": "Five panels (user, developer, investor, red team, segments)",
+          "nl": "Vijf panels (gebruiker, ontwikkelaar, investeerder, red team, segmenten)"
+        },
+        "status": "done",
+        "evidence": [
+          {
+            "kind": "file",
+            "ref": "src/panels/developers.ts"
+          },
+          {
+            "kind": "file",
+            "ref": "src/panels/investors.ts"
+          },
+          {
+            "kind": "file",
+            "ref": "src/panels/security.ts"
+          },
+          {
+            "kind": "file",
+            "ref": "src/panels/segments.ts"
+          }
+        ]
+      },
+      {
+        "id": "stars_scores",
+        "area": "launch",
+        "text": {
+          "es": "Todo puntuado con estrellas 0–5 y 0–100 %",
+          "en": "Everything scored with 0–5 stars and 0–100%",
+          "nl": "Alles gescoord met 0–5 sterren en 0–100%"
+        },
+        "status": "done",
+        "evidence": [
+          {
+            "kind": "file",
+            "ref": "src/panels/types.ts:52",
+            "excerpt": "export const stars = (score: number | null): number =>"
+          }
+        ]
+      },
+      {
+        "id": "exports",
+        "area": "launch",
+        "text": {
+          "es": "Exportación CSV, PNG, JPG, Markdown, JSON y PDF",
+          "en": "CSV, PNG, JPG, Markdown, JSON and PDF export",
+          "nl": "Export naar CSV, PNG, JPG, Markdown, JSON en PDF"
+        },
+        "status": "done",
+        "evidence": [
+          {
+            "kind": "file",
+            "ref": "src/reports/assets/launch.js:469",
+            "excerpt": "a.href = c.toDataURL(type === 'jpg' ? 'image/jpeg' : 'image/png', 0.92);"
+          },
+          {
+            "kind": "file",
+            "ref": "src/reports/assets/launch.js:427",
+            "excerpt": "if (fmt === 'csv') download(base + '.csv', 'text/csv;charset=utf-8', toCsv(scope));"
+          },
+          {
+            "kind": "file",
+            "ref": "src/cli/main.ts:784",
+            "excerpt": ".command('export')"
+          }
+        ]
+      },
+      {
+        "id": "languages",
+        "area": "launch",
+        "text": {
+          "es": "Interfaz en ES · EN · NL de verdad",
+          "en": "Real ES · EN · NL interface",
+          "nl": "Echte ES · EN · NL-interface"
+        },
+        "status": "done",
+        "evidence": [
+          {
+            "kind": "file",
+            "ref": "tests/unit/i18n.test.ts"
+          }
+        ]
+      },
+      {
+        "id": "mix_ui",
+        "area": "launch",
+        "text": {
+          "es": "Mezcla configurable por panel con progreso en vivo",
+          "en": "Configurable panel mix with live progress",
+          "nl": "Instelbare panelmix met live voortgang"
+        },
+        "status": "done",
+        "evidence": [
+          {
+            "kind": "file",
+            "ref": "src/panels/mix.ts"
+          },
+          {
+            "kind": "file",
+            "ref": "src/studio/server.ts"
+          }
+        ]
+      },
+      {
+        "id": "agent_security",
+        "area": "safety",
+        "text": {
+          "es": "Auditoría de la superficie de agentes IA (skills, MCP, prompt injection)",
+          "en": "AI-agent surface audit (skills, MCP, prompt injection)",
+          "nl": "Audit van het AI-agentoppervlak (skills, MCP, prompt injection)"
+        },
+        "status": "done",
+        "evidence": [
+          {
+            "kind": "file",
+            "ref": "src/panels/security.ts:50",
+            "excerpt": "export const HIDDEN_UNICODE ="
+          },
+          {
+            "kind": "file",
+            "ref": "src/panels/security.ts:230",
+            "excerpt": "check(P, 'sec.mcp', s6, 4, [...danger, ...poison, ...guards.slice(0, 3), ...tools.slice(0, 2)], {"
+          }
+        ]
+      },
+      {
+        "id": "argus",
+        "area": "launch",
+        "text": {
+          "es": "Conexión con Argus",
+          "en": "Argus integration",
+          "nl": "Integratie met Argus"
+        },
+        "status": "done",
+        "evidence": [
+          {
+            "kind": "file",
+            "ref": "src/panels/argus.ts"
+          }
+        ]
+      },
+      {
+        "id": "website",
+        "area": "launch",
+        "text": {
+          "es": "Web oficial ES/EN/NL",
+          "en": "Official ES/EN/NL website",
+          "nl": "Officiële ES/EN/NL-website"
+        },
+        "status": "done",
+        "evidence": [
+          {
+            "kind": "file",
+            "ref": "scripts/build-site.mjs"
+          }
+        ]
+      },
+      {
+        "id": "mobile",
+        "area": "launch",
+        "text": {
+          "es": "Ejecutable desde el móvil vía GitHub Actions",
+          "en": "Runnable from a phone via GitHub Actions",
+          "nl": "Uitvoerbaar vanaf een telefoon via GitHub Actions"
+        },
+        "status": "done",
+        "evidence": [
+          {
+            "kind": "file",
+            "ref": ".github/workflows/launch-check.yml"
+          }
+        ]
+      }
+    ]
+  },
+  "actions": [
+    {
+      "rank": 1,
+      "panel": "investors",
+      "check": "inv.adoption",
+      "score": 5,
+      "impact": 57
+    },
+    {
+      "rank": 2,
+      "panel": "segments",
+      "check": "seg.accessibility",
+      "score": 66,
+      "impact": 20.4
+    },
+    {
+      "rank": 3,
+      "panel": "security",
+      "check": "sec.web",
+      "score": 71,
+      "impact": 13.1
+    }
+  ],
+  "users_session": "sessions/users",
+  "duration_ms": 70134
+}

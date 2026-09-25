@@ -1,0 +1,21 @@
+{
+  "persona_id": "p-007",
+  "context": {
+    "situation": "leads a boutique dev studio",
+    "pain": "chases payments manually",
+    "trigger": "the accountant asked for cleaner records",
+    "constraints": [
+      "93 EUR/month maximum",
+      "has about twenty minutes before the next thing",
+      "is on a laptop",
+      "drops tools that take long to set up"
+    ],
+    "success_looks_like": "Karim is set up with a invoicing tool within budget"
+  },
+  "narrative": "Karim leads a boutique dev studio. Right now Karim chases payments manually. Background: Karim has bought SaaS with a company card before; and abandoned two SaaS tools because onboarding was too complicated. Karim can spend up to 93 EUR a month and is comfortable with software. Karim finds this invoicing tool because the accountant asked for cleaner records, and has about twenty minutes before the next thing. Karim drops tools that take long to set up.",
+  "narratives": {
+    "es": "Karim dirige un pequeño estudio de desarrollo. Ahora mismo, Karim reclama los pagos a mano. Antecedentes: Karim ya ha comprado SaaS con la tarjeta de empresa; y abandonó dos herramientas SaaS porque la puesta en marcha era demasiado complicada. Karim puede gastar hasta 93 EUR al mes y se maneja bien con el software. Karim encuentra esta herramienta de facturación porque la gestoría pidió registros más limpios, y tiene unos veinte minutos antes de lo siguiente. Karim abandona las herramientas que tardan en configurarse.",
+    "en": "Karim leads a boutique dev studio. Right now Karim chases payments manually. Background: Karim has bought SaaS with a company card before; and abandoned two SaaS tools because onboarding was too complicated. Karim can spend up to 93 EUR a month and is comfortable with software. Karim finds this invoicing tool because the accountant asked for cleaner records, and has about twenty minutes before the next thing. Karim drops tools that take long to set up.",
+    "nl": "Karim leidt een kleine ontwikkelstudio. Karim jaagt betalingen handmatig na. Achtergrond: Karim heeft eerder SaaS gekocht met een bedrijfscreditcard; en stopte met twee SaaS-tools omdat de onboarding te ingewikkeld was. Karim kan tot 93 EUR per maand uitgeven en is handig met software. Karim vindt deze factuurtool omdat de accountant om nettere administratie vroeg, en heeft zo’n twintig minuten voor de volgende afspraak. Karim haakt af bij tools die lang duren om in te stellen."
+  }
+}

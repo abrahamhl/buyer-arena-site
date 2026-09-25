@@ -1,0 +1,21 @@
+{
+  "persona_id": "p-014",
+  "context": {
+    "situation": "runs a one-van moving business",
+    "pain": "forgets small jobs",
+    "trigger": "a customer asked for an invoice by email",
+    "constraints": [
+      "69 EUR/month maximum",
+      "has ten minutes before another meeting",
+      "only has a phone right now",
+      "hates long forms on a phone"
+    ],
+    "success_looks_like": "Lucía is set up with a invoicing tool within budget"
+  },
+  "narrative": "Lucía runs a one-van moving business. Right now Lucía forgets small jobs. Background: Lucía gave up on apps that need a laptop; and does almost everything on the phone. Lucía can spend up to 69 EUR a month and gets by with most websites. Lucía finds this invoicing tool because a customer asked for an invoice by email, and has ten minutes before another meeting. Lucía hates long forms on a phone.",
+  "narratives": {
+    "es": "Lucía tiene una pequeña empresa de mudanzas con una furgoneta. Ahora mismo, Lucía se olvida de facturar los trabajos pequeños. Antecedentes: Lucía dejó las apps que necesitan portátil; y lo hace casi todo con el móvil. Lucía puede gastar hasta 69 EUR al mes y se defiende con la mayoría de las webs. Lucía encuentra esta herramienta de facturación porque un cliente pidió la factura por correo, y tiene diez minutos antes de otra reunión. Lucía odia los formularios largos en el móvil.",
+    "en": "Lucía runs a one-van moving business. Right now Lucía forgets small jobs. Background: Lucía gave up on apps that need a laptop; and does almost everything on the phone. Lucía can spend up to 69 EUR a month and gets by with most websites. Lucía finds this invoicing tool because a customer asked for an invoice by email, and has ten minutes before another meeting. Lucía hates long forms on a phone.",
+    "nl": "Lucía heeft een verhuisbedrijfje met één busje. Lucía vergeet kleine klussen te factureren. Achtergrond: Lucía haakte af bij apps die een laptop nodig hebben; en doet bijna alles op de telefoon. Lucía kan tot 69 EUR per maand uitgeven en redt zich met de meeste websites. Lucía vindt deze factuurtool omdat een klant om een factuur per e-mail vroeg, en heeft tien minuten voor een volgende vergadering. Lucía heeft een hekel aan lange formulieren op de telefoon."
+  }
+}

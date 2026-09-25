@@ -1,0 +1,21 @@
+{
+  "persona_id": "p-002",
+  "context": {
+    "situation": "runs operations at a small consultancy",
+    "pain": "has no view of outstanding revenue",
+    "trigger": "the accountant asked for cleaner records",
+    "constraints": [
+      "137 EUR/month maximum",
+      "has about twenty minutes before the next thing",
+      "is on a laptop",
+      "drops tools that take long to set up"
+    ],
+    "success_looks_like": "Leila is set up with a invoicing tool within budget"
+  },
+  "narrative": "Leila runs operations at a small consultancy. Right now Leila has no view of outstanding revenue. Background: Leila has bought SaaS with a company card before; and abandoned two SaaS tools because onboarding was too complicated. Leila can spend up to 137 EUR a month and is comfortable with software. Leila finds this invoicing tool because the accountant asked for cleaner records, and has about twenty minutes before the next thing. Leila drops tools that take long to set up.",
+  "narratives": {
+    "es": "Leila lleva las operaciones de una pequeña consultora. Ahora mismo, Leila no tiene visibilidad de lo pendiente de cobro. Antecedentes: Leila ya ha comprado SaaS con la tarjeta de empresa; y abandonó dos herramientas SaaS porque la puesta en marcha era demasiado complicada. Leila puede gastar hasta 137 EUR al mes y se maneja bien con el software. Leila encuentra esta herramienta de facturación porque la gestoría pidió registros más limpios, y tiene unos veinte minutos antes de lo siguiente. Leila abandona las herramientas que tardan en configurarse.",
+    "en": "Leila runs operations at a small consultancy. Right now Leila has no view of outstanding revenue. Background: Leila has bought SaaS with a company card before; and abandoned two SaaS tools because onboarding was too complicated. Leila can spend up to 137 EUR a month and is comfortable with software. Leila finds this invoicing tool because the accountant asked for cleaner records, and has about twenty minutes before the next thing. Leila drops tools that take long to set up.",
+    "nl": "Leila regelt de bedrijfsvoering bij een klein adviesbureau. Leila heeft geen zicht op openstaande omzet. Achtergrond: Leila heeft eerder SaaS gekocht met een bedrijfscreditcard; en stopte met twee SaaS-tools omdat de onboarding te ingewikkeld was. Leila kan tot 137 EUR per maand uitgeven en is handig met software. Leila vindt deze factuurtool omdat de accountant om nettere administratie vroeg, en heeft zo’n twintig minuten voor de volgende afspraak. Leila haakt af bij tools die lang duren om in te stellen."
+  }
+}

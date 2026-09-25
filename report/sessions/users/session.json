@@ -1,0 +1,37 @@
+{
+  "session_id": "users",
+  "created_at": "2026-09-25T13:01:33.225Z",
+  "updated_at": "2026-09-25T13:01:36.268Z",
+  "template": "saas",
+  "seed": 42,
+  "population_size": 16,
+  "task": {
+    "id": "custom",
+    "instruction": "Find out how to try this tool on your own project",
+    "success": {
+      "text_pattern": "npm run demo"
+    },
+    "checkout_url_pattern": "checkout|payment|billing/confirm"
+  },
+  "variants": [
+    {
+      "name": "current",
+      "url": "https://abrahamhl.github.io/buyer-arena-site/es/"
+    }
+  ],
+  "buyer": "heuristic",
+  "limits": {
+    "maxBuyers": 16,
+    "maxParallel": 4,
+    "timeoutMs": 60000
+  },
+  "status": "complete",
+  "runs_total": 16,
+  "runs_done": 16,
+  "usage": [],
+  "fingerprint": "b9c4e11991f5c785",
+  "options": {
+    "trace": "failed",
+    "screenshots": true
+  }
+}

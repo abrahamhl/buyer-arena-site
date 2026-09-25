@@ -1,0 +1,22 @@
+{
+  "persona_id": "p-004",
+  "context": {
+    "situation": "runs a one-van moving business",
+    "pain": "writes invoices at night after work",
+    "trigger": "a job just finished and the customer is waiting",
+    "constraints": [
+      "33 EUR/month maximum",
+      "has ten minutes before another meeting",
+      "only has a phone right now",
+      "hates long forms on a phone",
+      "refuses to hand over a phone number to sign up"
+    ],
+    "success_looks_like": "Marta is set up with a invoicing tool within budget"
+  },
+  "narrative": "Marta runs a one-van moving business. Right now Marta writes invoices at night after work. Background: Marta does almost everything on the phone; and gave up on apps that need a laptop. Marta can spend up to 33 EUR a month and gets by with most websites. Marta finds this invoicing tool because a job just finished and the customer is waiting, and has ten minutes before another meeting. Marta hates long forms on a phone, and refuses to hand over a phone number to sign up.",
+  "narratives": {
+    "es": "Marta tiene una pequeña empresa de mudanzas con una furgoneta. Ahora mismo, Marta hace las facturas de noche, después del trabajo. Antecedentes: Marta lo hace casi todo con el móvil; y dejó las apps que necesitan portátil. Marta puede gastar hasta 33 EUR al mes y se defiende con la mayoría de las webs. Marta encuentra esta herramienta de facturación porque acaba de terminar un trabajo y el cliente está esperando, y tiene diez minutos antes de otra reunión. Marta odia los formularios largos en el móvil, y se niega a dar un teléfono para registrarse.",
+    "en": "Marta runs a one-van moving business. Right now Marta writes invoices at night after work. Background: Marta does almost everything on the phone; and gave up on apps that need a laptop. Marta can spend up to 33 EUR a month and gets by with most websites. Marta finds this invoicing tool because a job just finished and the customer is waiting, and has ten minutes before another meeting. Marta hates long forms on a phone, and refuses to hand over a phone number to sign up.",
+    "nl": "Marta heeft een verhuisbedrijfje met één busje. Marta maakt facturen ’s avonds na het werk. Achtergrond: Marta doet bijna alles op de telefoon; en haakte af bij apps die een laptop nodig hebben. Marta kan tot 33 EUR per maand uitgeven en redt zich met de meeste websites. Marta vindt deze factuurtool omdat net een klus klaar is en de klant wacht, en heeft tien minuten voor een volgende vergadering. Marta heeft een hekel aan lange formulieren op de telefoon, en weigert een telefoonnummer op te geven om zich aan te melden."
+  }
+}

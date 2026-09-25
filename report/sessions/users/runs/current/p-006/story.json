@@ -1,0 +1,21 @@
+{
+  "persona_id": "p-006",
+  "context": {
+    "situation": "sells illustrations part-time",
+    "pain": "builds invoices by hand in a spreadsheet",
+    "trigger": "a friend mentioned this tool",
+    "constraints": [
+      "28 EUR/month maximum",
+      "has the afternoon to look around properly",
+      "is on a laptop",
+      "will not pay more than the monthly budget"
+    ],
+    "success_looks_like": "Priya is set up with a invoicing tool within budget"
+  },
+  "narrative": "Priya sells illustrations part-time. Right now Priya builds invoices by hand in a spreadsheet. Background: Priya cancelled a tool after a surprise price increase; and uses free spreadsheets. Priya can spend up to 28 EUR a month and is comfortable with software. Priya finds this invoicing tool because a friend mentioned this tool, and has the afternoon to look around properly. Priya will not pay more than the monthly budget.",
+  "narratives": {
+    "es": "Priya vende ilustraciones a tiempo parcial. Ahora mismo, Priya hace las facturas a mano en una hoja de cálculo. Antecedentes: Priya canceló una herramienta tras una subida de precio inesperada; y usa hojas de cálculo gratuitas. Priya puede gastar hasta 28 EUR al mes y se maneja bien con el software. Priya encuentra esta herramienta de facturación porque alguien de confianza le habló de esta herramienta, y tiene la tarde para mirarlo con calma. Priya no pagará más de su presupuesto mensual.",
+    "en": "Priya sells illustrations part-time. Right now Priya builds invoices by hand in a spreadsheet. Background: Priya cancelled a tool after a surprise price increase; and uses free spreadsheets. Priya can spend up to 28 EUR a month and is comfortable with software. Priya finds this invoicing tool because a friend mentioned this tool, and has the afternoon to look around properly. Priya will not pay more than the monthly budget.",
+    "nl": "Priya verkoopt parttime illustraties. Priya maakt facturen met de hand in een spreadsheet. Achtergrond: Priya zegde een tool op na een onverwachte prijsverhoging; en gebruikt gratis spreadsheets. Priya kan tot 28 EUR per maand uitgeven en is handig met software. Priya vindt deze factuurtool omdat een vriend deze tool noemde, en heeft de middag om rustig rond te kijken. Priya betaalt niet meer dan het maandbudget."
+  }
+}

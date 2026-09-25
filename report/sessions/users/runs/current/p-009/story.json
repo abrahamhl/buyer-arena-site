@@ -1,0 +1,22 @@
+{
+  "persona_id": "p-009",
+  "context": {
+    "situation": "is a self-employed electrician",
+    "pain": "forgets small jobs",
+    "trigger": "saw a social media ad",
+    "constraints": [
+      "80 EUR/month maximum",
+      "has ten minutes before another meeting",
+      "only has a phone right now",
+      "hates long forms on a phone",
+      "refuses to hand over a phone number to sign up"
+    ],
+    "success_looks_like": "Mateo is set up with a invoicing tool within budget"
+  },
+  "narrative": "Mateo is a self-employed electrician. Right now Mateo forgets small jobs. Background: Mateo gave up on apps that need a laptop; and does almost everything on the phone. Mateo can spend up to 80 EUR a month and gets by with most websites. Mateo finds this invoicing tool because saw a social media ad, and has ten minutes before another meeting. Mateo hates long forms on a phone, and refuses to hand over a phone number to sign up.",
+  "narratives": {
+    "es": "Mateo trabaja por cuenta propia como electricista. Ahora mismo, Mateo se olvida de facturar los trabajos pequeños. Antecedentes: Mateo dejó las apps que necesitan portátil; y lo hace casi todo con el móvil. Mateo puede gastar hasta 80 EUR al mes y se defiende con la mayoría de las webs. Mateo encuentra esta herramienta de facturación porque vio un anuncio en redes sociales, y tiene diez minutos antes de otra reunión. Mateo odia los formularios largos en el móvil, y se niega a dar un teléfono para registrarse.",
+    "en": "Mateo is a self-employed electrician. Right now Mateo forgets small jobs. Background: Mateo gave up on apps that need a laptop; and does almost everything on the phone. Mateo can spend up to 80 EUR a month and gets by with most websites. Mateo finds this invoicing tool because saw a social media ad, and has ten minutes before another meeting. Mateo hates long forms on a phone, and refuses to hand over a phone number to sign up.",
+    "nl": "Mateo werkt als zelfstandig elektricien. Mateo vergeet kleine klussen te factureren. Achtergrond: Mateo haakte af bij apps die een laptop nodig hebben; en doet bijna alles op de telefoon. Mateo kan tot 80 EUR per maand uitgeven en redt zich met de meeste websites. Mateo vindt deze factuurtool omdat er een advertentie op sociale media voorbijkwam, en heeft tien minuten voor een volgende vergadering. Mateo heeft een hekel aan lange formulieren op de telefoon, en weigert een telefoonnummer op te geven om zich aan te melden."
+  }
+}
