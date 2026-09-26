@@ -29,39 +29,41 @@
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Run builder · Buyer Arena">
   <meta name="twitter:description" content="Set how much attention each panel gets, the size and the depth, then copy the exact Buyer Arena command for your repository and website.">
+  <meta name="ba-launch-state" content="prelaunch">
   <link rel="icon" href="/buyer-arena-site/assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="/buyer-arena-site/assets/inter-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/buyer-arena-site/assets/styles.css?v=445edf8374">
+  <link rel="stylesheet" href="/buyer-arena-site/assets/styles.css?v=2921b254cf">
   <script>try{var t=localStorage.getItem('ba-theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t}catch(e){}</script>
-  <script src="/buyer-arena-site/assets/app.js?v=82e285c00d" defer></script>
+  <script src="/buyer-arena-site/assets/app.js?v=5e07fd06e3" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="nav" id="nav">
   <div class="wrap nav-row">
-    <a class="brand" href="/buyer-arena-site/en/"><span class="brand-mark" aria-hidden="true">▲</span><span>Buyer Arena</span></a>
-    <nav class="links" aria-label="Sections"><a href="/buyer-arena-site/en/#panels">Panels</a><a href="/buyer-arena-site/en/#evidence">Evidence</a><a href="/buyer-arena-site/en/#mix">Mix</a><a href="/buyer-arena-site/en/#quickstart">Get started</a><a href="/buyer-arena-site/en/#phone">From your phone</a><a href="/buyer-arena-site/en/#safety">Safety</a></nav>
+    <a class="brand" href="/buyer-arena-site/en/" aria-label="Buyer Arena — Home"><span class="brand-mark" aria-hidden="true">▲</span><span class="brand-word">BUYER ARENA</span></a>
+    <nav class="links" aria-label="Sections"><a href="/buyer-arena-site/en/#how">How it works</a><a href="/buyer-arena-site/en/#report">Real report</a><a href="/buyer-arena-site/en/#integrations">Integrations</a><a href="/buyer-arena-site/en/#offline">Offline first</a><a href="/buyer-arena-site/en/#limits">Limitations</a><a href="/buyer-arena-site/en/#pricing">Pricing</a><a href="/buyer-arena-site/en/#quickstart">Run locally</a></nav>
     <div class="controls">
-      <nav class="seg lang" id="lang" aria-label="Language"><a class="lb" href="/buyer-arena-site/es/run.html" hreflang="es" lang="es" title="Español">ES</a><a class="lb" href="/buyer-arena-site/en/run.html" hreflang="en" lang="en" aria-current="page" title="English">EN</a><a class="lb" href="/buyer-arena-site/nl/run.html" hreflang="nl" lang="nl" title="Nederlands">NL</a></nav>
-      <button class="icon-btn" id="themeBtn" type="button" aria-label="Switch between light and dark theme" title="Switch between light and dark theme"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><circle cx="12" cy="12" r="8.2" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M12 3.8a8.2 8.2 0 0 1 0 16.4z" fill="currentColor"/></svg></button>
+      <nav class="seg lang" id="lang" aria-label="Language"><a class="lb" href="/buyer-arena-site/es/run.html" hreflang="es" lang="es" aria-label="Español">ES</a><a class="lb" href="/buyer-arena-site/en/run.html" hreflang="en" lang="en" aria-current="page" aria-label="English">EN</a><a class="lb" href="/buyer-arena-site/nl/run.html" hreflang="nl" lang="nl" aria-label="Nederlands">NL</a></nav>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Switch between light and dark theme" title="Switch between light and dark theme"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="8.2" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M12 3.8a8.2 8.2 0 0 1 0 16.4z" fill="currentColor"/></svg></button>
       <a class="btn btn-primary run-btn" href="/buyer-arena-site/en/run.html" aria-current="page">Run builder</a>
     </div>
   </div>
   <nav class="subnav" aria-label="Sections">
-    <a class="sub-run" href="/buyer-arena-site/en/run.html" aria-current="page">Run builder</a><a href="/buyer-arena-site/en/#panels">Panels</a><a href="/buyer-arena-site/en/#evidence">Evidence</a><a href="/buyer-arena-site/en/#mix">Mix</a><a href="/buyer-arena-site/en/#quickstart">Get started</a><a href="/buyer-arena-site/en/#phone">From your phone</a><a href="/buyer-arena-site/en/#safety">Safety</a>
+    <a class="sub-run" href="/buyer-arena-site/en/run.html" aria-current="page">Run builder</a><a href="/buyer-arena-site/en/#how">How it works</a><a href="/buyer-arena-site/en/#report">Real report</a><a href="/buyer-arena-site/en/#integrations">Integrations</a><a href="/buyer-arena-site/en/#offline">Offline first</a><a href="/buyer-arena-site/en/#limits">Limitations</a><a href="/buyer-arena-site/en/#pricing">Pricing</a><a href="/buyer-arena-site/en/#quickstart">Run locally</a>
   </nav>
 </header>
 <main class="wrap" id="main">
-  <section class="page-head">
-    <p class="eyebrow">run builder · everything stays in your browser</p>
-    <h1 class="h1-page">Build a run</h1>
+  <section class="page-head" aria-labelledby="h-run">
+    <p class="eyebrow">run builder · everything happens in your browser</p>
+    <h1 class="h1-page" id="h-run">Build a run</h1>
     <p class="sub">Adjust the mix and copy the command. Nothing leaves this page.</p>
+    <p class="state-pill"><span class="state-dot" aria-hidden="true"></span>Commands for when the source opens: available at public launch.</p>
   </section>
   <form class="builder" id="builder" autocomplete="off" novalidate>
     <div class="card pad">
       <fieldset class="fs">
         <legend>Attention per panel</legend>
-        <p class="help-text">Relative weights, normalised to 100 %.</p>
+        <p class="help-text">Relative weights. They are normalised to 100%.</p>
         <div class="slider">
           <label for="w-users"><span class="sw p-users" aria-hidden="true"></span>End users</label>
           <input type="range" id="w-users" name="users" min="0" max="100" step="1" value="40" data-panel="users">
@@ -73,9 +75,9 @@
           <output for="w-developers" id="o-developers">15</output>
         </div>
         <div class="slider">
-          <label for="w-investors"><span class="sw p-investors" aria-hidden="true"></span>Investors</label>
-          <input type="range" id="w-investors" name="investors" min="0" max="100" step="1" value="15" data-panel="investors">
-          <output for="w-investors" id="o-investors">15</output>
+          <label for="w-commercial"><span class="sw p-commercial" aria-hidden="true"></span>Commercial readiness</label>
+          <input type="range" id="w-commercial" name="commercial" min="0" max="100" step="1" value="15" data-panel="commercial">
+          <output for="w-commercial" id="o-commercial">15</output>
         </div>
         <div class="slider">
           <label for="w-security"><span class="sw p-security" aria-hidden="true"></span>Red team</label>
@@ -107,26 +109,26 @@
         </div>
         <div class="field check-field">
           <input type="checkbox" id="execute" name="execute">
-          <label for="execute">Execute install/build (runs the repo’s code)<small>Only for repositories you trust: the developer panel will run their scripts.</small></label>
+          <label for="execute">Run install/build (executes repository code)<small>Only for repositories you trust: the developers panel will run their scripts.</small></label>
         </div>
       </div>
-      <p class="help-text">At least 2 per panel and 5 end users. Depth multiplies participants: quick ×0.5, deep ×2.</p>
+      <p class="help-text">At least 2 per panel and 5 for end users. Depth multiplies participants: quick ×0.5, deep ×2.</p>
       <button class="btn btn-ghost" type="button" id="reset">Reset</button>
     </div>
 
     <div class="result">
       <div class="card pad" aria-live="polite">
         <h2 class="h2-sm">Result</h2>
-        <div class="stack" id="stack" aria-hidden="true"><i class="p-users" data-seg="users"></i><i class="p-developers" data-seg="developers"></i><i class="p-investors" data-seg="investors"></i><i class="p-security" data-seg="security"></i><i class="p-segments" data-seg="segments"></i></div>
+        <div class="stack" id="stack" aria-hidden="true"><i class="p-users" data-seg="users"></i><i class="p-developers" data-seg="developers"></i><i class="p-commercial" data-seg="commercial"></i><i class="p-security" data-seg="security"></i><i class="p-segments" data-seg="segments"></i></div>
         <div class="table-wrap">
           <table>
             <thead><tr><th scope="col"><span class="sr">Panel</span></th><th scope="col" class="num">Share</th><th scope="col" class="num">Participants</th></tr></thead>
-            <tbody><tr><th scope="row"><span class="sw p-users" aria-hidden="true"></span>End users</th><td class="num" id="s-users">—</td><td class="num" id="n-users">—</td></tr><tr><th scope="row"><span class="sw p-developers" aria-hidden="true"></span>Developers</th><td class="num" id="s-developers">—</td><td class="num" id="n-developers">—</td></tr><tr><th scope="row"><span class="sw p-investors" aria-hidden="true"></span>Investors</th><td class="num" id="s-investors">—</td><td class="num" id="n-investors">—</td></tr><tr><th scope="row"><span class="sw p-security" aria-hidden="true"></span>Red team</th><td class="num" id="s-security">—</td><td class="num" id="n-security">—</td></tr><tr><th scope="row"><span class="sw p-segments" aria-hidden="true"></span>Segments</th><td class="num" id="s-segments">—</td><td class="num" id="n-segments">—</td></tr></tbody>
-            <tfoot><tr><th scope="row">Total</th><td class="num">100 %</td><td class="num" id="n-total">—</td></tr></tfoot>
+            <tbody><tr><th scope="row"><span class="sw p-users" aria-hidden="true"></span>End users</th><td class="num" id="s-users">—</td><td class="num" id="n-users">—</td></tr><tr><th scope="row"><span class="sw p-developers" aria-hidden="true"></span>Developers</th><td class="num" id="s-developers">—</td><td class="num" id="n-developers">—</td></tr><tr><th scope="row"><span class="sw p-commercial" aria-hidden="true"></span>Commercial readiness</th><td class="num" id="s-commercial">—</td><td class="num" id="n-commercial">—</td></tr><tr><th scope="row"><span class="sw p-security" aria-hidden="true"></span>Red team</th><td class="num" id="s-security">—</td><td class="num" id="n-security">—</td></tr><tr><th scope="row"><span class="sw p-segments" aria-hidden="true"></span>Segments</th><td class="num" id="s-segments">—</td><td class="num" id="n-segments">—</td></tr></tbody>
+            <tfoot><tr><th scope="row">Total</th><td class="num">100 %</td><td class="num" id="n-total">—</td></tr></tfoot>
           </table>
         </div>
-        <p class="estimate"><span class="dim">Rough time</span> <b id="est">—</b></p>
-        <p class="help-text">A rough estimate on a laptop; it depends on your site and your machine.</p>
+        <p class="estimate"><span class="dim">Approximate time</span> <b id="est">—</b></p>
+        <p class="help-text">A rough laptop estimate; it depends on your website and your machine.</p>
         <p class="error" id="err" hidden></p>
       </div>
       <div class="card pad">
@@ -135,14 +137,14 @@
       </div>
       <div class="card pad">
         <h2 class="h2-sm">Run on GitHub</h2>
-        <p class="muted">Open the workflow, tap “Run workflow” and paste these values:</p>
+        <p class="muted">Open the workflow, press “Run workflow” and paste these values:</p>
         <dl class="gh" id="gh">
           <div><dt>url</dt><dd><code id="gh-url"></code></dd></div>
           <div><dt>mix</dt><dd><code id="gh-mix"></code></dd></div>
           <div><dt>size</dt><dd><code id="gh-size"></code></dd></div>
           <div><dt>depth</dt><dd><code id="gh-depth"></code></dd></div>
         </dl>
-        <a class="btn btn-ghost" href="https://github.com/abrahamhl/buyer-arena/actions/workflows/launch-check.yml" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 2.5a9.7 9.7 0 0 0-3.07 18.9c.49.09.66-.21.66-.47v-1.7c-2.7.59-3.27-1.15-3.27-1.15-.44-1.12-1.08-1.42-1.08-1.42-.88-.6.07-.59.07-.59.97.07 1.49 1 1.49 1 .87 1.48 2.27 1.05 2.83.8.09-.63.34-1.05.62-1.3-2.16-.24-4.42-1.08-4.42-4.8 0-1.06.38-1.93 1-2.61-.1-.25-.43-1.24.1-2.57 0 0 .82-.26 2.67 1a9.2 9.2 0 0 1 4.86 0c1.85-1.26 2.67-1 2.67-1 .53 1.33.2 2.32.1 2.57.62.68 1 1.55 1 2.61 0 3.73-2.27 4.55-4.43 4.79.35.3.66.9.66 1.8v2.67c0 .26.17.57.67.47A9.7 9.7 0 0 0 12 2.5"/></svg> Open “Launch check” on GitHub <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+        <span class="btn btn-ghost is-disabled" role="link" aria-disabled="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8.5 10.5V7.8a3.5 3.5 0 0 1 7 0v2.7"/></svg> Open “Launch check” on GitHub · available at public launch</span>
       </div>
     </div>
   </form>
@@ -152,19 +154,20 @@
 <footer class="foot">
   <div class="wrap foot-grid">
     <div>
-      <a class="brand" href="/buyer-arena-site/en/"><span class="brand-mark" aria-hidden="true">▲</span><span>Buyer Arena</span></a>
-      <p class="muted foot-tag">Synthetic buyers for an evidence-based launch audit.</p>
-      <p class="foot-privacy-wrap"><a class="pill good foot-privacy" href="/buyer-arena-site/en/#safety" rel="privacy-policy"><span class="dot"></span>Privacy: no cookies, no trackers</a></p>
+      <a class="brand" href="/buyer-arena-site/en/" aria-label="Buyer Arena — Home"><span class="brand-mark" aria-hidden="true">▲</span><span class="brand-word">BUYER ARENA</span></a>
+      <p class="muted foot-tag">The evidence-first evaluation layer for software built by humans and AI agents.</p>
+      <p class="foot-state"><span class="state-dot" aria-hidden="true"></span>Private release candidate — source opens after an independent audit</p>
+      <p class="foot-privacy-wrap"><a class="pill good foot-privacy" href="/buyer-arena-site/en/#safety" rel="privacy-policy"><span class="dot" aria-hidden="true"></span>Privacy: no cookies, no trackers</a></p>
     </div>
     <ul class="foot-links">
-      <li><a href="https://github.com/abrahamhl/buyer-arena" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 2.5a9.7 9.7 0 0 0-3.07 18.9c.49.09.66-.21.66-.47v-1.7c-2.7.59-3.27-1.15-3.27-1.15-.44-1.12-1.08-1.42-1.08-1.42-.88-.6.07-.59.07-.59.97.07 1.49 1 1.49 1 .87 1.48 2.27 1.05 2.83.8.09-.63.34-1.05.62-1.3-2.16-.24-4.42-1.08-4.42-4.8 0-1.06.38-1.93 1-2.61-.1-.25-.43-1.24.1-2.57 0 0 .82-.26 2.67 1a9.2 9.2 0 0 1 4.86 0c1.85-1.26 2.67-1 2.67-1 .53 1.33.2 2.32.1 2.57.62.68 1 1.55 1 2.61 0 3.73-2.27 4.55-4.43 4.79.35.3.66.9.66 1.8v2.67c0 .26.17.57.67.47A9.7 9.7 0 0 0 12 2.5"/></svg>Source on GitHub</a></li>
-      <li><a href="https://github.com/abrahamhl/buyer-arena/blob/main/LICENSE" rel="noopener license">License Apache-2.0</a></li>
-      <li><a href="/buyer-arena-site/report/">Self-audit report</a></li>
+      <li><span class="foot-off" aria-disabled="true" role="link"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8.5 10.5V7.8a3.5 3.5 0 0 1 7 0v2.7"/></svg>Source · coming at launch</span></li>
+      <li><span class="foot-plain">Apache-2.0 licence</span></li>
+      <li><a href="/buyer-arena-site/report/demo/report.html">Real demo report</a></li>
       <li><a href="/buyer-arena-site/en/run.html">Run builder</a></li>
     </ul>
     <div class="foot-lang">
       <span class="dim">Languages</span>
-      <nav class="seg lang" aria-label="Language"><a class="lb" href="/buyer-arena-site/es/run.html" hreflang="es" lang="es" title="Español">ES</a><a class="lb" href="/buyer-arena-site/en/run.html" hreflang="en" lang="en" aria-current="page" title="English">EN</a><a class="lb" href="/buyer-arena-site/nl/run.html" hreflang="nl" lang="nl" title="Nederlands">NL</a></nav>
+      <div class="seg lang" role="group" aria-label="Language"><a class="lb" href="/buyer-arena-site/es/run.html" hreflang="es" lang="es" aria-label="Español">ES</a><a class="lb" href="/buyer-arena-site/en/run.html" hreflang="en" lang="en" aria-current="page" aria-label="English">EN</a><a class="lb" href="/buyer-arena-site/nl/run.html" hreflang="nl" lang="nl" aria-label="Nederlands">NL</a></div>
     </div>
   </div>
 </footer>

@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <title>Buyer Arena — prueba tu producto con compradores sintéticos</title>
-  <meta name="description" content="Auditoría de preparación para el lanzamiento con cinco paneles: personas usuarias, desarrollo, inversión, equipo rojo y segmentos. Gratis y de código abierto.">
+  <title>Buyer Arena — evaluación basada en evidencia para software de personas y agentes IA</title>
+  <meta name="description" content="Mide qué pasa antes de que tus usuarios den con los problemas: recorridos reales en navegador, compradores sintéticos y herramientas de seguridad. Local primero.">
   <link rel="canonical" href="https://abrahamhl.github.io/buyer-arena-site/es/">
   <link rel="alternate" hreflang="es" href="https://abrahamhl.github.io/buyer-arena-site/es/">
   <link rel="alternate" hreflang="en" href="https://abrahamhl.github.io/buyer-arena-site/en/">
@@ -15,8 +15,8 @@
   <meta name="theme-color" content="#000000" media="(prefers-color-scheme: dark)">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Buyer Arena">
-  <meta property="og:title" content="Buyer Arena — prueba tu producto con compradores sintéticos">
-  <meta property="og:description" content="Auditoría de preparación para el lanzamiento con cinco paneles: personas usuarias, desarrollo, inversión, equipo rojo y segmentos. Gratis y de código abierto.">
+  <meta property="og:title" content="Buyer Arena — evaluación basada en evidencia para software de personas y agentes IA">
+  <meta property="og:description" content="Mide qué pasa antes de que tus usuarios den con los problemas: recorridos reales en navegador, compradores sintéticos y herramientas de seguridad. Local primero.">
   <meta property="og:url" content="https://abrahamhl.github.io/buyer-arena-site/es/">
   <meta property="og:locale" content="es_ES">
   <meta property="og:locale:alternate" content="en_GB">
@@ -24,224 +24,386 @@
   <meta property="og:image" content="https://abrahamhl.github.io/buyer-arena-site/assets/og.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="Buyer Arena — prueba tu producto con compradores sintéticos">
+  <meta property="og:image:alt" content="Buyer Arena — evaluación basada en evidencia para software de personas y agentes IA">
   <meta name="twitter:image" content="https://abrahamhl.github.io/buyer-arena-site/assets/og.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Buyer Arena — prueba tu producto con compradores sintéticos">
-  <meta name="twitter:description" content="Auditoría de preparación para el lanzamiento con cinco paneles: personas usuarias, desarrollo, inversión, equipo rojo y segmentos. Gratis y de código abierto.">
+  <meta name="twitter:title" content="Buyer Arena — evaluación basada en evidencia para software de personas y agentes IA">
+  <meta name="twitter:description" content="Mide qué pasa antes de que tus usuarios den con los problemas: recorridos reales en navegador, compradores sintéticos y herramientas de seguridad. Local primero.">
+  <meta name="ba-launch-state" content="prelaunch">
   <link rel="icon" href="/buyer-arena-site/assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="/buyer-arena-site/assets/inter-latin-wght.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/buyer-arena-site/assets/styles.css?v=445edf8374">
+  <link rel="stylesheet" href="/buyer-arena-site/assets/styles.css?v=2921b254cf">
   <script>try{var t=localStorage.getItem('ba-theme');if(t==='dark'||t==='light')document.documentElement.dataset.theme=t}catch(e){}</script>
-  <script src="/buyer-arena-site/assets/app.js?v=82e285c00d" defer></script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Buyer Arena","description":"Auditoría de preparación para el lanzamiento con cinco paneles: personas usuarias, desarrollo, inversión, equipo rojo y segmentos. Gratis y de código abierto.","url":"https://abrahamhl.github.io/buyer-arena-site/es/","inLanguage":"es","applicationCategory":"DeveloperApplication","operatingSystem":"Windows, macOS, Linux","license":"https://www.apache.org/licenses/LICENSE-2.0","sameAs":["https://github.com/abrahamhl/buyer-arena"],"offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}</script>
+  <script src="/buyer-arena-site/assets/app.js?v=5e07fd06e3" defer></script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Buyer Arena","description":"Mide qué pasa antes de que tus usuarios den con los problemas: recorridos reales en navegador, compradores sintéticos y herramientas de seguridad. Local primero.","url":"https://abrahamhl.github.io/buyer-arena-site/es/","inLanguage":"es","applicationCategory":"DeveloperApplication","operatingSystem":"Windows, macOS, Linux","license":"https://www.apache.org/licenses/LICENSE-2.0","softwareVersion":"0.2.0-rc.1"}</script>
 </head>
 <body>
 <a class="skip" href="#main">Saltar al contenido</a>
 <header class="nav" id="nav">
   <div class="wrap nav-row">
-    <a class="brand" href="/buyer-arena-site/es/"><span class="brand-mark" aria-hidden="true">▲</span><span>Buyer Arena</span></a>
-    <nav class="links" aria-label="Secciones"><a href="#panels">Paneles</a><a href="#evidence">Evidencia</a><a href="#mix">Mezcla</a><a href="#quickstart">Empezar</a><a href="#phone">Desde el móvil</a><a href="#safety">Seguridad</a></nav>
+    <a class="brand" href="/buyer-arena-site/es/" aria-label="Buyer Arena — Inicio"><span class="brand-mark" aria-hidden="true">▲</span><span class="brand-word">BUYER ARENA</span></a>
+    <nav class="links" aria-label="Secciones"><a href="#how">Cómo funciona</a><a href="#report">Informe real</a><a href="#integrations">Integraciones</a><a href="#offline">Local primero</a><a href="#limits">Limitaciones</a><a href="#pricing">Precios</a><a href="#quickstart">Ejecutar en local</a></nav>
     <div class="controls">
-      <nav class="seg lang" id="lang" aria-label="Idioma"><a class="lb" href="/buyer-arena-site/es/" hreflang="es" lang="es" aria-current="page" title="Español">ES</a><a class="lb" href="/buyer-arena-site/en/" hreflang="en" lang="en" title="English">EN</a><a class="lb" href="/buyer-arena-site/nl/" hreflang="nl" lang="nl" title="Nederlands">NL</a></nav>
-      <button class="icon-btn" id="themeBtn" type="button" aria-label="Cambiar entre tema claro y oscuro" title="Cambiar entre tema claro y oscuro"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><circle cx="12" cy="12" r="8.2" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M12 3.8a8.2 8.2 0 0 1 0 16.4z" fill="currentColor"/></svg></button>
+      <nav class="seg lang" id="lang" aria-label="Idioma"><a class="lb" href="/buyer-arena-site/es/" hreflang="es" lang="es" aria-current="page" aria-label="Español">ES</a><a class="lb" href="/buyer-arena-site/en/" hreflang="en" lang="en" aria-label="English">EN</a><a class="lb" href="/buyer-arena-site/nl/" hreflang="nl" lang="nl" aria-label="Nederlands">NL</a></nav>
+      <button class="icon-btn" id="themeBtn" type="button" aria-label="Cambiar entre tema claro y oscuro" title="Cambiar entre tema claro y oscuro"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="8.2" fill="none" stroke="currentColor" stroke-width="1.9"/><path d="M12 3.8a8.2 8.2 0 0 1 0 16.4z" fill="currentColor"/></svg></button>
       <a class="btn btn-primary run-btn" href="/buyer-arena-site/es/run.html">Configurador</a>
     </div>
   </div>
   <nav class="subnav" aria-label="Secciones">
-    <a class="sub-run" href="/buyer-arena-site/es/run.html">Configurador</a><a href="#panels">Paneles</a><a href="#evidence">Evidencia</a><a href="#mix">Mezcla</a><a href="#quickstart">Empezar</a><a href="#phone">Desde el móvil</a><a href="#safety">Seguridad</a>
+    <a class="sub-run" href="/buyer-arena-site/es/run.html">Configurador</a><a href="#how">Cómo funciona</a><a href="#report">Informe real</a><a href="#integrations">Integraciones</a><a href="#offline">Local primero</a><a href="#limits">Limitaciones</a><a href="#pricing">Precios</a><a href="#quickstart">Ejecutar en local</a>
   </nav>
 </header>
 <main class="wrap" id="main">
-  <section class="hero" id="top">
-    <div>
-      <p class="eyebrow">código abierto · Apache-2.0 · v0.1</p>
-      <h1><span class="h1-brand">Buyer Arena —</span> Prueba tu producto con <em>compradores sintéticos</em> antes de que la clientela real encuentre los problemas.</h1>
-      <p class="sub">Una auditoría de preparación para el lanzamiento con cinco paneles. Cada panel mira tu producto con su propia intención y cada nota enlaza a su prueba.</p>
-      <p class="price"><span class="price-dot" aria-hidden="true"></span>Gratis y de código abierto · €0 · Apache-2.0</p>
+  <section class="hero" id="top" aria-labelledby="h-hero">
+    <div class="hero-copy">
+      <p class="state-pill "><span class="state-dot" aria-hidden="true"></span>Versión candidata privada — el código se abrirá tras una auditoría independiente</p>
+      <h1 id="h-hero"><span class="h1-brand"><span aria-hidden="true">▲ </span>BUYER ARENA<span class="state-v"> · v0.2.0-rc.1</span></span> La capa de evaluación <em>basada en evidencia</em> para el software que crean personas y agentes IA.</h1>
+      <p class="sub">Mide lo que ocurre de verdad —recorridos reales en navegador, compradores sintéticos, herramientas de seguridad y de evaluación— antes de que tus usuarios encuentren los problemas. Local primero, sin atarte a ningún modelo ni proveedor.</p>
       <div class="ctas">
-        <a class="btn btn-primary btn-lg" href="#quickstart">Empezar</a>
-        <a class="btn btn-ghost btn-lg" href="/buyer-arena-site/report/">Ver el informe en vivo <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-primary btn-lg" href="#quickstart">Ejecutar en local</a>
+        <a class="btn btn-ghost btn-lg" href="/buyer-arena-site/report/demo/report.html">Ver un informe real <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <span class="btn btn-ghost btn-lg is-disabled" role="link" aria-disabled="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8.5 10.5V7.8a3.5 3.5 0 0 1 7 0v2.7"/></svg> Código · llega con el lanzamiento</span>
+      </div>
+      <p class="price-hint"><a href="#pricing">Núcleo gratuito · €0 · planes cloud previstos desde €29/mes — aún no a la venta</a></p>
+    </div>
+    <figure class="scene card" id="scene">
+  <svg class="hs" viewBox="0 0 480 424" role="img" aria-label="Animación ilustrativa con datos de demostración. Veinte compradores sintéticos recorren el embudo de un producto. En la versión base, 8 de 20 llegan al objetivo (40 %); varios abandonan en un registro que exige el teléfono y se guardan pruebas de cada fallo. La versión candidata mejorada llega a 15 de 20 (75 %): +35 puntos. Después, cinco rutas de modelo —Claude, GPT, Gemini, un modelo local y una heurística determinista— alimentan Buyer Arena, que devuelve desacuerdo, evidencia y confianza." focusable="false">
+    <g aria-hidden="true">
+      <text class="hs-k" x="0" y="12">BASE</text>
+      <text class="hs-v" x="0" y="40" data-k="b">40%</text>
+      <text class="hs-k" x="118" y="12">CANDIDATA</text>
+      <text class="hs-v" x="118" y="40" data-k="c">75%</text>
+      <g class="hs-delta" data-k="d"><rect x="236" y="18" width="84" height="26" rx="13"/><text x="278" y="36" text-anchor="middle">+35 pp</text></g>
+      <circle class="hs-dot ok" cx="370" cy="10" r="4"/><text class="hs-lbl" x="380" y="14">objetivo</text><circle class="hs-dot ab" cx="370" cy="25" r="4"/><text class="hs-lbl" x="380" y="29">abandona</text><path class="hs-warn" d="M366 44 l4 -7 l4 7z"/><text class="hs-lbl" x="380" y="44">fricción</text>
+      <path class="hs-funnel" d="M40 58 L440 108 L440 180 L40 230 Z"/>
+      <line class="hs-gate" x1="150" x2="150" y1="73.8" y2="214.3"/><line class="hs-gate" x1="250" x2="250" y1="86.3" y2="201.8"/><line class="hs-gate" x1="350" x2="350" y1="98.8" y2="189.3"/>
+      <g class="hs-friction"><path class="hs-warn" d="M243 80.3 l7 -12 l7 12z"/><text class="hs-lbl hs-flbl" x="250" y="64.3" text-anchor="middle">pide el teléfono</text></g>
+      <text class="hs-lbl" x="150" y="252" text-anchor="middle">precios</text><text class="hs-lbl" x="250" y="252" text-anchor="middle">registro</text><text class="hs-lbl" x="350" y="252" text-anchor="middle">pago</text><text class="hs-lbl" x="462" y="252" text-anchor="middle">objetivo</text>
+      <circle class="hs-dot ok" r="4" cx="452" cy="124" data-o="-0.95" data-b="3" data-c="3"/><circle class="hs-dot ok" r="4" cx="462" cy="124" data-o="-0.25" data-b="1" data-c="3"/><circle class="hs-dot ab" r="4" cx="143" cy="170.3" data-o="0.44999999999999996" data-b="0" data-c="0"/><circle class="hs-dot ok" r="4" cx="472" cy="124" data-o="-0.85" data-b="3" data-c="3"/><circle class="hs-dot ok" r="4" cx="452" cy="134" data-o="-0.15000000000000002" data-b="1" data-c="3"/><circle class="hs-dot ok" r="4" cx="462" cy="134" data-o="0.55" data-b="1" data-c="3"/><circle class="hs-dot ok" r="4" cx="472" cy="134" data-o="-0.75" data-b="3" data-c="3"/><circle class="hs-dot ab" r="4" cx="343" cy="142.1" data-o="-0.050000000000000044" data-b="2" data-c="2"/><circle class="hs-dot ok" r="4" cx="452" cy="144" data-o="0.6499999999999999" data-b="1" data-c="3"/><circle class="hs-dot ok" r="4" cx="462" cy="144" data-o="-0.65" data-b="3" data-c="3"/><circle class="hs-dot ab" r="4" cx="143" cy="146.9" data-o="0.050000000000000044" data-b="0" data-c="0"/><circle class="hs-dot ok" r="4" cx="472" cy="144" data-o="0.75" data-b="1" data-c="3"/><circle class="hs-dot ok" r="4" cx="452" cy="154" data-o="-0.55" data-b="3" data-c="3"/><circle class="hs-dot ab" r="4" cx="243" cy="151.3" data-o="0.1499999999999999" data-b="1" data-c="1"/><circle class="hs-dot ok" r="4" cx="462" cy="154" data-o="0.8500000000000001" data-b="2" data-c="3"/><circle class="hs-dot ok" r="4" cx="472" cy="154" data-o="-0.44999999999999996" data-b="3" data-c="3"/><circle class="hs-dot ab" r="4" cx="143" cy="158.6" data-o="0.25" data-b="0" data-c="0"/><circle class="hs-dot ok" r="4" cx="452" cy="164" data-o="0.95" data-b="3" data-c="3"/><circle class="hs-dot ok" r="4" cx="462" cy="164" data-o="-0.35" data-b="1" data-c="3"/><circle class="hs-dot ok" r="4" cx="472" cy="164" data-o="0.3500000000000001" data-b="3" data-c="3"/>
+      <g class="hs-chip" data-i="0"><rect x="0" y="268" width="152" height="24" rx="7"/><text x="76" y="284" text-anchor="middle">form_error · paso 3</text></g><g class="hs-chip" data-i="1"><rect x="162" y="268" width="152" height="24" rx="7"/><text x="238" y="284" text-anchor="middle">captura · p-009</text></g><g class="hs-chip" data-i="2"><rect x="324" y="268" width="152" height="24" rx="7"/><text x="400" y="284" text-anchor="middle">objeción · teléfono</text></g>
+      <line class="hs-div" x1="0" x2="480" y1="305" y2="305"/>
+      <path class="hs-wire" id="hs-in-0" d="M98 327 C140 327 140 363 180 363"/><g class="hs-route"><rect x="0" y="318" width="98" height="18" rx="9"/><text x="49" y="331" text-anchor="middle">Claude</text></g><path class="hs-wire" id="hs-in-1" d="M98 348 C140 348 140 363 180 363"/><g class="hs-route"><rect x="0" y="339" width="98" height="18" rx="9"/><text x="49" y="352" text-anchor="middle">GPT</text></g><path class="hs-wire" id="hs-in-2" d="M98 369 C140 369 140 363 180 363"/><g class="hs-route"><rect x="0" y="360" width="98" height="18" rx="9"/><text x="49" y="373" text-anchor="middle">Gemini</text></g><path class="hs-wire" id="hs-in-3" d="M98 390 C140 390 140 363 180 363"/><g class="hs-route"><rect x="0" y="381" width="98" height="18" rx="9"/><text x="49" y="394" text-anchor="middle">modelo local</text></g><path class="hs-wire" id="hs-in-4" d="M98 411 C140 411 140 363 180 363"/><g class="hs-route"><rect x="0" y="402" width="98" height="18" rx="9"/><text x="49" y="415" text-anchor="middle">heurística</text></g>
+      <path class="hs-wire" id="hs-out-0" d="M304 363 C334 363 334 333 362 333"/><g class="hs-out" data-i="0"><rect x="362" y="322" width="118" height="22" rx="11"/><text x="421" y="337" text-anchor="middle">desacuerdo</text></g><path class="hs-wire" id="hs-out-1" d="M304 363 C334 363 334 363 362 363"/><g class="hs-out" data-i="1"><rect x="362" y="352" width="118" height="22" rx="11"/><text x="421" y="367" text-anchor="middle">evidencia</text></g><path class="hs-wire" id="hs-out-2" d="M304 363 C334 363 334 393 362 393"/><g class="hs-out" data-i="2"><rect x="362" y="382" width="118" height="22" rx="11"/><text x="421" y="397" text-anchor="middle">confianza</text></g>
+      <g class="hs-core"><rect x="180" y="340" width="124" height="46" rx="10"/><text x="242" y="368" text-anchor="middle">▲ BUYER ARENA</text></g>
+    </g>
+  </svg>
+  <figcaption class="scene-cap"><span>Animación ilustrativa — datos de demostración</span><button class="scene-btn" type="button" id="sceneBtn" hidden data-pause="Pausar animación" data-play="Reanudar animación" data-replay="Repetir animación"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2.4"><path d="M9 6v12M15 6v12"/></svg><span>Pausar animación</span></button></figcaption>
+</figure>
+  </section>
+
+  <section id="how" aria-labelledby="h-how">
+    <div class="sec-head"><h2 id="h-how">De un cambio a una decisión, en siete pasos</h2><p>Buyer Arena se sitúa entre quien hizo el cambio —una persona o un agente IA— y la decisión de publicarlo.</p></div>
+    <ol class="flow" id="flow">
+<li class="flow-step">
+        <span class="flow-n" aria-hidden="true">01</span>
+        <div class="flow-body"><h3><span class="sr">1. </span>Una persona o una IA construye software</h3><p>Una pull request, una rama o una vista previa desplegada. A Buyer Arena le da igual quién la escribió.</p></div>
+      </li>
+<li class="flow-step">
+        <span class="flow-n" aria-hidden="true">02</span>
+        <div class="flow-body"><h3><span class="sr">2. </span>Buyer Arena evalúa el cambio</h3><p>En tu máquina, en CI o desde un agente por MCP. Cada ejecución registra su política de red.</p></div>
+      </li>
+<li class="flow-step">
+        <span class="flow-n" aria-hidden="true">03</span>
+        <div class="flow-body"><h3><span class="sr">3. </span>Agentes de navegador y compradores sintéticos usan el producto</h3><p>Recorridos reales con Playwright, con capturas y eventos. Cada comprador es un perfil con semilla, objetivo, presupuesto y paciencia.</p><span class="tag mono">Playwright</span></div>
+      </li>
+<li class="flow-step">
+        <span class="flow-n" aria-hidden="true">04</span>
+        <div class="flow-body"><h3><span class="sr">4. </span>Las herramientas de seguridad y de evaluación aportan evidencia</h3><p>Promptfoo, garak, Gitleaks, Trivy y otras se conectan como adaptadores. Sus resultados son evidencia, no veredictos.</p></div>
+      </li>
+<li class="flow-step">
+        <span class="flow-n" aria-hidden="true">05</span>
+        <div class="flow-body"><h3><span class="sr">5. </span>Buyer Arena normaliza la evidencia</h3><p>Todo pasa a Evidence Protocol v1: registros JSONL portables con origen, ubicación y confianza.</p><span class="tag mono">Evidence Protocol v1</span></div>
+      </li>
+<li class="flow-step">
+        <span class="flow-n" aria-hidden="true">06</span>
+        <div class="flow-body"><h3><span class="sr">6. </span>Se comparan la versión base y la candidata</h3><p>Los mismos perfiles en ambas versiones, diferencias emparejadas con intervalos, fricción resuelta y fricción nueva.</p><span class="tag mono">Δ +35 pp</span></div>
+      </li>
+<li class="flow-step">
+        <span class="flow-n" aria-hidden="true">07</span>
+        <div class="flow-body"><h3><span class="sr">7. </span>Datos agregados reales calibran las simulaciones futuras</h3><p>Cuando aportas resultados reales agregados, la calibración mide el error y marca cada ejecución como UNCALIBRATED, PARTIALLY CALIBRATED o CALIBRATED.</p></div>
+      </li>
+    </ol>
+  </section>
+
+  <section id="report" aria-labelledby="h-report">
+    <div class="sec-head"><h2 id="h-report">Un informe real, no una maqueta</h2><p>Veinte compradores sintéticos deterministas recorrieron en un navegador real dos versiones de la tienda de demostración incluida, «Tallybird». Este es el informe HTML que generó esa ejecución, sin retocar.</p></div>
+    <div class="report card">
+      <div class="report-main">
+        <p class="fiction"><span class="dot" aria-hidden="true"></span>El producto de la demo es ficticio; los recorridos son reales y los compradores, sintéticos.</p>
+        <dl class="facts"><div class="fact"><dt>objetivo alcanzado, versión base</dt><dd>40 %</dd></div><div class="fact"><dt>objetivo alcanzado, versión candidata</dt><dd>75 %</dd></div><div class="fact good"><dt>diferencia · intervalo del 95 % +15 … +55 pp</dt><dd>+35 pp</dd></div><div class="fact"><dt>recorridos en navegador · 217 capturas</dt><dd>40</dd></div><div class="fact"><dt>coste de modelos · 0 tokens · red LOCAL</dt><dd>$0</dd></div></dl>
+        <ul class="checks"><li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Cada hallazgo cita un evento del recorrido, una captura, una URL o un <b>archivo:línea</b>.</span></li><li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Exporta a CSV, PNG, JPG, Markdown, JSON y PDF; informe en español, inglés y neerlandés.</span></li><li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Compradores deterministas: misma semilla, mismo resultado. Sin modelo y sin clave de API.</span></li></ul>
+        <p class="report-cta"><a class="btn btn-primary btn-lg" href="/buyer-arena-site/report/demo/report.html">Abrir el informe real <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a><span class="dim">Un solo archivo HTML · funciona sin conexión</span></p>
       </div>
     </div>
-    <div class="term " role="img" aria-label="buyer-arena — ejemplo">
-  <div class="term-bar"><i></i><i></i><i></i><span>buyer-arena — ejemplo</span></div>
-  <pre><span class="t-dim">$</span> npm run ba -- launch-check <span class="t-dim">\</span>
-    <span class="t-dim">--repo . --url https://tienda.example</span>
-<span class="t-ok">✓</span> 40 participantes · 5 paneles · profundidad standard
+  </section>
 
-Personas usuarias  <span class="t-warn">★★★★☆</span>  78 %
-Desarrollo         <span class="t-warn">★★★☆☆</span>  61 %
-Inversión          <span class="t-warn">★★★★☆</span>  72 %  <span class="t-dim">señales</span>
-Equipo rojo        <span class="t-warn">★★☆☆☆</span>  <span class="t-bad">44 %</span>
-Segmentos          <span class="t-warn">★★★☆☆</span>  63 %
-
-<span class="t-acc">#1</span> El script de instalación descarga código remoto
-   <span class="t-dim">package.json:14 · evidencia sec-003</span></pre>
-</div>
+  <section id="limits" aria-labelledby="h-limits">
+    <div class="sec-head"><h2 id="h-limits">Limitaciones: léelas primero</h2><p>Lo que Buyer Arena mide hoy y lo que no.</p></div>
+    <ul class="limits"><li class="card"><span class="ic warn-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 2.8 19.5h18.4z"/><path d="M12 10v4.2M12 16.8v.1"/></svg></span><div><h3>Un indicador de conversión, no ingresos</h3><p>Los compradores sintéticos miden si un recorrido llega a su objetivo. Es un indicador aproximado de conversión, no una previsión de ventas ni de ingresos.</p></div></li><li class="card"><span class="ic warn-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 2.8 19.5h18.4z"/><path d="M12 10v4.2M12 16.8v.1"/></svg></span><div><h3>Sin calibrar por defecto</h3><p>Hasta que aportes datos agregados reales, cada ejecución es UNCALIBRATED: toma las diferencias como una orientación.</p></div></li><li class="card"><span class="ic warn-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 2.8 19.5h18.4z"/><path d="M12 10v4.2M12 16.8v.1"/></svg></span><div><h3>Aún no se ha verificado una ejecución con un LLM en vivo</h3><p>Los compradores y las rutas con modelo están implementados y probados con modelos simulados; en esta versión no se ha verificado una ejecución real contra un proveedor de pago.</p></div></li><li class="card"><span class="ic warn-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 2.8 19.5h18.4z"/><path d="M12 10v4.2M12 16.8v.1"/></svg></span><div><h3>Ejecutar repositorios alojados es trabajo futuro</h3><p>Auditar un repositorio por URL es solo estático: los archivos se leen como datos. Etiqueta: STATIC AUDIT · NO CODE EXECUTED.</p></div></li><li class="card"><span class="ic warn-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 2.8 19.5h18.4z"/><path d="M12 10v4.2M12 16.8v.1"/></svg></span><div><h3>Lo experimental va marcado</h3><p>Todo lo que lleva la etiqueta EXPERIMENTAL puede cambiar o desaparecer antes de la 1.0.</p></div></li></ul>
   </section>
 
   <section id="panels" aria-labelledby="h-panels">
-    <div class="sec-head"><div><h2 id="h-panels">Cinco paneles, cinco intenciones</h2><p>Un lanzamiento falla por motivos distintos según quién mire. Cada panel busca lo suyo y lo puntúa con evidencia.</p></div></div>
+    <div class="sec-head"><h2 id="h-panels">Cinco paneles, cinco intenciones</h2><p>Un lanzamiento falla por motivos distintos según quién mire. Cada panel busca lo suyo y lo puntúa con evidencia.</p></div>
     <div class="panels">
-<article class="card panel p-users-card">
+<article class="card panel">
       <div class="panel-top"><span class="ic p-users-ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.2 10.2a1.5 1.5 0 0 0 1.5 1.2h8.6a1.5 1.5 0 0 0 1.5-1.1L20.5 8H6.2"/><circle cx="9.5" cy="19.5" r="1.3"/><circle cx="17" cy="19.5" r="1.3"/></svg></span><code class="key">users</code></div>
       <h3>Personas usuarias</h3>
       <p class="intent">¿Dónde se pierden las conversiones y por qué?</p>
-      <ul class="ticks"><li>Recorridos reales en navegador hechos por clientela sintética.</li><li>Embudo paso a paso, fricción detectada y abandono.</li><li>Comparación A/B entre dos versiones de tu web.</li></ul>
+      <ul class="ticks"><li>Recorridos reales en navegador hechos por compradores sintéticos.</li><li>Embudo paso a paso, fricción detectada y abandono.</li><li>Comparación entre versión base y candidata con diferencias emparejadas.</li></ul>
       
     </article>
-<article class="card panel p-developers-card">
+<article class="card panel">
       <div class="panel-top"><span class="ic p-developers-ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="15" rx="3"/><path d="m7.5 10 2.5 2-2.5 2M12.5 15h4"/></svg></span><code class="key">developers</code></div>
       <h3>Desarrollo</h3>
       <p class="intent">¿Cuánto tarda una persona recién llegada en conseguir su primer éxito?</p>
-      <ul class="ticks"><li>Clona el repositorio y sigue el README al pie de la letra.</li><li>Instala y ejecuta hasta el primer resultado que funciona.</li><li>Mide el tiempo hasta el primer éxito y anota qué se rompe.</li></ul>
+      <ul class="ticks"><li>Parte de una copia limpia y sigue el README al pie de la letra.</li><li>Instala y ejecuta hasta el primer resultado que funciona (solo con --execute y repositorios de confianza).</li><li>Mide el tiempo hasta el primer éxito y anota qué se rompe.</li></ul>
       
     </article>
-<article class="card panel p-investors-card">
-      <div class="panel-top"><span class="ic p-investors-ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5h16"/><path d="m5 15 4.5-4.5 3.5 3L19 7.5"/><path d="M15 7.5h4v4"/></svg></span><code class="key">investors</code></div>
-      <h3>Inversión</h3>
-      <p class="intent">¿Qué dice la evidencia a quien hace la due diligence?</p>
-      <ul class="ticks"><li>Problema, diferenciación y encaje del modelo de negocio: código abierto, open core, SaaS, suscripción, servicios o API.</li><li>Potencial de viralidad e interés estratégico: laboratorios de IA, automatización de navegador, analítica y A/B, plataformas para desarrollo, seguridad.</li></ul>
-      <p class="note"><span class="dot"></span>Son señales, nunca una predicción de financiación.</p>
+<article class="card panel">
+      <div class="panel-top"><span class="ic p-commercial-ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5h16"/><path d="m5 15 4.5-4.5 3.5 3L19 7.5"/><path d="M15 7.5h4v4"/></svg></span><code class="key">commercial</code></div>
+      <h3>Preparación comercial</h3>
+      <p class="intent">¿Está respaldada por evidencia la historia comercial?</p>
+      <ul class="ticks"><li>Problema, diferenciación y encaje del modelo de negocio: código abierto, open core, SaaS, suscripción, servicios o API.</li><li>Potencial de distribución e interés estratégico, con la evidencia detrás de cada señal.</li></ul>
+      <p class="note"><span class="dot" aria-hidden="true"></span>Incluye una lente de inversión: señales para la due diligence, nunca una predicción de decisiones de inversión.</p>
     </article>
-<article class="card panel p-security-card">
+<article class="card panel">
       <div class="panel-top"><span class="ic p-security-ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.2 5 6v5.4c0 4.3 3 7.9 7 9.4 4-1.5 7-5.1 7-9.4V6z"/><path d="M12 8.5v4.2M12 15.6v.1"/></svg></span><code class="key">security</code></div>
       <h3>Equipo rojo</h3>
       <p class="intent">¿Por dónde entraría alguien con malas intenciones?</p>
-      <ul class="ticks"><li>Secretos, dependencias, inyección en scripts de CI y scripts de instalación.</li><li>Superficie de la web con Argus, privacidad y cookies.</li><li>Superficie de ataque para agentes IA: inyección de prompts en skills, AGENTS.md y documentación, Unicode oculto, envenenamiento de herramientas MCP y capacidades peligrosas, contenido web no fiable que llega a un LLM y permisos de agente demasiado amplios.</li></ul>
+      <ul class="ticks"><li>Secretos, dependencias, inyección en scripts de CI y scripts de instalación.</li><li>Superficie de la web con Argus, privacidad y cookies.</li><li>Superficie de ataque para agentes IA: inyección de prompts en skills, AGENTS.md y documentación, Unicode oculto, envenenamiento de herramientas MCP y permisos de agente demasiado amplios.</li></ul>
       
     </article>
-<article class="card panel p-segments-card">
+<article class="card panel">
       <div class="panel-top"><span class="ic p-segments-ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="9" cy="10" r="5.2"/><circle cx="15" cy="10" r="5.2"/><circle cx="12" cy="15" r="5.2"/></svg></span><code class="key">segments</code></div>
       <h3>Segmentos</h3>
       <p class="intent">¿Funciona para quien no se parece a tu equipo?</p>
-      <ul class="ticks"><li>Públicos objetivos, no estereotipos.</li><li>Accesibilidad, conexiones lentas, zoom al 200 % y móvil.</li><li>Personas que no quieren crear una cuenta, y otros idiomas.</li></ul>
+      <ul class="ticks"><li>Públicos objetivos, no estereotipos.</li><li>Accesibilidad, conexiones lentas, zoom al 200 % y móvil.</li><li>Personas que no quieren crear una cuenta, y otros idiomas.</li></ul>
       
     </article>
     </div>
   </section>
 
-  <section id="evidence" aria-labelledby="h-evidence">
-    <div class="sec-head"><div><h2 id="h-evidence">Cada nota es evidencia</h2><p>Nada de puntuaciones sin respaldo. Cada comprobación dice de dónde sale.</p></div></div>
-    <div class="grid-2">
-      <div class="card pad">
-        <ul class="checks"><li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span><b>0–5 estrellas y 0–100 %</b> por panel y por comprobación.</span></li><li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Cada comprobación cita <b>archivo:línea</b>, una <b>URL</b> o un <b>evento del recorrido</b> grabado.</span></li><li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Exporta a CSV, PNG, JPG, Markdown, JSON y PDF.</span></li><li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Informe en español, inglés y neerlandés.</span></li></ul>
-        <div class="kv"><span class="dim">Exportar</span><div class="chips"><span class="chip mono">CSV</span><span class="chip mono">PNG</span><span class="chip mono">JPG</span><span class="chip mono">Markdown</span><span class="chip mono">JSON</span><span class="chip mono">PDF</span></div></div>
-        <div class="kv"><span class="dim">Idiomas</span><div class="chips"><span class="chip mono">ES</span><span class="chip mono">EN</span><span class="chip mono">NL</span></div></div>
-      </div>
-      <div class="card pad sample">
-        <p class="eyebrow">Ejemplo de comprobación · users</p>
-        <h3>Se puede pagar sin crear una cuenta</h3>
-        <div class="score-row"><span class="stars" role="img" aria-label="4/5">★★★★<span class="off">★</span></span><b>80 %</b></div>
-        <div class="bar"><i style="width:80%"></i></div>
-        <p class="muted">8 de 10 recorridos llegaron al pago como invitado. Dos se quedaron en el registro obligatorio del paso 3.</p>
-        <div class="chips"><span class="ev">journey p-007:e12</span><span class="ev">src/checkout/guest.ts:88</span><span class="ev">https://shop.example/cart</span></div>
-      </div>
+  <section id="capabilities" aria-labelledby="h-caps">
+    <div class="sec-head"><h2 id="h-caps">Qué incluye esta versión</h2><p>En breve y con precisión. Lo experimental está marcado.</p></div>
+    <ul class="caps"><li class="cap"><h3>Evidence Protocol v1</h3><p>Evidencia portable en JSONL que cualquier herramienta puede escribir y leer.</p></li><li class="cap"><h3>SDK de integración</h3><p>Un contrato pequeño para añadir herramientas como adaptadores; <code>integrations list</code> muestra las disponibles.</p></li><li class="cap"><h3>agent-eval</h3><p>Evalúa lo que produjo un agente IA de programación —compilación, tests, tests borrados u omitidos, secretos, puertas de calidad— y nunca se fía de lo que el agente dice de sí mismo.</p></li><li class="cap"><h3>Router de modelos</h3><p>Fijación explícita del modelo y enrutado según coste: quality, balanced, economy u offline.</p></li><li class="cap"><h3>Informe de economía de tokens</h3><p>Tokens y coste por ejecución, y coste por hallazgo.</p></li><li class="cap"><h3>Caché exacta de respuestas</h3><p>Una petición idéntica se responde desde una caché local en lugar de ir al proveedor.</p></li><li class="cap"><h3>Flujo de PR en GitHub</h3><p>Un flujo reutilizable que publica un único comentario compacto con la diferencia.</p></li><li class="cap"><h3>Estados de calibración</h3><p>UNCALIBRATED · PARTIALLY CALIBRATED · CALIBRATED, con métricas de error.</p></li><li class="cap"><h3>Auditoría estática de repositorios</h3><p>Audita un repositorio público por URL sin ejecutarlo: STATIC AUDIT · NO CODE EXECUTED.</p></li><li class="cap exp"><h3>Conjunto de modelos <span class="badge b-experimental">EXPERIMENTAL</span></h3><p>Varias rutas de modelo sobre el mismo comprador para sacar a la luz el desacuerdo.</p></li></ul>
+  </section>
+
+  <section id="integrations" aria-labelledby="h-integ">
+    <div class="sec-head"><h2 id="h-integ">Funciona con las herramientas que ya usas</h2><p>Solo texto, sin logotipos. Cada entrada indica hasta dónde llega la integración.</p></div>
+    <div class="wall">
+      <section class="ig-group card" aria-labelledby="ig-models">
+        <h3 id="ig-models" class="ig-h">Modelos / pasarelas</h3>
+        <ul><li><span class="ig-name">Anthropic</span><span class="badge b-built">BUILT IN</span></li><li><span class="ig-name">OpenAI-compatible (OpenAI, vLLM, llama.cpp, LocalAI)</span><span class="badge b-built">BUILT IN</span></li><li><span class="ig-name">OpenRouter</span><span class="badge b-supported">SUPPORTED</span></li><li><span class="ig-name">LM Studio</span><span class="badge b-built">BUILT IN</span></li><li><span class="ig-name">Ollama</span><span class="badge b-built">BUILT IN</span></li><li><span class="ig-name">OpenCode</span><span class="badge b-adapter">ADAPTER</span></li></ul>
+      </section>
+      <section class="ig-group card" aria-labelledby="ig-browser">
+        <h3 id="ig-browser" class="ig-h">Navegador</h3>
+        <ul><li><span class="ig-name">Playwright</span><span class="badge b-built">BUILT IN</span></li><li><span class="ig-name">Browser Use<small>sidecar de referencia</small></span><span class="badge b-adapter">ADAPTER</span></li><li><span class="ig-name">Stagehand</span><span class="badge b-experimental">EXPERIMENTAL</span></li></ul>
+      </section>
+      <section class="ig-group card" aria-labelledby="ig-evals">
+        <h3 id="ig-evals" class="ig-h">Evaluación de IA</h3>
+        <ul><li><span class="ig-name">Promptfoo</span><span class="badge b-supported">SUPPORTED</span></li><li><span class="ig-name">DeepEval</span><span class="badge b-adapter">ADAPTER</span></li><li><span class="ig-name">Inspect AI</span><span class="badge b-adapter">ADAPTER</span></li><li><span class="ig-name">lm-evaluation-harness</span><span class="badge b-adapter">ADAPTER</span></li></ul>
+      </section>
+      <section class="ig-group card" aria-labelledby="ig-security">
+        <h3 id="ig-security" class="ig-h">Equipo rojo / seguridad</h3>
+        <ul><li><span class="ig-name">garak</span><span class="badge b-supported">SUPPORTED</span></li><li><span class="ig-name">PyRIT</span><span class="badge b-experimental">EXPERIMENTAL</span></li><li><span class="ig-name">Gitleaks</span><span class="badge b-supported">SUPPORTED</span></li><li><span class="ig-name">Trivy</span><span class="badge b-supported">SUPPORTED</span></li><li><span class="ig-name">Nuclei<small>solo importación por defecto</small></span><span class="badge b-experimental">EXPERIMENTAL</span></li></ul>
+      </section>
+      <section class="ig-group card" aria-labelledby="ig-obs">
+        <h3 id="ig-obs" class="ig-h">Observabilidad</h3>
+        <ul><li><span class="ig-name">OpenTelemetry<small>convenciones GenAI</small></span><span class="badge b-adapter">ADAPTER</span></li><li><span class="ig-name">Langfuse<small>vía OpenTelemetry</small></span><span class="badge b-adapter">ADAPTER</span></li><li><span class="ig-name">Phoenix<small>vía OpenTelemetry</small></span><span class="badge b-adapter">ADAPTER</span></li></ul>
+      </section>
+    </div>
+    <p class="disclaimer">Se citan por interoperabilidad; no implica ninguna colaboración ni respaldo.</p>
+    <div class="legend card">
+      <h3 class="h3-sm">Qué significa cada estado</h3>
+      <dl><div><dt><span class="badge b-built">BUILT IN</span></dt><dd>Viene con Buyer Arena y está cubierto por tests.</dd></div><div><dt><span class="badge b-supported">SUPPORTED</span></dt><dd>Funciona mediante un puente mantenido; la herramienta se instala aparte.</dd></div><div><dt><span class="badge b-adapter">ADAPTER</span></dt><dd>Hay un contrato o un adaptador de referencia; la herramienta la ejecutas tú.</dd></div><div><dt><span class="badge b-experimental">EXPERIMENTAL</span></dt><dd>Funciona en casos limitados y puede cambiar.</dd></div><div><dt><span class="badge b-planned">PLANNED</span></dt><dd>En la hoja de ruta; todavía no está disponible.</dd></div></dl>
     </div>
   </section>
 
+  <section id="offline" aria-labelledby="h-offline">
+    <div class="sec-head"><h2 id="h-offline">Local primero, por diseño</h2><p>Nada sale de tu máquina salvo que elijas un modelo en la nube. Y cuando algo sale, la ejecución lo deja escrito.</p></div>
+    <ul class="offline-points"><li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Sin API de pago obligatoria</span></li><li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Modo determinista</span></li><li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>LM Studio / Ollama</span></li><li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Toda la evidencia se guarda en local</span></li><li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>Sin telemetría por defecto</span></li><li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>No hace falta subir el código</span></li><li><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg><span>La nube es opcional</span></li></ul>
+    <div class="boundary card" id="boundary" data-mode="local">
+    <fieldset class="modes">
+      <legend>Política de red</legend>
+      <div class="seg seg-radio modes-seg"><label><input type="radio" name="netmode" value="offline"><span>OFFLINE</span></label><label><input type="radio" name="netmode" value="local" checked><span>LOCAL</span></label><label><input type="radio" name="netmode" value="hybrid"><span>HYBRID</span></label><label><input type="radio" name="netmode" value="online"><span>ONLINE</span></label></div>
+    </fieldset>
+    <div class="bd">
+      <div class="bd-machine">
+        <p class="bd-title">TU MÁQUINA</p>
+        <ul><li>repositorio</li><li>navegador</li><li>modelos locales</li><li>artefactos y evidencia</li></ul>
+      </div>
+      <div class="bd-link bd-l-lan"><span class="bd-st st-allowed">permitido</span><span class="bd-st st-blocked" hidden>✕ bloqueado</span></div>
+      <div class="bd-box bd-lan"><p>red privada (LAN, Docker)</p></div>
+      <div class="bd-link bd-l-cloud is-blocked"><span class="bd-st st-allowed" hidden>permitido</span><span class="bd-st st-blocked">✕ bloqueado</span></div>
+      <div class="bd-box bd-cloud">
+        <p class="bd-title">NUBE OPCIONAL</p>
+        <p class="c-sel">solo el proveedor de modelos que elijas</p>
+        <p class="c-any" hidden>cualquier host, con las reglas de seguridad</p>
+      </div>
+    </div>
+    <ul class="mode-desc"><li data-m="offline"><b>OFFLINE</b> Solo loopback. Funcionan los modelos locales, los destinos en localhost y los repositorios locales; nada más.</li><li data-m="local" class="on"><b>LOCAL</b> Loopback más tu red privada (LAN, Docker). Es el punto de partida si no eliges nada.</li><li data-m="hybrid"><b>HYBRID</b> Lo local más los proveedores de modelos que hayas elegido. Nada más sale de la máquina.</li><li data-m="online"><b>ONLINE</b> Cualquier host, siempre dentro de las reglas de seguridad, como navegar solo en el mismo origen.</li></ul>
+    <p class="sr" id="bdLive" aria-live="polite"></p>
+  </div>
+    <p class="ledger">Cada ejecución registra qué salió de la máquina: hosts contactados, proveedores que recibieron datos y lo que se rechazó. Sin elección explícita, parte de LOCAL y solo se amplía para un destino que indiques en el comando, y lo avisa.</p>
+  </section>
+
   <section id="mix" aria-labelledby="h-mix">
-    <div class="sec-head"><div><h2 id="h-mix">Elige la mezcla</h2><p>Tú decides cuánta atención recibe cada panel. Antes de una ronda de inversión, más inversión y menos equipo rojo; antes de abrir el código, al revés.</p></div></div>
+    <div class="sec-head"><h2 id="h-mix">Elige la mezcla</h2><p>Tú decides cuánta atención recibe cada panel. Antes de un lanzamiento, más personas usuarias; antes de abrir el código, más equipo rojo.</p></div>
     <div class="grid-2">
       <div class="card pad">
-        <p class="eyebrow">Ejemplo: preparar una ronda</p>
-        <div class="stack" aria-hidden="true"><i class="p-users" style="width:35.00%"></i><i class="p-developers" style="width:15.00%"></i><i class="p-investors" style="width:30.00%"></i><i class="p-security" style="width:5.00%"></i><i class="p-segments" style="width:15.00%"></i></div><ul class="stack-legend"><li><span class="sw p-users" aria-hidden="true"></span><span>Personas usuarias</span><b>35 %</b></li><li><span class="sw p-developers" aria-hidden="true"></span><span>Desarrollo</span><b>15 %</b></li><li><span class="sw p-investors" aria-hidden="true"></span><span>Inversión</span><b>30 %</b></li><li><span class="sw p-security" aria-hidden="true"></span><span>Equipo rojo</span><b>5 %</b></li><li><span class="sw p-segments" aria-hidden="true"></span><span>Segmentos</span><b>15 %</b></li></ul>
-        <h3 class="sub-h">Profundidad</h3>
-        <dl class="depths"><div><dt><code>quick</code> Rápida</dt><dd>Menos participantes y recorridos más cortos. Para una comprobación antes de cada despliegue.</dd></div><div class="on"><dt><code>standard</code> Estándar</dt><dd>La opción por defecto. Suficiente para decidir si lanzar.</dd></div><div><dt><code>deep</code> Profunda</dt><dd>Más recorridos y más pasos por recorrido. Para antes de un lanzamiento importante.</dd></div></dl>
-        <a class="btn btn-primary" href="/buyer-arena-site/es/run.html">Abrir el configurador <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <p class="eyebrow">Ejemplo: antes de un lanzamiento</p>
+        <div class="stack" aria-hidden="true"><i class="p-users" style="width:45.00%"></i><i class="p-developers" style="width:15.00%"></i><i class="p-commercial" style="width:15.00%"></i><i class="p-security" style="width:10.00%"></i><i class="p-segments" style="width:15.00%"></i></div><ul class="stack-legend"><li><span class="sw p-users" aria-hidden="true"></span><span>Personas usuarias</span><b>45 %</b></li><li><span class="sw p-developers" aria-hidden="true"></span><span>Desarrollo</span><b>15 %</b></li><li><span class="sw p-commercial" aria-hidden="true"></span><span>Preparación comercial</span><b>15 %</b></li><li><span class="sw p-security" aria-hidden="true"></span><span>Equipo rojo</span><b>10 %</b></li><li><span class="sw p-segments" aria-hidden="true"></span><span>Segmentos</span><b>15 %</b></li></ul>
       </div>
-      <div class="studio">
-        <h3 class="sub-h">Progreso en directo</h3>
-        <p class="muted">Mientras corre, <code>buyer-arena studio</code> muestra una barra de progreso por panel y el registro de la terminal, en local.</p>
-        <div class="term " role="img" aria-label="buyer-arena studio">
-  <div class="term-bar"><i></i><i></i><i></i><span>buyer-arena studio</span></div>
-  <pre><span class="t-dim">personas   </span> <span class="t-acc">████████████</span><span class="t-dim">░░░░</span> 12/16
-<span class="t-dim">desarrollo </span> <span class="t-ok">████████████████</span>  6/6
-<span class="t-dim">inversión  </span> <span class="t-acc">██████████</span><span class="t-dim">░░░░░░</span>  5/8
-<span class="t-dim">equipo rojo</span> <span class="t-acc">████████</span><span class="t-dim">░░░░░░░░</span>  2/4
-<span class="t-dim">segmentos  </span> <span class="t-acc">██████</span><span class="t-dim">░░░░░░░░░░</span>  3/8
-
-<span class="t-dim">12:04:31</span> p-011 pago <span class="t-ok">✓ objetivo alcanzado</span>
-<span class="t-dim">12:04:33</span> p-012 registro <span class="t-bad">✗ abandona en el paso 3</span></pre>
-</div>
+      <div class="card pad">
+        <h3 class="h3-sm">Profundidad</h3>
+        <dl class="depths"><div><dt><code>quick</code> Rápida</dt><dd>Menos participantes y recorridos más cortos. Para una comprobación antes de cada despliegue.</dd></div><div class="on"><dt><code>standard</code> Estándar</dt><dd>La opción por defecto. Suficiente para decidir si lanzar.</dd></div><div><dt><code>deep</code> Profunda</dt><dd>Más recorridos y más pasos por recorrido. Para antes de un lanzamiento importante.</dd></div></dl>
+        <a class="btn btn-primary" href="/buyer-arena-site/es/run.html">Abrir el configurador <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
       </div>
     </div>
   </section>
 
   <section id="quickstart" aria-labelledby="h-quick">
-    <div class="sec-head"><div><h2 id="h-quick">Empezar</h2><p>Necesitas Node.js 22.12 o superior y Git. La demo descarga una vez Chromium para Playwright.</p></div></div>
+    <div class="sec-head"><h2 id="h-quick">Ejecutar en local</h2><p>Necesitas Node.js 22.12 o superior. La demo descarga una vez Chromium para Playwright.</p></div>
+    <div class="soon" role="note"><span class="ic warn-ic"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8.5 10.5V7.8a3.5 3.5 0 0 1 7 0v2.7"/></svg></span><div><p class="soon-t">Disponible en el lanzamiento público</p><p>El código aún no es público. Estos son los comandos que usarás cuando se abra; hoy no hay nada que instalar.</p></div></div>
     <ol class="card qs-list">
 <li class="qs">
       <span class="qs-n" aria-hidden="true">1</span>
-      <div class="qs-t">Clona el repositorio</div>
-      <div class="code"><pre><code id="cmd-clone">git clone https://github.com/abrahamhl/buyer-arena.git</code></pre><button class="copy" type="button" data-copy-target="cmd-clone" data-copied="Copiado">Copiar</button></div>
+      <div class="qs-t">Instala las dependencias</div>
+      <div class="code"><pre><code id="cmd-install">npm install</code></pre><button class="copy" type="button" data-copy-target="cmd-install" data-copied="Copiado" aria-label="Copiar: npm install">Copiar</button></div>
     </li>
 <li class="qs">
       <span class="qs-n" aria-hidden="true">2</span>
-      <div class="qs-t">Entra en la carpeta</div>
-      <div class="code"><pre><code id="cmd-cd">cd buyer-arena</code></pre><button class="copy" type="button" data-copy-target="cmd-cd" data-copied="Copiado">Copiar</button></div>
+      <div class="qs-t">Ejecuta la demo y abre el informe que genera</div>
+      <div class="code"><pre><code id="cmd-demo">npm run demo</code></pre><button class="copy" type="button" data-copy-target="cmd-demo" data-copied="Copiado" aria-label="Copiar: npm run demo">Copiar</button></div>
     </li>
 <li class="qs">
       <span class="qs-n" aria-hidden="true">3</span>
-      <div class="qs-t">Instala las dependencias</div>
-      <div class="code"><pre><code id="cmd-install">npm install</code></pre><button class="copy" type="button" data-copy-target="cmd-install" data-copied="Copiado">Copiar</button></div>
+      <div class="qs-t">Abre la sala de control visual en local</div>
+      <div class="code"><pre><code id="cmd-studio">npm run ba -- studio</code></pre><button class="copy" type="button" data-copy-target="cmd-studio" data-copied="Copiado" aria-label="Copiar: npm run ba -- studio">Copiar</button></div>
     </li>
 <li class="qs">
       <span class="qs-n" aria-hidden="true">4</span>
-      <div class="qs-t">Ejecuta la demo y abre el informe que genera</div>
-      <div class="code"><pre><code id="cmd-demo">npm run demo</code></pre><button class="copy" type="button" data-copy-target="cmd-demo" data-copied="Copiado">Copiar</button></div>
+      <div class="qs-t">Audita tu propio producto: cambia la URL y el texto que indica éxito</div>
+      <div class="code"><pre><code id="cmd-launch">npm run ba -- launch-check --repo . --url https://your-site.example --success-text &quot;welcome&quot;</code></pre><button class="copy" type="button" data-copy-target="cmd-launch" data-copied="Copiado" aria-label="Copiar: npm run ba -- launch-check --repo . --url https://your-site.example --success-text &quot;welcome&quot;">Copiar</button></div>
     </li>
 <li class="qs">
       <span class="qs-n" aria-hidden="true">5</span>
-      <div class="qs-t">Abre la sala de control visual en local</div>
-      <div class="code"><pre><code id="cmd-studio">npm run ba -- studio</code></pre><button class="copy" type="button" data-copy-target="cmd-studio" data-copied="Copiado">Copiar</button></div>
-    </li>
-<li class="qs">
-      <span class="qs-n" aria-hidden="true">6</span>
-      <div class="qs-t">Audita tu propio producto: cambia la URL y el texto que indica éxito</div>
-      <div class="code"><pre><code id="cmd-launch">npm run ba -- launch-check --repo . --url https://your-site.example --success-text &quot;welcome&quot;</code></pre><button class="copy" type="button" data-copy-target="cmd-launch" data-copied="Copiado">Copiar</button></div>
+      <div class="qs-t">Evalúa lo que ha producido un agente IA en este repositorio</div>
+      <div class="code"><pre><code id="cmd-agentEval">npm run ba -- agent-eval --repo .</code></pre><button class="copy" type="button" data-copy-target="cmd-agentEval" data-copied="Copiado" aria-label="Copiar: npm run ba -- agent-eval --repo .">Copiar</button></div>
     </li>
     </ol>
-  </section>
-
-  <section id="phone" aria-labelledby="h-phone">
-    <div class="grid-2">
-      <div>
-        <div class="sec-head"><div><h2 id="h-phone">Desde el móvil</h2><p>Sin ordenador: la auditoría corre en GitHub Actions.</p></div></div>
-        <ol class="timeline"><li><span class="node" aria-hidden="true">1</span><span>Abre la app de GitHub.</span></li><li><span class="node" aria-hidden="true">2</span><span>Ve al repositorio <b>abrahamhl/buyer-arena</b> (o tu copia).</span></li><li><span class="node" aria-hidden="true">3</span><span>Entra en <b>Actions</b> y elige <b>Launch check</b>.</span></li><li><span class="node" aria-hidden="true">4</span><span>Pulsa <b>Run workflow</b> y rellena la URL y la mezcla.</span></li><li><span class="node" aria-hidden="true">5</span><span>El resultado aparece como resumen con estrellas en la página de la ejecución, con el informe para descargar.</span></li></ol>
-        <a class="btn btn-ghost" href="https://github.com/abrahamhl/buyer-arena/actions/workflows/launch-check.yml" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 2.5a9.7 9.7 0 0 0-3.07 18.9c.49.09.66-.21.66-.47v-1.7c-2.7.59-3.27-1.15-3.27-1.15-.44-1.12-1.08-1.42-1.08-1.42-.88-.6.07-.59.07-.59.97.07 1.49 1 1.49 1 .87 1.48 2.27 1.05 2.83.8.09-.63.34-1.05.62-1.3-2.16-.24-4.42-1.08-4.42-4.8 0-1.06.38-1.93 1-2.61-.1-.25-.43-1.24.1-2.57 0 0 .82-.26 2.67 1a9.2 9.2 0 0 1 4.86 0c1.85-1.26 2.67-1 2.67-1 .53 1.33.2 2.32.1 2.57.62.68 1 1.55 1 2.61 0 3.73-2.27 4.55-4.43 4.79.35.3.66.9.66 1.8v2.67c0 .26.17.57.67.47A9.7 9.7 0 0 0 12 2.5"/></svg> Abrir el flujo «Launch check» <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+    <div class="grid-2 qs-more">
+      <div class="card pad">
+        <h3 class="h3-sm">En CI y desde el móvil</h3>
+        <p class="muted">El flujo «Launch check» corre en GitHub Actions y se lanza desde la app de GitHub. Un flujo reutilizable de PR publica un único comentario compacto con la diferencia.</p>
+        <span class="btn btn-ghost is-disabled" role="link" aria-disabled="true"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8.5 10.5V7.8a3.5 3.5 0 0 1 7 0v2.7"/></svg> Abrir el flujo «Launch check» · disponible en el lanzamiento público</span>
       </div>
-      <div id="agents" class="card pad agents">
-        <h2 class="h2-sm">Úsalo desde agentes IA</h2>
-        <p>Buyer Arena incluye un servidor MCP para que un agente lance auditorías y lea los resultados.</p>
-        <div class="code"><pre><code id="cmd-mcp">npm run ba -- mcp</code></pre><button class="copy" type="button" data-copy-target="cmd-mcp" data-copied="Copiado">Copiar</button></div>
-        <p class="note"><span class="dot"></span>Escucha solo en localhost por defecto. Abrirlo a la red es una decisión explícita tuya.</p>
+      <div class="card pad" id="agents">
+        <h3 class="h3-sm">Desde agentes IA</h3>
+        <p class="muted">Un servidor MCP para que un agente lance auditorías y lea los resultados.</p>
+        <div class="code"><pre><code id="cmd-mcp">npm run ba -- mcp</code></pre><button class="copy" type="button" data-copy-target="cmd-mcp" data-copied="Copiado" aria-label="Copiar: npm run ba -- mcp">Copiar</button></div>
+        <p class="note good-note"><span class="dot" aria-hidden="true"></span>Escucha solo en localhost por defecto. Abrirlo a la red es una decisión explícita tuya.</p>
       </div>
     </div>
   </section>
 
+  <section id="pricing" aria-labelledby="h-pricing">
+    <div class="sec-head"><h2 id="h-pricing">Precios y licencias</h2><p>El núcleo es completo y gratuito. Los planes de pago cobrarán por lo que operamos nosotros —ejecuciones alojadas, retención, colaboración, cumplimiento y tiempo de personas—, nunca por lo que ejecutas tú.</p></div>
+    <div class="soon preview" role="note"><span class="ic warn-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3.5 2.8 19.5h18.4z"/><path d="M12 10v4.2M12 16.8v.1"/></svg></span><div><p class="soon-t">Precios fijados — aún no hay nada a la venta</p><p>Aún no hay empresa, ni pasarela de pago, ni servicio alojado. Estos precios son un plan publicado, no incluyen IVA y pueden cambiar antes de vender nada.</p></div></div>
+    <div class="plans">
+      <article class="card plan plan-community" aria-labelledby="plan-community">
+        <div class="plan-top"><h3 id="plan-community">Community</h3><span class="badge b-built">EN EL LANZAMIENTO PÚBLICO</span></div>
+        <p class="who">Para todo el mundo</p>
+        <p class="price"><span class="amount">0 €</span> <span class="per">para siempre</span></p>
+        
+        <ul class="ticks"><li>Los cinco paneles, Studio, MCP, agent-eval y todas las integraciones</li><li>Modelos locales o con tu propia clave; ejecuciones ilimitadas en tu máquina o CI</li><li>Soporte de la comunidad en GitHub</li></ul>
+        <p class="lic"><span class="dim">Licencia:</span> Apache-2.0 + política de marca</p>
+        
+      </article>
+      <article class="card plan plan-starter" aria-labelledby="plan-starter">
+        <div class="plan-top"><h3 id="plan-starter">Cloud Starter</h3><span class="badge b-planned">PLANIFICADO</span></div>
+        <p class="who">Personas y equipos pequeños</p>
+        <p class="price"><span class="amount">29 €</span> <span class="per">/ mes</span></p>
+        <p class="quota">1000 recorridos / mes incluidos<br><span class="dim">después, 4 € por cada 100 recorridos</span></p>
+        <ul class="ticks"><li>Navegadores alojados, 3 proyectos, 30 días de retención</li><li>Informes compartibles, usuarios ilimitados</li></ul>
+        <p class="lic"><span class="dim">Licencia:</span> Términos cloud + acuerdo de tratamiento de datos</p>
+        
+      </article>
+      <article class="card plan plan-team" aria-labelledby="plan-team">
+        <div class="plan-top"><h3 id="plan-team">Cloud Team</h3><span class="badge b-planned">PLANIFICADO</span></div>
+        <p class="who">Equipos de producto e ingeniería</p>
+        <p class="price"><span class="amount">249 €</span> <span class="per">/ mes</span></p>
+        <p class="quota">10.000 recorridos / mes incluidos<br><span class="dim">después, 3 € por cada 100 recorridos</span></p>
+        <ul class="ticks"><li>Puerta de PR para repositorios privados, historial de benchmarks de agentes</li><li>Espacio de calibración, 1 año de retención, soporte por email</li></ul>
+        <p class="lic"><span class="dim">Licencia:</span> Términos cloud + acuerdo de tratamiento de datos</p>
+        
+      </article>
+      <article class="card plan plan-enterprise" aria-labelledby="plan-enterprise">
+        <div class="plan-top"><h3 id="plan-enterprise">Enterprise</h3><span class="badge b-planned">PLANIFICADO</span></div>
+        <p class="who">Organizaciones grandes o reguladas</p>
+        <p class="price"><span class="from">desde</span> <span class="amount">2500 €</span> <span class="per">/ mes</span></p>
+        
+        <ul class="ticks"><li>SSO/SAML, SCIM, registros de auditoría, residencia de datos en la UE</li><li>Plano de control autoalojado o en VPC, SLA, contrato anual</li></ul>
+        <p class="lic"><span class="dim">Licencia:</span> Licencia comercial de complementos + MSA</p>
+        
+      </article>
+    </div>
+    <p class="disclaimer">Un recorrido es un comprador sintético intentando un recorrido en una versión. Comparar antes/después con 20 compradores usa 40. Los tokens de los modelos nunca van escondidos en el precio.</p>
+    <div class="card pad services">
+      <h3 class="h3-sm">Servicios a precio cerrado</h3>
+      <p class="muted">Hechos con la herramienta de código abierto, para que puedas reproducir cada hallazgo después. Disponibles cuando exista la empresa.</p>
+      <ul class="svc"><li><div><h3 class="h3-sm">Auditoría de lanzamiento</h3><p class="muted">Un producto, antes y después, los cinco paneles, informe escrito y una llamada de revisión.</p></div><p class="svc-price">1900 €</p></li><li><div><h3 class="h3-sm">Benchmark de agentes</h3><p class="muted">De dos a cuatro agentes de programación con IA sobre tu repositorio, con la evidencia en bruto.</p></div><p class="svc-price">desde 4900 €</p></li><li><div><h3 class="h3-sm">Puesta en marcha de calibración</h3><p class="muted">Conecta tus analíticas agregadas y recibe tu primer informe de calibración.</p></div><p class="svc-price">desde 2900 €</p></li><li><div><h3 class="h3-sm">Soporte autoalojado</h3><p class="muted">Contrato de soporte para equipos que usan el núcleo abierto en producción.</p></div><p class="svc-price">desde 500 € / mes</p></li></ul>
+    </div>
+    <p class="disclaimer">Descuentos: Cloud Team gratis para proyectos de código abierto y ONG, Starter gratis para educación y 50 % el primer año para startups en fase inicial. Detalles, fórmulas y referencias de mercado: docs/PRICING.md en el repositorio.</p>
+  </section>
+
+  <section id="roi" aria-labelledby="h-roi">
+    <div class="sec-head"><h2 id="h-roi">Calcula tu retorno</h2><p>Cinco maneras en que Buyer Arena puede pagarse sola. La calculadora usa la fórmula de nuestro documento de precios; cambia los números por los tuyos.</p></div>
+    <ol class="roi-paths"><li class="card"><span class="flow-n" aria-hidden="true">A</span><div><h3 class="h3-sm">Gasto en investigación evitado</h3><p class="muted">Rondas de usabilidad que ya no necesitas en cada versión.</p></div></li><li class="card"><span class="flow-n" aria-hidden="true">B</span><div><h3 class="h3-sm">Conversión recuperada</h3><p class="muted">Fricción encontrada antes del lanzamiento, contada en el límite inferior y por un factor de confianza.</p></div></li><li class="card"><span class="flow-n" aria-hidden="true">C</span><div><h3 class="h3-sm">Tiempo de ingeniería ahorrado</h3><p class="muted">Caza de regresiones y QA manual que no tuviste que hacer.</p></div></li><li class="card"><span class="flow-n" aria-hidden="true">D</span><div><h3 class="h3-sm">Gasto en modelos evitado</h3><p class="muted">Caché exacta, enrutado y modelos locales; cada ejecución informa de su economía de tokens.</p></div></li><li class="card"><span class="flow-n" aria-hidden="true">E</span><div><h3 class="h3-sm">Mejor elección de agente</h3><p class="muted">Elige el agente de programación con IA cuyos cambios pasan de verdad tus puertas.</p></div></li></ol>
+    <div class="card pad roi-calc">
+      <h3 class="h3-sm">Calculadora de ROI — ilustrativa</h3>
+      <div class="roi-grid">
+        <form id="roiForm" class="roi-fields" data-locale="es-ES" novalidate><label class="rf"><span>Rondas de usabilidad evitadas al año</span><input type="number" inputmode="decimal" id="roi-rounds" name="rounds" value="2" min="0" step="1"></label><label class="rf"><span>Coste total por ronda (€)</span><input type="number" inputmode="decimal" id="roi-roundCost" name="roundCost" value="1000" min="0" step="1"></label><label class="rf"><span>Visitantes al mes</span><input type="number" inputmode="decimal" id="roi-visitors" name="visitors" value="20000" min="0" step="1"></label><label class="rf"><span>Mejora real de conversión (puntos porcentuales)</span><input type="number" inputmode="decimal" id="roi-uplift" name="uplift" value="0.1" min="0" step="0.01"></label><label class="rf"><span>Valor por conversión (€)</span><input type="number" inputmode="decimal" id="roi-value" name="value" value="40" min="0" step="1"></label><label class="rf"><span>Factor de confianza (0–1)</span><input type="number" inputmode="decimal" id="roi-confidence" name="confidence" value="0.5" min="0" max="1" step="0.05"></label><label class="rf"><span>Horas de ingeniería ahorradas al año</span><input type="number" inputmode="decimal" id="roi-hours" name="hours" value="20" min="0" step="1"></label><label class="rf"><span>Coste por hora (€)</span><input type="number" inputmode="decimal" id="roi-rate" name="rate" value="60" min="0" step="1"></label><label class="rf"><span>Coste de Buyer Arena al mes (€)</span><input type="number" inputmode="decimal" id="roi-plan" name="plan" value="249" min="0" step="1"></label></form>
+        <div class="roi-out" aria-live="polite">
+          <dl><div><dt>Gasto en investigación evitado</dt><dd id="roi-out-a">2000 €</dd></div><div><dt>Conversión recuperada</dt><dd id="roi-out-b">4800 €</dd></div><div><dt>Tiempo de ingeniería ahorrado</dt><dd id="roi-out-c">1200 €</dd></div><div><dt>Coste de Buyer Arena</dt><dd id="roi-out-cost">-2988 €</dd></div><div class="total"><dt>Neto al año</dt><dd id="roi-out-net">5012 €</dd></div><div class="total"><dt>Retorno sobre el coste</dt><dd id="roi-out-ratio">168 %</dd></div></dl>
+          <p class="dim">al año</p>
+        </div>
+      </div>
+      <p class="note"><span class="dot" aria-hidden="true"></span>Ilustrativo, no es un resultado de cliente. Buyer Arena mide una aproximación a la conversión, no ingresos; mientras una ejecución esté SIN CALIBRAR, mantén el factor de confianza en 0,5 o menos. El gasto en modelos y la elección de agente no entran en la calculadora.</p>
+    </div>
+  </section>
+
   <section id="safety" aria-labelledby="h-safety">
-    <div class="sec-head"><div><h2 id="h-safety">Seguridad y privacidad</h2><p>Una herramienta que prueba webs no debería convertirse en un riesgo.</p></div></div>
-    <ul class="safety"><li class="card"><span class="ic good-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><h3>Corre en local</h3><p>En tu máquina o en tu propio runner de CI. No hay servicio intermedio.</p></div></li><li class="card"><span class="ic good-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><h3>Solo el origen que indicas</h3><p>Visita únicamente el dominio que le das.</p></div></li><li class="card"><span class="ic good-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><h3>Bloquea terceros</h3><p>Las peticiones a otros dominios se bloquean durante los recorridos.</p></div></li><li class="card"><span class="ic good-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><h3>Nunca datos de pago reales</h3><p>Jamás introduce una tarjeta ni datos de pago reales.</p></div></li><li class="card"><span class="ic good-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><h3>Tests sin coste</h3><p>La batería de tests hace cero llamadas a APIs de pago.</p></div></li><li class="card"><span class="ic good-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><h3>Un solo archivo</h3><p>El informe es un HTML que funciona sin conexión.</p></div></li></ul>
+    <div class="sec-head"><h2 id="h-safety">Seguridad y privacidad</h2><p>Una herramienta que prueba webs no debería convertirse en un riesgo.</p></div>
+    <ul class="safety"><li class="card"><span class="ic good-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><h3>Corre en local</h3><p>En tu máquina o en tu propio runner de CI. No hay servicio intermedio.</p></div></li><li class="card"><span class="ic good-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><h3>Solo el origen que indicas</h3><p>Visita únicamente el dominio que le das.</p></div></li><li class="card"><span class="ic good-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><h3>Bloquea terceros</h3><p>Las peticiones a otros dominios se bloquean durante los recorridos.</p></div></li><li class="card"><span class="ic good-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><h3>Nunca datos de pago reales</h3><p>Jamás introduce una tarjeta ni datos de pago reales.</p></div></li><li class="card"><span class="ic good-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><h3>Tests sin coste</h3><p>La batería de tests hace cero llamadas a APIs de pago.</p></div></li><li class="card"><span class="ic good-ic"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" stroke-width="2"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg></span><div><h3>Un solo archivo</h3><p>El informe es un HTML que funciona sin conexión.</p></div></li></ul>
+  </section>
+
+  <section id="self-audit" class="self-audit" aria-labelledby="h-self">
+    <div class="card pad self-card">
+      <p class="self-label">AUTOAUDITORÍA — NO ES UNA VALIDACIÓN EXTERNA</p>
+      <h2 id="h-self" class="h3-sm">Buyer Arena sobre sí mismo</h2>
+      <p class="muted">Pasamos launch-check sobre el propio repositorio de Buyer Arena. La ejecución del 25-09-2026 obtuvo 84/100 (los paneles web miden la tienda demo ficticia, con defectos plantados, no a Buyer Arena). La herramienta se puntuó a sí misma: no es evidencia independiente ni la prueba en la que nos apoyamos; esa es el informe real de arriba.</p>
+      
+    </div>
   </section>
 </main>
 <footer class="foot">
   <div class="wrap foot-grid">
     <div>
-      <a class="brand" href="/buyer-arena-site/es/"><span class="brand-mark" aria-hidden="true">▲</span><span>Buyer Arena</span></a>
-      <p class="muted foot-tag">Compradores sintéticos para una auditoría de lanzamiento basada en evidencia.</p>
-      <p class="foot-privacy-wrap"><a class="pill good foot-privacy" href="/buyer-arena-site/es/#safety" rel="privacy-policy"><span class="dot"></span>Privacidad: sin cookies, sin rastreadores</a></p>
+      <a class="brand" href="/buyer-arena-site/es/" aria-label="Buyer Arena — Inicio"><span class="brand-mark" aria-hidden="true">▲</span><span class="brand-word">BUYER ARENA</span></a>
+      <p class="muted foot-tag">La capa de evaluación basada en evidencia para el software que crean personas y agentes IA.</p>
+      <p class="foot-state"><span class="state-dot" aria-hidden="true"></span>Versión candidata privada — el código se abrirá tras una auditoría independiente</p>
+      <p class="foot-privacy-wrap"><a class="pill good foot-privacy" href="/buyer-arena-site/es/#safety" rel="privacy-policy"><span class="dot" aria-hidden="true"></span>Privacidad: sin cookies, sin rastreadores</a></p>
     </div>
     <ul class="foot-links">
-      <li><a href="https://github.com/abrahamhl/buyer-arena" rel="noopener"><svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true"><path d="M12 2.5a9.7 9.7 0 0 0-3.07 18.9c.49.09.66-.21.66-.47v-1.7c-2.7.59-3.27-1.15-3.27-1.15-.44-1.12-1.08-1.42-1.08-1.42-.88-.6.07-.59.07-.59.97.07 1.49 1 1.49 1 .87 1.48 2.27 1.05 2.83.8.09-.63.34-1.05.62-1.3-2.16-.24-4.42-1.08-4.42-4.8 0-1.06.38-1.93 1-2.61-.1-.25-.43-1.24.1-2.57 0 0 .82-.26 2.67 1a9.2 9.2 0 0 1 4.86 0c1.85-1.26 2.67-1 2.67-1 .53 1.33.2 2.32.1 2.57.62.68 1 1.55 1 2.61 0 3.73-2.27 4.55-4.43 4.79.35.3.66.9.66 1.8v2.67c0 .26.17.57.67.47A9.7 9.7 0 0 0 12 2.5"/></svg>Código en GitHub</a></li>
-      <li><a href="https://github.com/abrahamhl/buyer-arena/blob/main/LICENSE" rel="noopener license">Licencia Apache-2.0</a></li>
-      <li><a href="/buyer-arena-site/report/">Informe de autoauditoría</a></li>
+      <li><span class="foot-off" aria-disabled="true" role="link"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5" y="10.5" width="14" height="10" rx="2.5"/><path d="M8.5 10.5V7.8a3.5 3.5 0 0 1 7 0v2.7"/></svg>Código · llega con el lanzamiento</span></li>
+      <li><span class="foot-plain">Licencia Apache-2.0</span></li>
+      <li><a href="/buyer-arena-site/report/demo/report.html">Informe real de demostración</a></li>
       <li><a href="/buyer-arena-site/es/run.html">Configurador</a></li>
     </ul>
     <div class="foot-lang">
       <span class="dim">Idiomas</span>
-      <nav class="seg lang" aria-label="Idioma"><a class="lb" href="/buyer-arena-site/es/" hreflang="es" lang="es" aria-current="page" title="Español">ES</a><a class="lb" href="/buyer-arena-site/en/" hreflang="en" lang="en" title="English">EN</a><a class="lb" href="/buyer-arena-site/nl/" hreflang="nl" lang="nl" title="Nederlands">NL</a></nav>
+      <div class="seg lang" role="group" aria-label="Idioma"><a class="lb" href="/buyer-arena-site/es/" hreflang="es" lang="es" aria-current="page" aria-label="Español">ES</a><a class="lb" href="/buyer-arena-site/en/" hreflang="en" lang="en" aria-label="English">EN</a><a class="lb" href="/buyer-arena-site/nl/" hreflang="nl" lang="nl" aria-label="Nederlands">NL</a></div>
     </div>
   </div>
 </footer>
